@@ -22,7 +22,7 @@ numthread.times do |t|
 	p  " Thread Numero " + t.to_s 
 	p "# da analizzare " + per_thread.to_s
 	
-      result = `./th_dizionario.rb =0 #{t} #{per_thread}` 
+      result = `./th_dizionario.rb #{t} #{per_thread}` 
 	  Thread.current["result"] = result
     end
   else
