@@ -1,5 +1,5 @@
 def lemmatize text,linee
-  
+	
 
 
 text.split.each do |flessa|
