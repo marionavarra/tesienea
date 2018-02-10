@@ -1,5 +1,5 @@
 def rimuovi_non_in_dizionario text,dizionario
-	out_file = File.open("#{Time.now.strftime('%Y%m%d%H%M%S%L')}_Out_rimuovi_non_in_dizionario.txt","w")
+	#out_file = File.open("#{Time.now.strftime('%Y%m%d%H%M%S%L')}_Out_rimuovi_non_in_dizionario.txt","w")
 	text.split.each do |p_text|
 	trovata = false
     #p "Sto cercando: " + flessa

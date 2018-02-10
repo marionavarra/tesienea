@@ -3,44 +3,24 @@ require 'active_record'
 require 'mysql2' # or 'pg' or 'sqlite3'
 require 'nokogiri'      #
 require "./rimuovi_non_in_dizionario.rb"
-ActiveRecord::Base.establish_connection(
-  adapter:  'mysql2', # or 'postgresql' or 'sqlite3'
-  database: 'info',
-  username: 'root',
-  password: 'stava',
-  host:     'localhost',
-  socket:   '/var/run/mysqld/mysqld.sock'
-)
-
-# Note that the corresponding table is 'orders'
-class Alert < ActiveRecord::Base
-  has_and_belongs_to_many :categories
-  has_many :entries
-end
-class Category < ActiveRecord::Base
-  has_and_belongs_to_many :alerts
-end
-class Entry < ActiveRecord::Base
-  belongs_to :alert
-end
+require './modelli.rb'
 
 file_dizionario = File.open("dizionario.txt", "r")
 linee =  file_dizionario.readlines
-bodies = []
-
-out_file = File.open("#{Time.now.strftime('%Y%m%d%H%M%S%L')}_Out_th_dizionario.txt","w")
-out_file.write "id,text,guasto,manutenzione,maltempo\n"
-alerts = Alert.all.limit(ARGV[1]).offset(ARGV[0])
+#bodies = []
+file_guasto = File.open("guasti_thread_#{ARGV[0]}_dizionario.txt","w")
+file_maltempo = File.open("maltempo_thread_#{ARGV[0]}_dizionario.txt","w")
+file_manutenzione = File.open("manutenzione_thread_#{ARGV[0]}_dizionario.txt","w")
+#out_file = File.open("#{Time.now.strftime('%Y%m%d%H%M%S%L')}_Out_th_dizionario.txt","w")
+#out_file.write "id,text,guasto,manutenzione,maltempo\n"#
+alerts = Alert.all.limit(ARGV[2]).offset(ARGV[1])
 alerts.each do |a|
-doc=""
-#      	doc = Nokogiri.HTML(a.html)
-#	doc.css('script').remove                             # Remove <script>…</script>
-#	doc.css('style').remove  				 # Remove <style>…</style>
+    doc=a.title
 	a.entries.each do |entry|
 		doc+=entry.entry 
 	end
   
-  p "Documento da analizzare " + doc unless doc.nil?
+    #p "Documento da analizzare " + doc unless doc.nil?
     unless doc.nil?
 		out=doc.gsub /^\s*$/m, ''                       # Remove carriage return
 		out=out.gsub(/\s\s+/, "\s")  				#remove double space
@@ -69,8 +49,13 @@ doc=""
 		end		
 	end
 
-out_file.write a.id.to_s + "," + out + ",#{guasto},#{manutenzione},#{maltempo}\n"
-    out_file.flush
+   #out_file.write a.id.to_s + "," + out + ",#{guasto},#{manutenzione},#{maltempo}\n"
+    file_guasto.write("#{a.id},#{out},  #{guasto}\n")
+	file_manutenzione.write("#{a.id},#{out},#{manutenzione}\n")
+	file_maltempo.write("#{a.id},#{out},#{maltempo}\n")
+
+
+    #out_file.flush
 
 end     
 
