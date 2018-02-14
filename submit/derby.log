@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Wed Feb 14 14:47:03 CET 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0161-9491-918f-000012f5efb0 
+on database directory /home/dimartino/Documenti/mario/codice/tesienea/submit/metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@64254b95 
+Loaded from file:/home/dimartino/Documenti/mario/spark-2.2.1-bin-hadoop2.7/jars/derby-10.12.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_151-8u151-b12-1-b12
+user.dir=/home/dimartino/Documenti/mario/codice/tesienea/submit
+os.name=Linux
+os.arch=amd64
+os.version=4.14.0-3-amd64
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
