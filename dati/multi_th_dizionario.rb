@@ -14,7 +14,7 @@ alerts = []
 count = 0
 numthread.times do |t|
   p "T " + t.to_s
-  if t == 1
+  if t == 0
     
     th[t]=Thread.new do
         p " TEST " 
@@ -22,8 +22,8 @@ numthread.times do |t|
 	p  " Thread Numero " + t.to_s 
 	p "# da analizzare " + per_thread.to_s
 	
-      result = `./th_dizionario.rb #{t} #{per_thread}` 
-	  Thread.current["result"] = result
+      result = `./th_dizionario.rb 0 0 #{per_thread}` 
+	#  Thread.current["result"] = result
     end
   else
     th[t]=Thread.new do
@@ -31,7 +31,7 @@ numthread.times do |t|
 	  p "# da analizzare " + per_thread.to_s
       Thread.current["mycount"] = t
 	  result = `./th_dizionario.rb #{t} #{per_thread*t} #{per_thread}`
-      Thread.current["result"] = result
+      #Thread.current["result"] = result
 	end
   end
 end
