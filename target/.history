@@ -1,0 +1,199 @@
+   69  ls
+   70  spark-shell
+   71  cd ..
+   72  ls
+   73  cd spark-2.2.1-bin-hadoop2.7/
+   74  ls
+   75  cd bin
+   76  pwd
+   77  export PATH=$PATH:/home/dimartino/Documenti/mario/spark-2.2.1-bin-hadoop2.7/bin 
+   78  vi /home/dimartino/.bashrc 
+   79  cd ..
+   80  ls
+   81  vi /home/dimartino/.bashrc 
+   82  vi .bashrc 
+   83  . ./.bashrc 
+   84  spark-shell 
+   85  cd Documenti/mario/dati/
+   86  spark-shell 
+   87  cd Documenti/mario/
+   88  wget https://cache.ruby-lang.org/pub/ruby/2.4/ruby-2.4.3.tar.gz
+   89  tar -xvz ruby-2.4.3.tar.gz 
+   90  tar -xvzf ruby-2.4.3.tar.gz 
+   91  cd ruby-2.4.3/
+   92  ./configure –prefix=$HOME
+   93  ./configure -prefix=$HOME
+   94  make
+   95  make install
+   96  ruby -v
+   97  export PATH=/home/username/bin/:.:$PATH
+   98  ruby -v
+   99  cd ..
+  100  vi .bashrc 
+  101  cd -
+  102  ls
+  103  cd mario/
+  104  ls
+  105  cd codice/
+  106  cd ..
+  107  wget https://rubygems.org/rubygems/rubygems-2.7.4.tgz
+  108  export GEM_HOME=/home/dimartino/Documenti/mario
+  109  tar -xvzf rubygems-2.7.4.tgz 
+  110  ls
+  111  cd rubygems-2.7.4/
+  112  ls
+  113  ruby setup.rb 
+  114  export PATH=/home/username/bin/:.:$PATH
+  115  export PATH=/home/dimartino/Documenti/mario/ruby-2.4.3/bin/:.:$PATH
+  116  ruby setup.rb 
+  117  ruby
+  118  vi /home/dimartino/.bashrc 
+  119  cd
+  120  ls
+  121  vi /home/dimartino/.bashrc 
+  122  export PATH=/home/dimartino/bin/:.:$PATH
+  123  ruby setup.rb 
+  124  cd -
+  125  ruby setup.rb 
+  126  export GEM_HOME=/home/dimartino/gems
+  127  ruby setup.rb 
+  128  locate zlib
+  129  dpkg-query -l 
+  130  dpkg-query -l | grep libreadline6
+  131  dpkg-query -l | grep ssl
+  132  dpkg-query -l | grep openssl
+  133  dpkg-query -l | grep build
+  134  dpkg-query -l | grep curl
+  135  dpkg-query -l | grep git-core
+  136  dpkg-query -l | grep git
+  137  dpkg-query -l | grep zlib1g
+  138  dpkg-query -l | grep libssl-dev
+  139  dpkg-query -l | grep libssl
+  140  dpkg-query -l | grep libyaml
+  141  dpkg-query -l | grep libxml
+  142  dpkg-query -l | grep libxml2-dev
+  143  dpkg-query -l | grep libxslt-dev
+  144  dpkg-query -l | grep autoconf
+  145  dpkg-query -l | grep libc6
+  146  dpkg-query -l | grep ncurs
+  147  java -version 
+  148  scala -version
+  149  cd Documenti/mario/
+  150  wget https://downloads.lightbend.com/scala/2.12.4/scala-2.12.4.tgz
+  151  tar -xvzf scala-2.12.4.tgz 
+  152  cd scala-2.12.4/
+  153  ls
+  154  cd bin/
+  155  ls
+  156  ./scala
+  157  ./scala --version
+  158  ./scala -version
+  159  export PATH = $PATH:/home/dimartino/Documenti/mario/scala-2.12.4/bin
+  160  pwd
+  161  export PATH = $PATH:/home/dimartino/Documenti/mario/scala-2.12.4/bin
+  162  export PATH=$PATH:/home/dimartino/Documenti/mario/scala-2.12.4/bin
+  163  scala -version
+  164  wget http://apache.panu.it/spark/spark-2.2.1/spark-2.2.1-bin-hadoop2.7.tgz
+  165  wget http://it.apache.contactlab.it/spark/spark-2.2.1/spark-2.2.1-bin-hadoop2.7.tgz
+  166  mv spark-2.2.1-bin-hadoop2.7.tgz ../../
+  167  cd ..
+  168  ls
+  169  tar -xvzf spark-2.2.1-bin-hadoop2.7.tgz 
+  170  rm -r spark-2.2.1-bin-hadoop2.7
+  171  rm spark-2.2.1-bin-hadoop2.7.tgz 
+  172  wget http://it.apache.contactlab.it/spark/spark-2.2.1/spark-2.2.1-bin-hadoop2.7.tgz
+  173  tar -xvzf spark-2.2.1-bin-hadoop2.7.tgz 
+  174  cd spark-2.2.1-bin-hadoop2.7/
+  175  ls
+  176  cd bin/
+  177  ls
+  178  ./spark-shell 
+  179  pwd
+  180  export PATH=$PATH:/home/dimartino/Documenti/mario/spark-2.2.1-bin-hadoop2.7/bin
+  181  cd ..
+  182  spark-shell 
+  183  cd codice/
+  184  ls
+  185  cd ..
+  186  cd dati/
+  187  ls
+  188  ruby  estrai.rb 
+  189  cd /home/dimartino/lib/ruby/site_ruby/2.4.0/rubygems/
+  190  la
+  191  ls
+  192  cd ..
+  193  ls
+  194  cd ..
+  195  ls
+  196  cd ..
+  197  ls
+  198  cd Documenti/mario/
+  199  ls
+  200  cd ruby
+  201  cd rubygems-2.7.4/
+  202  ls
+  203  cd bin/
+  204  ls
+  205  ./gem install active_record
+  206  cd Documenti/mario/dati/
+  207  ll
+  208  ls
+  209  vi maltempo.csv 
+  210  mysql -u dimartino@babylon.casaccia.enea.it navarra -p
+  211  mysql -u dimartino navarra -p
+  212  mysql -u dimartino -p
+  213  mysql -u dimartino -p -h babylon.casaccia.enea.it
+  214  mysql -u 'dimartino@babylon.casaccia.enea.it' navarra -p
+  215  netstat -an | grep 3600
+  216  mysql -u 'dimartino@babylon.casaccia.enea.it'  -p
+  217  mysql -u 'dimartino'@'babylon.casaccia.enea.it'  -p
+  218  mysql -u 'dimartino'@'babylon.casaccia.enea.it'  -p -h babylon.casaccia.enea.it
+  219  mysql -u 'dimartino'  -p
+  220  netstat -an | grep 3306
+  221  netstat -an |head
+  222  mysql -u 'dimartino'@'babylon.casaccia.enea.it'  -p -h localhost
+  223  ping babylon.casaccia.enea.it
+  224  hostname
+  225  cat /etc/htosts
+  226  cat /etc/hosts
+  227  mysql -u 'dimartino'  -p -h localhost
+  228  mysql -u 'dimartino'  -p -h localhost navarra
+  229  netstat -an |head
+  230  netstat -an |tcp6
+  231  netstat -an |grep tcp6
+  232  netstat -an |grep ~~
+  233  netstat -an |grep 3306
+  234  mysql -u 'dimartino'  -pnavarra -h localhost navarra
+  235  mysql -u dimartino  -pnavarra -h localhost navarra
+  236  cd Documenti/mario/dati/
+  237  ls
+  238  cd ..
+  239  ls
+  240  cd rubygems-2.7.4/
+  241  ls
+  242  ruby setup.rb 
+  243  dpkg-query -l | grep zlib
+  244  cd ../ruby-2.4.3/
+  245  ./configure -prefix=$HOME
+  246  make
+  247  make install
+  248  cd -
+  249  ruby setup.rb 
+  250  gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+  251  curl -sSL https://get.rvm.io | bash -s stable
+  252  source /home/dimartino/.rvm/scripts/rvm
+  253  rvm install ruby
+  254  cat /home/dimartino/.rvm/log/1517254930_ruby-2.4.1/update_system.log
+  255  rvm list
+  256  cd
+  257  rvm help install
+  258  rvm list known
+  259  rvm list remote
+  260  rvm requirements
+  261  export GEM_HOME=/home/dimartino/gems
+  262  cd -
+  263  ruby setup.rb 
+  264  cd bin/
+  265  ls
+  266  ./gem 
+  267  ./gem install mysql2
