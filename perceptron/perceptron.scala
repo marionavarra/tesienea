@@ -44,7 +44,7 @@ def main(args: Array[String]) {
   val truePos = sqlContext.sql("SELECT COUNT(*) as c FROM predicted WHERE label = 1.0 and prediction = 1")
   println("False Positive = " + falsePos.head.getLong(0))
   println("False Negative = " + falseNeg.head.getLong(0))
-  println("True Positive = " + trueNeg.head.getLong(0))
+  println("True Positive = " + truePos.head.getLong(0))
   println("True Negative = " + trueNeg.head.getLong(0))
   risultati.write.mode("overwrite").format("com.databricks.spark.csv").save("./"+filename+"_result.csv")
   }
