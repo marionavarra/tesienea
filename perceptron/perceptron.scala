@@ -20,7 +20,7 @@ val hashingTF = new HashingTF().setInputCol(tokenizer.getOutputCol).setOutputCol
 
 val word = tokenizer.transform(labelled)   
 val featurized = hashingTF.transform(word)
-val data = featurized.select("label", "features")
+val data = featurized.select("id", "label", "features")
 
 val splits = data.randomSplit(Array(0.8, 0.2), seed = 1234L)
 val train = splits(0)
@@ -33,7 +33,7 @@ val evaluator = new MulticlassClassificationEvaluator().setMetricName("accuracy"
 val predictionAndLabels = result.select("prediction", "label")
 println("Test set accuracy = " + evaluator.evaluate(predictionAndLabels))
 result.printSchema
-  val risultati = result.select("id", "prediction", "label")
+  val risultati = result.select("id", "label", "prediction", "label")
   //result.write.format("com.databricks.spark.csv").save("./result.csv")
 }
 }
