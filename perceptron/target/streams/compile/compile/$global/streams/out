@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/perceptron/perceptron.scala:15:52: value $ is not a member of StringContext[0m
+[0m[[0m[31merror[0m] [0m[0mval labelled = dataset.withColumn("label", toLabel($"topic".like("%true%"))).cache[0m
+[0m[[0m[31merror[0m] [0m[0m                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

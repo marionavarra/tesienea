@@ -1,3 +1,5 @@
+import org.apache.spark.sql.functions.udf
+import org.apache.spark.sql.functions.col
 import org.apache.spark.sql.{SparkSession, SQLContext}
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.ml.feature.HashingTF
@@ -11,14 +13,14 @@ val sparkSession = SparkSession.builder().master("local").appName("Kmean maltemp
 val dataset = sparkSession.read.format("com.databricks.spark.csv").option("header", "true").option("inferSchema", "true").load("/home/dimartino/Documenti/mario/codice/tesienea/submit/maltempo.csv")
 val topic2Label: Boolean => Int = isSci => if (isSci) 1 else 0
 val toLabel = udf(topic2Label)
-val labelled = dataset.withColumn("label", toLabel($"topic".like("%true%"))).cache
+val labelled = dataset.withColumn("label", toLabel(col("topic").like("%true%"))).cache
 val tokenizer = new RegexTokenizer().setInputCol("text").setOutputCol("words")
 
 val hashingTF = new HashingTF().setInputCol(tokenizer.getOutputCol).setOutputCol("features").setNumFeatures(20)
 
 val word = tokenizer.transform(labelled)   
 val featurized = hashingTF.transform(word)
-val data = featurized.select('label, 'features)
+val data = featurized.select("label", "features")
 
 val splits = data.randomSplit(Array(0.6, 0.4), seed = 1234L)
 val train = splits(0)
