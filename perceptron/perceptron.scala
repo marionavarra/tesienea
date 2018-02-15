@@ -33,7 +33,7 @@ val evaluator = new MulticlassClassificationEvaluator().setMetricName("accuracy"
 val predictionAndLabels = result.select("prediction", "label")
 println("Test set accuracy = " + evaluator.evaluate(predictionAndLabels))
 result.printSchema
-  val risultati = result.select("id", "label", "prediction", "label")
+  val risultati = result.select("id", "prediction", "label")
   risultati.write.format("com.databricks.spark.csv").save("./result.csv")
 }
 }
