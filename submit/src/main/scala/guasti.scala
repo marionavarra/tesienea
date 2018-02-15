@@ -41,7 +41,7 @@ object Guasti {
     println("False Positive = " + falsePos.head.getLong(0))
     println("False Negative = " + falseNeg.head.getLong(0))
     println("True Positive = " + trueNeg.head.getLong(0))
-    println("True Negative = " + trueNeg.head.getLong(0))
+    println("True Negative = " + truePos.head.getLong(0))
     risultati.write.mode("overwrite").format("com.databricks.spark.csv").save("./"+filename+"_result.csv")
 
     println("Success prediction rate: %s".format(areaTest))
