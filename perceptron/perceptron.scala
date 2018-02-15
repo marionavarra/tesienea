@@ -9,6 +9,7 @@ import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
 
 object Perceptron {
 def main(args: Array[String]) { 
+  val sc = new SparkContext()
   val sqlContext = new org.apache.spark.sql.SQLContext(sc)
   val filename = args(0)
   val sparkSession = SparkSession.builder().master("local").appName("Kmean maltempo").config("spark.some.config.option", "some-value").getOrCreate()
