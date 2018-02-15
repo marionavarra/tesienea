@@ -38,7 +38,6 @@ def main(args: Array[String]) {
   result.printSchema
   val risultati = result.select("id", "prediction", "label")
   risultati.registerTempTable("predicted")
-  val top3 = sqlContext.sql("SELECT * FROM (SELECT *, ROW_NUMBER() OVER (PARTITION BY topic ORDER BY id) AS rn FROM predicted) x WHERE rn <= 3")
   val falseNeg = sqlContext.sql("SELECT COUNT(*) FROM predicted WHERE label = 1.0 and prediction = 0")
   val falsePos = sqlContext.sql("SELECT COUNT(*) FROM predicted WHERE label = 0.0 and prediction = 1")
   val trueNeg = sqlContext.sql("SELECT COUNT(*) FROM predicted WHERE label = 0.0 and prediction = 0")
