@@ -34,6 +34,6 @@ val predictionAndLabels = result.select("prediction", "label")
 println("Test set accuracy = " + evaluator.evaluate(predictionAndLabels))
 result.printSchema
   val risultati = result.select("id", "label", "prediction", "label")
-  //result.write.format("com.databricks.spark.csv").save("./result.csv")
+  risultati.write.format("com.databricks.spark.csv").save("./result.csv")
 }
 }
