@@ -1,0 +1,10 @@
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/kmean/kmean.scala:7:15: not found: value sparkSession[0m
+[0m[[0m[31merror[0m] [0m[0mval dataset = sparkSession.read[0m
+[0m[[0m[31merror[0m] [0m[0m              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/kmean/kmean.scala:15:62: not found: value numIterations[0m
+[0m[[0m[31merror[0m] [0m[0m    val kmeans = new KMeans().setK(2).setSeed(1L).setMaxIter(numIterations)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/kmean/kmean.scala:26:5: not found: value sparkSession[0m
+[0m[[0m[31merror[0m] [0m[0m    sparkSession.stop()[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m

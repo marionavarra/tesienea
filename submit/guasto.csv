@@ -1,9 +1,7 @@
 id,text,topic
 13448, interruzione corrente distribuzione interruzione fornitura energia manutenzione sostituzione informazione polizia comune computer energia distribuzione comune informazione azienda zona ,  false
-13449, ,  false
 13450, sospensione servizio energia energia interruzione energia tensione erogazione energia servizio distribuzione guasto ,  true
 13451, linea tensione cavo strada cavo fuoco luce danno collegamento energia panico elettrico emergenza rottura linea centrale cavo zona cavo fumo paura fuoco sicurezza zona intervento ripristino impianto lavoro ripristino energia area luce causa rottura linea disservizio cabina cabina guasto luce buio corrente linea sbalzo guasto sostituzione problema raffica servizio emergenza ,  true
-13452, ,  false
 13453,guasto rete emergenza fiume protezione autobotte autobotte popolazione gestore acqua condotta flusso emergenza acqua secco ,  false
 13454,guasto rete strada strada causa condotta polizia acqua intervento traffico zona ,  false
 13455, linea tensione cavo strada cavo fuoco luce danno collegamento energia panico elettrico emergenza rottura linea centrale cavo zona cavo fumo paura fuoco sicurezza zona intervento ripristino impianto lavoro ripristino energia area luce causa rottura linea disservizio cabina cabina guasto luce buio corrente linea sbalzo guasto sostituzione problema raffica servizio emergenza ,  true
@@ -11,7 +9,6 @@ id,text,topic
 13457, sospensione servizio sospensione servizio servizio acqua comune intervento interruzione erogazione acqua collegamento rete comune intervento interruzione erogazione acqua servizio rete telefonia ,  false
 13458, sospensione servizio ,  false
 13459,acqua erogazione erogazione rete rete sospensione servizio urgenza servizio erogazione sospensione erogazione acqua zona acqua impianto fornitura rete condotta fornitura ,  false
-13460, ,  false
 13461, interruzione energia carenza territorio interruzione energia carenza interruzione energia carenza popolazione interruzione energia problema causa manutenzione rete paese interruzione problema carenza rete consorzio comunicazione casa popolazione pressione acqua paese ,  false
 13462, condotta interruzione servizio sostituzione condotta erogazione acqua chiusura acqua pressione intervento ,  false
 13463, rete zona rete zona acqua interruzione servizio territorio fornitura manutenzione rete distribuzione comune erogazione zona servizio fornitura capoluogo zona ripristino servizio acqua tempo intervento azienda rete ,  false
@@ -25,9 +22,7 @@ id,text,topic
 13470,maltempo vento allerta vento zona comune pressione calo perturbazione pioggia regione precipitazione vento regione vento regione regione rischio vento regione pioggia vento regione precipitazione vento regione vento vento caduta trasporto circolazione distribuzione telefonia informazione protezione comune regione comune ,  true
 13471, interruzione erogazione acqua interruzione erogazione acqua interruzione erogazione acqua erogazione acqua sospensione erogazione sostituzione condotta incrocio erogazione acqua intervento erogazione acqua tempo intervento acqua problema autoclave sospensione area zona polizia zona tratto circonvallazione chiusura traffico coda autostrada tempo ,  false
 13472, acqua causa sospensione acqua acqua zona zona territorio zona ,  false
-13473, ,  false
 13474,blackout emergenza rete blackout distribuzione energia rete linea riparazione lavoro distribuzione intervento azienda intervento ,  true
-13475, ,  false
 13476, rete corrente sicurezza servizio rete energia comune lavoro rete guasto intervento intervento manutenzione distribuzione zona rete rete struttura zona provincia rete distribuzione infrastruttura energia rete rete zona energia disagio servizio lavoro territorio servizio fornitura energia centrale servizio territorio ,  true
 13477, interruzione fornitura interruzione fornitura fornitura energia comune manutenzione ,  false
 13478,guasto rete bus guasto rete stazione guasto rete circolazione circolazione linea alimentazione servizio circolazione linea ,  true
@@ -127,7 +122,6 @@ id,text,topic
 13570, manutenzione rete intervento acquedotto manutenzione rete acquedotto sospensione erogazione acqua coda flusso interruzione flusso servizio emergenza acquedotto acquedotto rete ,  false
 13571, erogazione erogazione territorio servizio comune comune acquedotto erogazione ripristino manutenzione sospensione ripristino autoclave acquedotto area acqua interruzione ,  false
 13572, blackout ,  false
-13573, ,  false
 13574, interruzione energia quartiere zona erogazione corrente causa rete distribuzione zona corrente tempo ente distribuzione energia ,  false
 13575, energia internet causa interruzione energia internet utenza ,  true
 13576, interruzione fornitura interruzione fornitura fornitura energia comune manutenzione ,  false
@@ -283,7 +277,6 @@ id,text,topic
 13728, sospensione erogazione manutenzione ,  false
 13729,blackout casa attacco casa linea tempo casa attacco linea casa attacco casa campo casa attacco attacco casa ,  false
 13730, blackout squadra ,  false
-13731, ,  false
 13732, elettrico comune campo elettrico guasto manutenzione popolazione erogazione energia comune interruzione energia ripristino erogazione energia distribuzione polizia tecnico problema distribuzione disagio distribuzione elettrico popolazione polizia energia protezione servizio manutenzione distribuzione disservizio ,  true
 13733,guasto rete erogazione provincia secco manutenzione acqua zona acqua provincia servizio telefono acqua notizia ,  false
 13734,guasto rete acqua zona lavoro problema erogazione ,  false
@@ -325,7 +318,6 @@ id,text,topic
 13769, secco tratto secco frazione secco interruzione lavoro rete distribuzione erogazione capoluogo zona pressione sistema protezione servizio fornitura ospedale territorio interruzione approvvigionamento area area stazione area area area scuola area area intervento erogazione sospensione erogazione interruzione acqua sospensione erogazione rifornimento rubinetto casa acqua approvvigionamento interruzione ripristino erogazione impianto acqua deposito autoclave acqua interruzione approvvigionamento rifornimento acqua interruzione acqua acqua erogazione rubinetto casa acqua acqua protezione comune ,  false
 13770, acqua rete interruzione erogazione chiusura scuola scuola scuola scuola scuola scuola scuola sospensione rete servizio acqua sospensione ,  false
 13771, blackout casa ,  false
-13772, ,  false
 13773,energia ripristino emergenza rete energia protezione energia sospensione rete interruzione rete ripristino servizio sospensione tempo servizio sospensione sicurezza caduta,  false
 13774, distribuzione tensione ,  false
 13775,luce erogazione energia interruzione energia servizio elettrico energia gas sistema interruzione servizio rete interruzione rete interruzione gas luce gas acqua energia elettrico gas energia luce gas energia gas elettrico gas gestore casa energia energia energia ,  false
@@ -405,7 +397,6 @@ id,text,topic
 13848,maltempo rete distribuzione gestore rete rete maltempo azienda tensione sostituzione impatto rete regione protezione distribuzione area interruzione energia popolazione regione rete maltempo nevicata terremoto energia territorio servizio territorio energia gas rete energia ,  false
 13849,blackout blackout elettrico buio stazione distribuzione energia metropolitana canale energia mancanza corrente problema luce blackout provincia ,  true
 13850, blackout blackout ,  true
-13851, ,  false
 13852, blackout squadra calo blackout tempo ,  true
 13853, blackout buio luce tempo impianto illuminazione blackout buio ritardo blackout ,  true
 13854, blackout squadra tempo calo calo blackout ,  true
@@ -663,7 +654,6 @@ id,text,topic
 14107,blackout sbalzo energia sbalzo energia blackout linea corrente soccorso fuoco paura rete rete tempo problema territorio sospensione tecnico sicurezza ,  true
 14108, sospensione erogazione ,  false
 14109,blackout blackout blocco fuoco ,  true
-14110, ,  false
 14111,blackout blackout blackout emergenza causa blackout sbalzo energia mancanza energia ,  true
 14112, corrente carenza acqua,  false
 14113, sospensione area provincia zona causa fuoco causa interruzione corrente squadra intervento fuoco emergenza caduta coda sbalzo energia guasto sicurezza disservizio ente sbalzo energia guasto rete ,  true
@@ -694,7 +684,6 @@ id,text,topic
 14138,acquedotto sospensione servizio comune ,  false
 14139, sospensione fornitura sistema intervento rete fornitura tratto tratto ponte intervento pressione quartiere chiusura acqua ,  false
 14140, blackout canale ,  false
-14141, ,  false
 14142, blackout internet comunicazione informazione problema blackout elettrico copertura campo blackout elettrico evacuazione squadra sicurezza sicurezza tempo tecnico blackout blackout ferito fuoco blackout condotta internet quartiere blackout mancanza energia blackout blocco blackout elettrico segnalazione sicurezza macchina sicurezza struttura anomalia macchina evacuazione servizio evacuazione intervento fuoco squadra anomalia macchina notizia comunicazione incrocio informazione ,  true
 14143, energia causa interruzione energia comune causa manutenzione erogazione energia ,  false
 14144, rischio chiusura impianto compagnia allarme energia chiusura condotta gas compagnia impianto causa intervento chiusura condotta linea chiusura paese ,  false
@@ -731,7 +720,6 @@ id,text,topic
 14175, blackout tempo interruzione energia sisma ,  true
 14176, acqua secco,  false
 14177, blackout blackout elettrico tempo ,  true
-14178, ,  false
 14179, ponte casa stazione acqua causa ponte fornitura comune acqua sospensione servizio condotta acqua tempo ,  false
 14180, interruzione pressione manutenzione rete distribuzione comune erogazione comune comune pressione ponte rete ripristino servizio acqua tempo ,  false
 14181, ponte casa stazione acqua causa ponte fornitura comune acqua sospensione servizio condotta acqua tempo ,  false
@@ -835,7 +823,6 @@ id,text,topic
 14278,blackout elettrico elettrico territorio interruzione energia territorio zona impianto acqua erogazione utenza pressione energia provincia ,  true
 14279, sospensione erogazione sospensione erogazione interruzione acqua scuola collegamento rete scuola fornitura zona ,  false
 14280,blackout elettrico elettrico territorio interruzione energia territorio zona impianto acqua erogazione utenza pressione energia provincia ,  true
-14281, ,  false
 14282, energia energia popolazione distribuzione corrente rifornimento elettrico blackout servizio area chiusura impianto impianto energia crisi ,  true
 14283, sospensione erogazione comunicazione causa condotta consorzio erogazione acqua conseguenza territorio disagio rete comune ,  false
 14284, sospensione scuola regione ospedale regione regione ,  false
@@ -1174,7 +1161,6 @@ id,text,topic
 14619,sospensione flusso manutenzione rete flusso manutenzione rete secco comunicazione manutenzione rete servizio comune sospensione flusso ripristino servizio ,  false
 14620, blackout blackout blackout ,  true
 14621, acqua acqua interruzione servizio erogazione acqua comune canale ripristino servizio acqua tempo azienda intervento ,  false
-14622, ,  false
 14623,allarme fumo fuoco fumo causa guasto quadro elettrico emergenza ,  true
 14624,guasto rete erogazione rete erogazione guasto acqua danno tubazione riparazione guasto erogazione lavoro riparazione danno servizio guasto ,  true
 14625, zona fumo fiamma metro fumo zona blocco erogazione energia blocco conseguenza sicurezza servizio disservizio protezione blackout elettrico mancanza fornitura energia sicurezza blackout sicurezza ,  true
@@ -1569,7 +1555,6 @@ id,text,topic
 15012,emergenza emergenza emergenza sospensione fornitura provincia erogazione servizio provincia frazione approvvigionamento frazione capoluogo erogazione acqua sospensione erogazione comune disagio acqua acqua acqua secco frazione comune acqua provvedimento erogazione emergenza acqua emergenza sospensione erogazione ,  false
 15013, blackout corrente quartiere area ,  false
 15014, energia zona energia casa luce ,  false
-15015, ,  false
 15016, intervento guasto rete intervento guasto rete intervento riparazione rete guasto condotta rottura asfalto conseguenza intervento acqua sicurezza riparazione guasto interruzione servizio ,  true
 15017, acqua guasto condotta diga ,  false
 15018, acqua manutenzione servizio flusso zona pressione mancanza acqua area servizio servizio rifornimento sospensione erogazione acqua informazione internet ,  false
@@ -1816,7 +1801,6 @@ id,text,topic
 15260,guasto rete guasto rete causa guasto comune problema segnalazione rete telefono ,  true
 15261,guasto elettrico installazione riparazione distribuzione rete tensione area zona energia causa guasto azienda intervento azienda rete area corrente notizia ,  true
 15262,emergenza erogazione secco emergenza erogazione secco emergenza erogazione secco sospensione fornitura provincia capoluogo interruzione servizio sospensione popolazione erogazione pressione comune servizio stazione incrocio incrocio frazione sospensione frazione acqua frazione comune comune causa manutenzione rete erogazione emergenza emergenza ,  true
-15263, ,  false
 15264, consorzio crisi zona pioggia consorzio distribuzione acqua servizio territorio area provincia acqua servizio consorzio consorzio polizia acqua consorzio consorzio sospensione consorzio acqua ,  false
 15265,blackout elettrico guasto blackout elettrico tensione corrente area zona buio zona interruzione guasto fornitura emergenza erogazione energia installazione riparazione distribuzione rete tensione area energia causa guasto azienda intervento azienda rete area ,  true
 15266, blackout energia elettrico energia energia guasto energia energia ,  true
@@ -1835,7 +1819,6 @@ id,text,topic
 15279,emergenza maltempo ondata maltempo territorio sicurezza livello acqua carreggiata zona regione casa emergenza sicurezza territorio lavoro fango interruzione circolazione ondata maltempo fuoco intervento maltempo maltempo pioggia provincia fuoco,  false
 15280,maltempo ,  false
 15281, lavoro paese acqua intervento manutenzione comune acquedotto lavoro tubazione sospensione erogazione flusso interruzione flusso servizio emergenza acquedotto acquedotto rete ,  false
-15282, ,  false
 17011, problema rete sistema causa blackout internet gestore gestore disservizio problematica rete network problema caos ,  true
 15283,guasto elettrico installazione riparazione distribuzione rete tensione area zona energia causa guasto azienda intervento azienda rete area corrente notizia ,  true
 15284,guasto energia installazione riparazione distribuzione rete tensione area zona energia causa guasto azienda intervento azienda rete area corrente notizia ,  true
@@ -1848,12 +1831,10 @@ id,text,topic
 15291, servizio ,  false
 15292, guasto linea zona guasto linea zona zona zona corrente problema guasto cabina blackout elettrico comune squadra erogazione luce zona zona corrente zona corrente blackout corrente ,  true
 15293,emergenza emergenza centrale incidente traffico tilt maltempo allerta provincia deposito auto morto ospedale emergenza crisi regione emergenza emergenza centrale tempo causa comunicazione interruzione flusso comune comune zona campo comunicazione emergenza crisi regione emergenza ,  false
-15294, ,  false
 15295,guasto rete guasto rete zona gasdotto area conduttura rete campo centrale interruzione fornitura rete rete distribuzione area emergenza tecnico fornitura servizio ,  true
 15296, erogazione acqua pompiere erogazione acqua pompiere diga acqua interruzione emergenza incendio diga acqua rete emergenza acqua incendio gestore acqua pompa pozzo acqua ritardo vigile fuoco fuoco edificio fuoco servizio protezione comune emergenza protezione rischio territorio lavoro emergenza rischio tempo emergenza rischio emergenza rete rischio rischio territorio acqua fuoco ,  false
 15297,maltempo zona ,  false
 15298, grandine grandine grandine grandine ondata maltempo grandine provincia maltempo emergenza notizia maltempo fenomeno ,  false
-15299, ,  false
 15300, sospensione tempo sospensione sospensione ,  false
 15667, servizio area acqua interruzione ,  false
 15301, fornitura acqua zona comune sospensione erogazione causa riparazione guasto condotta serbatoio ramo fornitura ,  true
@@ -2017,7 +1998,6 @@ id,text,topic
 15458, guasto rete rete comune acqua servizio squadra rete territorio lavoro guasto zona perdita installazione intervento comune ente squadra problema ,  true
 15459, secco comunicazione comune secco comunicazione comune interruzione servizio secco disagio interruzione servizio comunicazione comune disservizio rete comunicazione mancanza acqua zona comunicazione interruzione servizio crisi causa disservizio ,  true
 15460, cavo elettrico guasto cavo linea stazione centrale problema treno binario cavo blocco alimentazione sicurezza binario fuoco stazione guasto circolazione binario traffico ,  true
-15461, ,  false
 15462, rottura guasto elettrico tempo squadra macchina ,  true
 15463,sospensione flusso manutenzione flusso manutenzione secco manutenzione collegamento condotta servizio comune sospensione flusso campo ponte area ripristino servizio acqua sospensione flusso ,  false
 15464,emergenza emergenza emergenza territorio provvedimento servizio zona emergenza ,  false
@@ -2214,13 +2194,11 @@ id,text,topic
 15654,maltempo regione vento pioggia grandine zona vento carreggiata traffico tratto strada carreggiata circolazione fuoco illuminazione tromba aria linea temporale fulmine impianto elettrico causa maltempo linea ferrovia fulmine centralina zona tilt circolazione transito tecnico lavoro nubifragio caduta fuoco soccorso acqua protezione portata acqua causa auto protezione acqua traffico carreggiata polizia traffico ,  false
 15655, sospensione erogazione ripristino livello erogazione acqua ripristino livello erogazione acqua ripristino livello erogazione acqua ripristino livello erogazione acqua ripristino livello erogazione acqua causa guasto erogazione causa guasto erogazione zona consorzio ripristino livello erogazione acqua ,  true
 15656,intervento rete rete acquedotto lavoro intervento manutenzione comune acquedotto lavoro condotta sospensione erogazione acqua flusso interruzione flusso servizio emergenza acquedotto acquedotto rete ,  false
-15657, ,  false
 15658, elettrico emergenza elettrico ospedale mancanza corrente azienda blocco elettrico struttura mancanza energia guasto linea alimentazione struttura sistema emergenza ospedale energia comunicazione blocco sospensione azienda problematica emergenza ,  true
 15659, elettrico caos ospedale elettrico caos ospedale soccorso tilt ospedale causa guasto elettrico interruzione energia caos struttura servizio lavoro alimentazione generatore emergenza emergenza struttura utenza soccorso blocco disagio struttura guasto serbatoio livello ,  true
 15660, elettrico ospedale elettrico tilt ospedale erogazione energia vittima ospedale computer elettrico ospedale interruzione energia rete rete computer problema elettrico interruzione casa illuminazione tensione zona centrale sbalzo tensione guasto stazione rete computer tensione tensione ,  true
 15661, corrente aria buio allarme aria luce blackout rete energia problema azienda aria luce zona tensione blackout tensione zona quartiere zona emergenza problema intervento guasto problema cabina luce abitazione emergenza fenomeno azienda comune interruzione luce tilt fuoco sicurezza corrente azienda blackout ,  true
 15662,maltempo tempesta allerta maltempo maltempo maltempo regione pioggia pozzo fiume torrente ponte tromba aria interruzione energia zona vento temporale ,  false
-15663, ,  false
 15664, conduttura acqua conduttura acqua zona rete pressione acqua fuoriuscita guasto riparazione acqua ,  true
 15665, servizio guasto causa guasto servizio erogazione interruzione tempo erogazione acqua ,  true
 15666, ospedale emergenza guasto condotta interruzione erogazione emergenza campo guasto condotta zona erogazione acqua servizio lavoro emergenza protezione problematica ospedale ospedale mancanza acqua sospensione autobotte zona soccorso emergenza soccorso interruzione servizio crisi ,  true
@@ -2423,7 +2401,6 @@ id,text,topic
 15862, acqua conseguenza acqua emergenza acqua emergenza acqua regione acqua rischio crisi acqua aria rete acqua approvvigionamento acqua azienda distribuzione acqua rete sospensione acqua acqua acqua acqua acqua ,  false
 15863, acqua acqua secco secco danno rete acqua ,  false
 15864,maltempo vento blackout maltempo pioggia vento livello acqua fuoco squadra fiume maltempo temporale temporale nubifragio provincia fuoco zona fuoco ondata maltempo provincia ondata maltempo nubifragio zona maltempo pioggia vento vento strada aeroporto strada zona blackout caduta albero casa copertura ospedale zona vento blackout livello linea problema allarme albero auto transito auto vento ,  true
-15865, ,  false
 15866, interruzione erogazione energia zona ,  false
 15867, energia ,  false
 15868, erogazione erogazione energia zona ripristino sospensione corrente energia canale utenza tempo corrente ,  false
@@ -2435,13 +2412,11 @@ id,text,topic
 15874, acqua sospensione acqua sospensione acqua regione azienda rete acqua sospensione servizio acqua notizia regione regione comune acqua servizio rete acqua rete distribuzione acqua azienda comune regione ,  false
 15875, rischio acqua acqua protezione approvvigionamento acqua causa carenza servizio approvvigionamento emergenza regione incubo sospensione erogazione acqua sospensione regione azienda regione acqua portata regione erogazione acqua telefono tecnico rischio acqua comune problema chiusura acqua acqua comune emergenza disastro sospensione manutenzione ,  false
 15876, gas gas sicurezza approvvigionamento gas ,  false
-15877, ,  false
 15878, regione ripristino regione ripristino notizia consorzio regione causa lavoro consorzio erogazione acqua consorzio interruzione servizio interruzione consorzio regione regione regione fornitura disagio acqua regione ,  false
 15879, crisi crisi crisi acqua area metropolitana livello approvvigionamento livello sicurezza interruzione servizio livello comune acqua regione comune blocco regione acqua flusso acqua acqua crisi sistema regione comune blocco paura conseguenza crisi acqua livello acqua ,  false
 15880, interruzione erogazione acqua sospensione erogazione acqua consorzio consorzio consorzio approvvigionamento acqua consorzio comune problematica emergenza ,  false
 15881, interruzione erogazione energia zona ,  false
 15882, energia ,  false
-15883, ,  false
 15884,interruzione acqua acqua manutenzione erogazione erogazione acqua comunicazione lavoro manutenzione condotta causa intervento flusso territorio ripristino flusso acqua ,  false
 15885, acqua rischio acqua rischio sospensione erogazione acqua livello erogazione emergenza urgenza livello ospedale soccorso emergenza comune interruzione rischio comune segnalazione emergenza emergenza ,  false
 15886, sospensione acqua collegamento rete quartiere comune intervento interruzione erogazione acqua pressione servizio rete telefonia ,  false
@@ -2632,12 +2607,10 @@ id,text,topic
 16074, sospensione erogazione tratto ,  false
 16075,crisi sospensione fenomeno fenomeno programma crisi acqua acqua acqua fiume calo paese campo paese acqua acqua rete distribuzione ,  false
 16076, elettrico gas elettrico gas energia elettrico gas elettrico gas erogazione elettrico gas energia provvedimento erogazione energia gas energia gas energia gas sistema energia gas luce gas gas energia energia gas energia energia servizio fornitura fornitura energia gas gestore sistema energia gas sistema energia gas energia gas energia erogazione ,  false
-16077, ,  false
 16078,raffica buio incubo buio incubo buio energia corrente guasto interruzione interruzione acqua energia buio energia buio causa ,  true
 16079, energia guasto rete distribuzione causa erogazione energia zona zona quartiere energia ,  true
 16080, hacker blackout hacker elettrico corrente corrente interruzione rete buio problema hacker internet rete corrente portata danno buio guasto linea tensione mancanza luce internet rischio ,  true
 16081,guasto rete quartiere acqua flusso causa guasto rete gestore acqua rete guasto rete secco quartiere ,  true
-16082, ,  false
 16083, acqua area guasto rete carenza acqua secco acqua lavoro servizio emergenza servizio acqua guasto ,  true
 16084, interruzione corrente interruzione corrente intervento manutenzione rete distribuzione rete distribuzione intervento manutenzione sistema elettrico cabina alimentazione servizio elettrico distribuzione impianto installazione cabina energia tensione sistema elettrico elettrico servizio disservizio sicurezza interruzione servizio elettrico distribuzione zona distribuzione corrente territorio fiume gas programma ,  false
 16085,blackout lavoro guasto distribuzione tensione lavoro ripristino servizio elettrico interruzione provincia provincia distribuzione servizio collegamento tratto rete guasto servizio ripristino servizio distribuzione ,  true
@@ -3528,7 +3501,6 @@ id,text,topic
 16970, energia impianto zona ,  false
 16990,maltempo elettrico ondata maltempo territorio zona provincia tromba aria smottamento ripristino corrente energia acqua sicurezza condotta ripristino servizio erogazione corrente sostituzione acqua comune tempo auto allerta pioggia allerta protezione regione maltempo territorio maltempo tilt traffico arteria carreggiata ritardo casa caduta circolazione traffico binario ,  false
 16971, allarme energia impianto zona ,  false
-16972, ,  false
 16973,uragano blackout rete tilt uragano rete livello emergenza buio ,  true
 16974, emergenza rete acqua guasto rete quartiere tubo acquedotto zona acqua ,  true
 16975,uragano blackout uragano paura campo tempesta blackout paese uragano uragano sicurezza rischio uragano guasto rete buio ,  true
@@ -3633,7 +3605,6 @@ id,text,topic
 17076, elettrico buio energia buio maltempo tromba aria mancanza energia energia nubifragio zona vento pioggia energia zona maltempo corrente linea problema guasto buio danno energia zona problema energia emergenza territorio comune casa causa disservizio danno disagio ,  true
 17077, cabina casa lavoro ,  false
 17078, abitazione abitazione azienda energia regione azienda energia regione impianto provincia abitazione impianto energia energia rete impianto sistema impianto energia sistema abitazione energia energia servizio impianto installazione installazione tempo impianto batteria energia impianto ,  false
-17079, ,  false
 17080, cavo elettrico impianto cavo elettrico impianto luce guasto cavo elettrico rete guasto lavoro rete tempo buio zona ,  true
 17081, elettrico frazione buio zona problema capoluogo paese frazione problema frazione buio guasto centralina intervento squadra ,  true
 17082, incendio incendio ,  false
@@ -4184,7 +4155,6 @@ id,text,topic
 17627, caos caos guasto treno corrente linea lavoro riparazione circolazione buio alimentazione provincia bus caos informazione albero rottura linea guasto treno incidente impianto bus bus servizio stazione treno linea stazione bus tensione guasto linea struttura azienda rete danno linea ,  true
 17628, acqua guasto elettrico acqua causa guasto elettrico disservizio acquedotto distribuzione distribuzione ripristino guasto autoclave acquedotto area acqua interruzione acquedotto fornitura acqua acqua ,  true
 17629,guasto linea linea guasto linea conseguenza alimentazione provincia servizio guasto treno linea alimentazione circolazione riparazione circolazione problema tecnico linea treno transito servizio bus utenza ,  true
-17630, ,  false
 17631,erogazione erogazione causa interruzione serbatoio servizio erogazione erogazione acqua causa interruzione serbatoio servizio erogazione secco capoluogo capoluogo erogazione capoluogo capoluogo ,  false
 17632, buio buio blackout comune sbalzo tensione illuminazione buio illuminazione blackout elettrico comune buio buio tecnico buio illuminazione illuminazione macchina problema casa casa pericolo comune buio luce tratto protezione causa sbalzo tensione problema buio ,  true
 17633,interruzione ,  false
@@ -4318,7 +4288,6 @@ id,text,topic
 17763,acqua guasto acqua guasto frazione acqua frazione zona interruzione erogazione squadra acqua gestore lavoro intervento ripristino azienda rete livello acqua interruzione erogazione frazione comune calo pressione riparazione secco servizio popolazione acqua popolazione servizio paese tempo acqua disservizio acquedotto acqua servizio popolazione acqua popolazione servizio paese tempo acqua rete problematica acqua riparazione rete acquedotto acqua danno acqua rete acqua tubatura secco frazione riparazione intervento interruzione erogazione acqua riparazione rete acqua rete riparazione rete acquedotto acqua guasto frazione secco,  true
 17764, interruzione servizio causa servizio comune sospensione sospensione interruzione tempo erogazione acqua rubinetto acqua notizia ,  false
 17765, acqua servizio autobotte acqua servizio autobotte protezione servizio carenza protezione comune servizio autobotte erogazione acqua protezione servizio causa interruzione fornitura acqua sospensione provvedimento comunicazione servizio ,  false
-17766, ,  false
 17767, elettrico elettrico elettrico buio corrente buio guasto centralina intervento corrente servizio guasto ,  true
 17768,incendio cabina corrente,  false
 17769, lavoro erogazione corrente internet comune comune strada strada ,  false

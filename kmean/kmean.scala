@@ -1,13 +1,14 @@
 import org.apache.spark.ml.clustering.KMeans
 import org.apache.spark.sql.{SparkSession, SQLContext}
 import org.apache.spark.{SparkConf, SparkContext}
-
-
-    val dataset = sparkSession.read
+    
+object Kmeanmaltempo {
+def main(args: Array[String]) {
+val dataset = sparkSession.read
       .format("com.databricks.spark.csv")
       .option("header", "true") // Use first line of all files as header
       .option("inferSchema", "true") // Automatically infer data types
-      .load(/home/dimartino/Documenti/mario/codice/tesienea/submit/maltempo.csv)
+      .load("/home/dimartino/Documenti/mario/codice/tesienea/submit/maltempo.csv")
 
 
     // Trains a k-means model.
@@ -28,3 +29,5 @@ import org.apache.spark.{SparkConf, SparkContext}
   def dataToDouble(s: String): Double = {
     return if (s.isEmpty) 0 else s.toDouble
   }
+}
+}
