@@ -16,7 +16,7 @@ val toLabel = udf(topic2Label)
 val labelled = dataset.withColumn("label", toLabel(col("topic").like("%true%"))).cache
 val tokenizer = new RegexTokenizer().setInputCol("text").setOutputCol("words")
 
-val hashingTF = new HashingTF().setInputCol(tokenizer.getOutputCol).setOutputCol("features").setNumFeatures(20)
+val hashingTF = new HashingTF().setInputCol(tokenizer.getOutputCol).setOutputCol("features").setNumFeatures(50)
 
 val word = tokenizer.transform(labelled)   
 val featurized = hashingTF.transform(word)
@@ -25,7 +25,7 @@ val data = featurized.select("label", "features")
 val splits = data.randomSplit(Array(0.8, 0.2), seed = 1234L)
 val train = splits(0)
 val test = splits(1)
-val layers = Array[Int](20, 50, 10, 2)
+val layers = Array[Int](50, 100, 20, 2)
 val trainer = new MultilayerPerceptronClassifier().setLayers(layers).setBlockSize(128).setSeed(1234L).setMaxIter(100)
 val model = trainer.fit(train)
 val result = model.transform(test)
