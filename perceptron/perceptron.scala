@@ -32,5 +32,10 @@ val result = model.transform(test)
 val evaluator = new MulticlassClassificationEvaluator().setMetricName("accuracy")
 val predictionAndLabels = result.select("prediction", "label")
 println("Test set accuracy = " + evaluator.evaluate(predictionAndLabels))
+result.coalesce(1).
+    write.
+    format("com.databricks.spark.csv").
+    option("header", "true").
+    save("myfile.csv")
 }
 }
