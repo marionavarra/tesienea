@@ -38,14 +38,14 @@ def main(args: Array[String]) {
   result.printSchema
   val risultati = result.select("id", "prediction", "label")
   risultati.registerTempTable("predicted")
-  val falseNeg = sqlContext.sql("SELECT COUNT(*) FROM predicted WHERE label = 1.0 and prediction = 0")
-  val falsePos = sqlContext.sql("SELECT COUNT(*) FROM predicted WHERE label = 0.0 and prediction = 1")
-  val trueNeg = sqlContext.sql("SELECT COUNT(*) FROM predicted WHERE label = 0.0 and prediction = 0")
-  val truePos = sqlContext.sql("SELECT COUNT(*) FROM predicted WHERE label = 1.0 and prediction = 1")
-  println("False Positive = " + falsePos.show)
-  println("False Negative = " + falseNeg.show)
-  println("True Positive = " + trueNeg.show)
-  println("True Negative = " + trueNeg.show)
+  val falseNeg = sqlContext.sql("SELECT COUNT(*) as c FROM predicted WHERE label = 1.0 and prediction = 0")
+  val falsePos = sqlContext.sql("SELECT COUNT(*) as c FROM predicted WHERE label = 0.0 and prediction = 1")
+  val trueNeg = sqlContext.sql("SELECT COUNT(*) as c FROM predicted WHERE label = 0.0 and prediction = 0")
+  val truePos = sqlContext.sql("SELECT COUNT(*) as c FROM predicted WHERE label = 1.0 and prediction = 1")
+  println("False Positive = " + falsePos.c)
+  println("False Negative = " + falseNeg.c)
+  println("True Positive = " + trueNeg.c)
+  println("True Negative = " + trueNeg.c)
   risultati.write.mode("overwrite").format("com.databricks.spark.csv").save("./"+filename+"_result.csv")
   }
 }
