@@ -13,7 +13,7 @@ def main(args: Array[String]) {
   val sqlContext = new org.apache.spark.sql.SQLContext(sc)
   val filename = args(0)
   val sparkSession = SparkSession.builder().master("local").appName("Kmean maltempo").config("spark.some.config.option", "some-value").getOrCreate()
-  val dataset = sparkSession.read.format("com.databricks.spark.csv").option("header", "true").option("inferSchema", "true").load("/home/dimartino/Documenti/mario/codice/tesienea/submit/"+filename)
+  val dataset = sparkSession.read.format("com.databricks.spark.csv").option("header", "true").option("inferSchema", "true").load("/home/dimartino/Documenti/mario/codice/tesienea/submit/"+filename+".csv")
   val topic2Label: Boolean => Int = isSci => if (isSci) 1 else 0
   val toLabel = udf(topic2Label)
   val labelled = dataset.withColumn("label", toLabel(col("topic").like("%true%"))).cache
@@ -29,7 +29,7 @@ def main(args: Array[String]) {
   val train = splits(0)
   val test = splits(1)
   val layers = Array[Int](100, 200, 50, 10, 2)
-  val trainer = new MultilayerPerceptronClassifier().setLayers(layers).setBlockSize(128).setSeed(1234L).setMaxIter(500)
+  val trainer = new MultilayerPerceptronClassifier().setLayers(layers).setBlockSize(128).setSeed(1234L).setMaxIter(5000)
   val model = trainer.fit(train)
   val result = model.transform(test)
   val evaluator = new MulticlassClassificationEvaluator().setMetricName("accuracy")
@@ -42,6 +42,10 @@ def main(args: Array[String]) {
   val falsePos = sqlContext.sql("SELECT COUNT(*) FROM predicted WHERE label = 0.0 and prediction = 1")
   val trueNeg = sqlContext.sql("SELECT COUNT(*) FROM predicted WHERE label = 0.0 and prediction = 0")
   val truePos = sqlContext.sql("SELECT COUNT(*) FROM predicted WHERE label = 1.0 and prediction = 1")
-  risultati.write.mode("overwrite").format("com.databricks.spark.csv").save("./result.csv")
+  println("False Positive = " + falsePos)
+  println("False Negative = " + falseNeg)
+  println("True Positive = " + trueNeg)
+  println("True Negative = " + trueNeg)
+  risultati.write.mode("overwrite").format("com.databricks.spark.csv").save("./"+filename+"_result.csv")
   }
 }
