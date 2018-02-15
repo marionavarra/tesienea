@@ -9,7 +9,7 @@ import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
 
 object Perceptron {
 def main(args: Array[String]) { 
-  val filename = args[0]
+  val filename = args(0)
   val sparkSession = SparkSession.builder().master("local").appName("Kmean maltempo").config("spark.some.config.option", "some-value").getOrCreate()
   val dataset = sparkSession.read.format("com.databricks.spark.csv").option("header", "true").option("inferSchema", "true").load("/home/dimartino/Documenti/mario/codice/tesienea/submit/"+filename)
   val topic2Label: Boolean => Int = isSci => if (isSci) 1 else 0
