@@ -37,7 +37,7 @@ def main(args: Array[String]) {
   val predictionAndLabels = result.select("prediction", "label")
   println("Test set accuracy = " + evaluator.evaluate(predictionAndLabels))
   val predictionAndLabels2 = results.select(col("prediction"), col("label").as[(Double, Double)].rdd
-  val metrics = new MulticlassMetrics(predictionAndLabels)
+  val metrics = new MulticlassMetrics(predictionAndLabels2)
   println("Test set accuracy = " + metrics.confusionMatrix)
   result.printSchema
   val risultati = result.select("id", "prediction", "label")
