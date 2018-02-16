@@ -6,6 +6,7 @@ import org.apache.spark.ml.feature.HashingTF
 import org.apache.spark.ml.feature.RegexTokenizer
 import org.apache.spark.ml.classification.MultilayerPerceptronClassifier
 import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
+import org.apache.spark.mllib.evaluation.MulticlassMetrics
 
 object Perceptron {
 def main(args: Array[String]) { 
@@ -35,6 +36,8 @@ def main(args: Array[String]) {
   val evaluator = new MulticlassClassificationEvaluator().setMetricName("accuracy")
   val predictionAndLabels = result.select("prediction", "label")
   println("Test set accuracy = " + evaluator.evaluate(predictionAndLabels))
+  val metrics = new MulticlassMetrics(predictionAndLabels)
+  println("Test set accuracy = " + metrics.confusionMatrix)
   result.printSchema
   val risultati = result.select("id", "prediction", "label")
   risultati.registerTempTable("predicted")
