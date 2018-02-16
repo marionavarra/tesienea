@@ -32,7 +32,7 @@ object Guasti {
     
     val evaluatorParams = ParamMap(evaluator.metricName -> "areaUnderROC")
     val areaTest = evaluator.evaluate(testPredictions, evaluatorParams)
-    val risultati = result.select("id", "prediction", "label")
+    val risultati = testPredictions.select("id", "prediction", "label")
     risultati.registerTempTable("predicted")
     val falseNeg = sqlContext.sql("SELECT COUNT(*) as c FROM predicted WHERE label = 1.0 and prediction = 0")
     val falsePos = sqlContext.sql("SELECT COUNT(*) as c FROM predicted WHERE label = 0.0 and prediction = 1")
