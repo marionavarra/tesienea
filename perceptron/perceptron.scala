@@ -36,6 +36,7 @@ def main(args: Array[String]) {
   val evaluator = new MulticlassClassificationEvaluator().setMetricName("accuracy")
   val predictionAndLabels = result.select("prediction", "label")
   println("Test set accuracy = " + evaluator.evaluate(predictionAndLabels))
+  val predictionAndLabels2 = results.select(col("prediction"), col("label").as[(Double, Double)].rdd
   val metrics = new MulticlassMetrics(predictionAndLabels)
   println("Test set accuracy = " + metrics.confusionMatrix)
   result.printSchema
