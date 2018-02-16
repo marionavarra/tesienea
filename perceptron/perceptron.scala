@@ -7,6 +7,7 @@ import org.apache.spark.ml.feature.RegexTokenizer
 import org.apache.spark.ml.classification.MultilayerPerceptronClassifier
 import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
 import org.apache.spark.mllib.evaluation.MulticlassMetrics
+import spark.implicits._
 
 object Perceptron {
 def main(args: Array[String]) { 
