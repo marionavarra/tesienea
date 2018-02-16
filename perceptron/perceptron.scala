@@ -7,12 +7,12 @@ import org.apache.spark.ml.feature.RegexTokenizer
 import org.apache.spark.ml.classification.MultilayerPerceptronClassifier
 import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
 import org.apache.spark.mllib.evaluation.MulticlassMetrics
-import spark.implicits._
 
 object Perceptron {
 def main(args: Array[String]) { 
   val sc = new SparkContext()
   val sqlContext = new org.apache.spark.sql.SQLContext(sc)
+  import spark.implicits._
   val filename = args(0)
   val sparkSession = SparkSession.builder().master("local").appName("Kmean maltempo").config("spark.some.config.option", "some-value").getOrCreate()
   val dataset = sparkSession.read.format("com.databricks.spark.csv").option("header", "true").option("inferSchema", "true").load("/home/dimartino/Documenti/mario/codice/tesienea/submit/"+filename+".csv")
