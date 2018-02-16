@@ -45,9 +45,18 @@ def main(args: Array[String]) {
   val metrics = new MulticlassMetrics(predictionAndLabels2)
   println("Confusion matrix = ")
   println(metrics.confusionMatrix)
-  println(metrics.precsion)
+  println("Accuracy with metrics = "+metrics.accuracy)
+  
+  println("Recall with metrics = "+metrics.recall(0.0))
+  println("False Positive % with metrics = "+metrics.falsePositiveRate)
+
   result.printSchema
   val risultati = result.select("id", "prediction", "label")
+  
+  println("Other metrix handmade calculated")
+
+  
+  
   risultati.registerTempTable("predicted")
   val falseNeg = sqlContext.sql("SELECT COUNT(*) as c FROM predicted WHERE label = 1.0 and prediction = 0")
   val falsePos = sqlContext.sql("SELECT COUNT(*) as c FROM predicted WHERE label = 0.0 and prediction = 1")
