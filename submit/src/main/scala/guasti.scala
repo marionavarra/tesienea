@@ -8,7 +8,7 @@ import org.apache.spark.ml.Pipeline
 import org.apache.spark.ml.evaluation.BinaryClassificationEvaluator 
 import org.apache.spark.ml.param.ParamMap
 
-object Guasti {
+object LogReg {
   def main(args: Array[String]) {
     val sc = new SparkContext()
     val sqlContext = new org.apache.spark.sql.SQLContext(sc)
