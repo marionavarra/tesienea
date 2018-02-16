@@ -1,6 +1,7 @@
 import org.apache.spark.sql.functions.udf
 import org.apache.spark.sql.functions.col
 import org.apache.spark.sql.{SparkSession, SQLContext}
+import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.ml.feature.RegexTokenizer
 import org.apache.spark.ml.classification.LogisticRegression 
 import org.apache.spark.ml.feature.HashingTF 
