@@ -12,6 +12,10 @@ object Perceptron {
 def main(args: Array[String]) { 
   val sc = new SparkContext()
   val sqlContext = new org.apache.spark.sql.SQLContext(sc)
+  @transient lazy val spark = SparkSession
+    .builder()
+    .master("spark://master:7777")
+    .getOrCreate()
   import spark.implicits._
   val filename = args(0)
   val sparkSession = SparkSession.builder().master("local").appName("Kmean maltempo").config("spark.some.config.option", "some-value").getOrCreate()
