@@ -48,7 +48,7 @@ def main(args: Array[String]) {
   println("Accuracy with metrics = "+metrics.accuracy)
   
   println("Recall with metrics = "+metrics.recall(0.0))
-  println("False Positive % with metrics = "+metrics.falsePositiveRate)
+  println("False Positive % with metrics = "+metrics.falsePositiveRate(0.0))
 
   result.printSchema
   val risultati = result.select("id", "prediction", "label")
