@@ -1,4 +1,4 @@
-name         := "Guasti"
+name         := "LogReg"
 scalaVersion := "2.11.7"
 
 libraryDependencies += "org.apache.spark" %% "spark-core" % "2.2.1"  
