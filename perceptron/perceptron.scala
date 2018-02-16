@@ -45,6 +45,7 @@ def main(args: Array[String]) {
   val metrics = new MulticlassMetrics(predictionAndLabels2)
   println("Confusion matrix = ")
   println(metrics.confusionMatrix)
+  println(metrics.precsion)
   result.printSchema
   val risultati = result.select("id", "prediction", "label")
   risultati.registerTempTable("predicted")
