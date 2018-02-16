@@ -7,6 +7,7 @@ import org.apache.spark.ml.feature.HashingTF
 import org.apache.spark.ml.Pipeline 
 import org.apache.spark.ml.evaluation.BinaryClassificationEvaluator 
 import org.apache.spark.ml.param.ParamMap
+import org.apache.spark.mllib.evaluation.MulticlassMetrics
 
 object LogReg {
   def main(args: Array[String]) {
@@ -45,6 +46,21 @@ object LogReg {
     risultati.write.mode("overwrite").format("com.databricks.spark.csv").save("./"+filename+"_result.csv")
 
     println("Success prediction rate: %s".format(areaTest))
+    
+    
+     @transient lazy val spark = SparkSession
+    .builder()
+    .master("spark://master:7777")
+    .getOrCreate()
+    import spark.implicits._
+    val predictionAndLabels2 = testPredictions.select("prediction", "label").as[(Double, Double)].rdd
+    val metrics = new MulticlassMetrics(predictionAndLabels2)
+    println("Confusion matrix = ")
+    println(metrics.confusionMatrix)
+    println("Accuracy with metrics = "+metrics.accuracy)
+    println("Recall with metrics = "+metrics.recall(0.0))  
+    println("False Positive % with metrics = "+metrics.falsePositiveRate(0.0))
+
     //96,48%
   }
 }
