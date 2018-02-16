@@ -13,7 +13,7 @@ object Guasti {
     val sc = new SparkContext()
     val sqlContext = new org.apache.spark.sql.SQLContext(sc)
     val filename = args(0)
-    val articles = sqlContext.read.format("com.databricks.spark.csv").option("header", "true").load("./guasto"+filename+".csv")
+    val articles = sqlContext.read.format("com.databricks.spark.csv").option("header", "true").load("./"+filename+".csv")
     val topic2Label: Boolean => Double = isSci => if (isSci) 1 else 0
     val toLabel = udf(topic2Label)
     val labelled = articles.withColumn("label", toLabel(col("topic").like("%true%"))).cache
