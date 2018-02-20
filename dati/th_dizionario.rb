@@ -27,7 +27,7 @@ alerts.each do |a|
 		body=out.downcase.gsub(/\W+/, ' ')			#remove everything but the words
 		#out_file.write "Da ripulire: " + body
     else
-	   out_file.write "documento non trovato"
+	   #out_file.write "documento non trovato"
 	end
 	#out_file.write "\nAlert Elaborato # " + a.id.to_s + " " + a.title
     #out_file.write "\nripulito # " + rimuovi_non_in_dizionario(body,linee) unless body.nil?
@@ -48,12 +48,11 @@ alerts.each do |a|
 			maltempo = true
 		end		
 	end
-
-   #out_file.write a.id.to_s + "," + out + ",#{guasto},#{manutenzione},#{maltempo}\n"
-    file_guasto.write("#{a.id},#{out},  #{guasto}\n")
+     unless out==" "
+        file_guasto.write("#{a.id},#{out},#{guasto}\n")
 	file_manutenzione.write("#{a.id},#{out},#{manutenzione}\n")
 	file_maltempo.write("#{a.id},#{out},#{maltempo}\n")
-
+     end
 
     #out_file.flush
 

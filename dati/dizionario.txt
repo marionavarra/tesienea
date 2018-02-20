@@ -1,246 +1,498 @@
 2017-04-04_04:48:04
-acqua 2378
-interruzione 2231
-lavoro 1824
-rete 1761
-servizio 1728
-zona 1613
-disagio 1424
-comune 1408
-energia 1399
-causa 1235
-intervento 1153
-erogazione 1084
-guasto 1058
-problema 872
-strada 805
-blackout 732
-impianto 712
-danno 639
-corrente 631
-maltempo 622
-fornitura 616
-linea 566
-tempo 559
-sospensione 551
-tratto 518
-gas 472
-distribuzione 459
-tecnico 456
-acquedotto 435
-territorio 425
-condotta 424
-emergenza 419
-area 418
-fuoco 413
-manutenzione 409
-vigile 407
-sistema 397
-utenza 395
-casa 383
-pioggia 368
-paese 360
-sicurezza 355
-azienda 352
-ripristino 320
-regione 311
-riparazione 308
-provincia 306
-quartiere 303
-località 297
-tensione 293
-rottura 288
-serbatoio 288
-frazione 286
-squadra 286
-disservizio 274
-luce 256
-abitazione 254
-chiusura 253
-protezione 246
-allagamento 242
-carreggiata 238
-cabina 228
-centrale 228
-flusso 227
-buio 226
-elettricità 220
-struttura 218
-gestore 217
-cavo 215
-albero 212
-traffico 212
-neve 207
-stazione 205
-pressione 203
-mancanza 203
-metro 198
-rischio 197
-vento 196
-soccorso 196
-livello 193
-comunicazione 187
-informazione 187
-auto 177
-scuola 174
-fenomeno 170
-operazione 168
-popolazione 168
-sostituzione 166
-campo 165
-ospedale 163
-conseguenza 163
-notizia 162
-treno 153
-segnalazione 150
-ente 149
-difficoltà 147
-perdita 146
-programma 145
-circolazione 142
-temperatura 140
-ritardo 140
-polizia 139
-ondata 139
-black-out 134
-compagnia 133
-rubinetto 132
-attacco 132
-collegamento 131
-approvvigionamento 130
-provvedimento 125
-capoluogo 124
-incendio 123
-allaccio 122
-tubazione 121
-veicolo 121
-autobotte 120
-viabilità 120
-infrastruttura 119
-temporale 118
-transito 113
-fiume 110
-criticità 109
-nubifragio 109
-illuminazione 108
-incidente 107
-calo 106
-alimentazione 106
-allerta 104
-tubo 103
-frana 102
-crisi 101
-terremoto 101
-trasporto 95
-secco 95
-tilt 95
-internet 94
-caduta 94
-fulmine 93
-pericolo 92
-furto 92
-pozzo 91
-portata 87
-consorzio 86
-installazione 86
-aria 82
-pompa 81
-blocco 81
-scossa 80
-automobilista 79
-allarme 79
-vittima 78
-distacco 76
-aeroporto 75
-tubatura 74
-telefonia 73
-precipitazione 72
-conduttura 70
-edificio 70
-nevicata 69
-paura 69
-incrocio 68
-freddo 66
-quadro 65
-raffica 65
-torrente 62
-ponte 61
-piattaforma 61
-ramo 61
-corsia 60
-carenza 57
-crollo 56
-rame 56
-problematica 55
-sisma 54
-elettrico 54
-tombino 53
-macchina 53
-morto 51
-coda 51
-tempesta 50
-ferito 50
-autostrada 48
-gelo 48
-bus 48
-caos 47
-metropolitana 47
-rallentamento 46
-urgenza 46
-ferrovia 45
-smottamento 45
-canale 43
-deposito 43
-telefonata 43
-telefono 41
-trasformatore 41
-batteria 41
-fumo 40
-computer 40
-generatore 40
-grandine 40
-infiltrazione 40
-sbalzo 40
-asfalto 40
-fibra 40
-centralina 40
-fango 40
-intensità 39
-ghiaccio 39
-perturbazione 37
-rifornimento 36
-tromba 35
-fiamma 35
-circuito 35
-bomba 35
-hacker 33
-nucleo 33
-pompiere 33
-alluvione 32
-copertura 32
-traliccio 31
-tram 31
-scontro 30
-malfunzionamento 30
-anomalia 30
-server 30
-network 29
-uragano 29
-evacuazione 29
-diga 29
-autoclave 27
-magnitudo 27
-binario 27
-cisterna 27
-gasdotto 27
-fuoriuscita 27
-impatto 27
-arteria 26
-calamità 26
-panico 25
-incubo 25
-esplosione 25
-disastro 24
-morte 23
-tragedia 23
-circonvallazione 22
+acqua
+acque
+interruzione
+interruzioni
+lavoro
+lavori
+rete
+reti
+servizio
+servizi
+zona
+zone
+disagio
+disagi
+comune
+comuni
+energia
+energie
+causa
+cause
+intervento
+interventi
+erogazione
+erogazioni
+guasto
+guasta
+guaste
+guasti
+problema
+problemi
+strada
+strade
+blackout
+impianto
+impianti
+danno
+danni
+corrente
+correnti
+maltempo
+maltempi
+fornitura
+forniture
+linea
+linee
+tempo
+tempi
+sospensione
+sospensioni
+tratto
+tratti
+gas
+distribuzione
+distribuzioni
+tecnico
+tecnica
+tecniche
+tecnici
+acquedotto
+acquedotti
+territorio
+territori
+condotta
+condotte
+emergenza
+emergenze
+area
+aree
+fuoco
+fuochi
+manutenzione
+manutenzioni
+vigile
+vigili
+sistema
+sistemi
+utenza
+utenze
+casa
+case
+pioggia
+piogge
+pioggie
+paese
+paesi
+sicurezza
+sicurezze
+azienda
+aziende
+ripristino
+ripristini
+regione
+regioni
+riparazione
+riparazioni
+provincia
+province
+provincie
+quartiere
+quartier
+quartieri
+località
+tensione
+tensioni
+rottura
+rotture
+serbatoio
+serbatoi
+frazione
+frazioni
+squadra
+squadre
+disservizio
+disservizi
+luce
+luci
+abitazione
+abitazioni
+chiusura
+chiusure
+protezione
+protezioni
+allagamento
+allagamenti
+carreggiata
+carreggiate
+cabina
+cabine
+centrale
+centrali
+flusso
+flussi
+buio
+bui
+buia
+buie
+elettricità
+struttura
+strutture
+gestore
+gestori
+cavo
+cava
+cave
+cavi
+albero
+alberi
+traffico
+traffici
+neve
+nevi
+stazione
+stazioni
+pressione
+pressioni
+mancanza
+mancanze
+metro
+metri
+rischio
+rischi
+vento
+venti
+soccorso
+soccorsi
+livello
+livelli
+comunicazione
+comunicazioni
+informazione
+informazioni
+auto
+scuola
+scuole
+fenomeno
+fenomeni
+operazione
+operazioni
+popolazione
+popolazioni
+sostituzione
+sostituzioni
+campo
+campi
+ospedale
+ospedali
+conseguenza
+conseguenze
+notizia
+notizie
+treno
+treni
+segnalazione
+segnalazioni
+ente
+enti
+difficoltà
+perdita
+perdite
+programma
+programmi
+circolazione
+temperatura
+temperature
+ritardo
+ritardi
+polizia
+polizie
+ondata
+ondate
+black-out
+compagnia
+compagnie
+rubinetto
+rubinetti
+attacco
+attacchi
+collegamento
+collegamenti
+approvvigionamento
+approvvigionamenti
+provvedimento
+provvedimenti
+capoluogo
+capoluoghi
+incendio
+incendi
+allaccio
+allacci
+tubazione
+tubazioni
+veicolo
+veicoli
+autobotte
+autobotti
+viabilità
+infrastruttura
+infrastrutture
+temporale
+temporali
+transito
+transiti
+fiume
+fiumi
+criticità
+nubifragio
+nubifragi
+illuminazione
+illuminazioni
+incidente
+incidenti
+calo
+cali
+alimentazione
+alimentazioni
+allerta
+allerte
+tubo
+tubi
+frana
+frane
+crisi
+terremoto
+terremoti
+trasporto
+trasporti
+secco
+secca
+secche
+secchi
+tilt
+internet
+caduta
+cadute
+fulmine
+fulmini
+pericolo
+pericoli
+furto
+furti
+pozzo
+pozzi
+portata
+portate
+consorzio
+consorzi
+installazione
+installazioni
+aria
+arie
+pompa
+pompe
+blocco
+blocchi
+scossa
+scosse
+automobilista
+automobiliste
+automobilisti
+allarme
+allarmi
+vittima
+vittime
+distacco
+distacchi
+aeroporto
+aeroporti
+tubatura
+tubature
+telefonia
+telefonie
+precipitazione
+precipitazioni
+conduttura
+condutture
+edificio
+edifici
+nevicata
+nevicate
+paura
+paure
+incrocio
+incroci
+freddo
+fredda
+fredde
+freddi
+quadro
+quadra
+quadre
+quadri
+raffica
+raffiche
+torrente
+torrenti
+ponte
+ponti
+piattaforma
+piattaforme
+ramo
+rami
+corsia
+corsie
+carenza
+carenze
+crollo
+crolli
+rame
+rami
+problematica
+sisma
+sismi
+elettrico
+elettrica
+elettriche
+elettrici
+tombino
+tombini
+macchina
+macchine
+morto
+morta
+morte
+morti
+coda
+code
+tempesta
+tempeste
+ferito
+ferita
+ferite
+feriti
+autostrada
+autostrade
+gelo
+geli
+bus
+caos
+metropolitana
+metropolitane
+rallentamento
+rallentamenti
+urgenza
+urgenze
+ferrovia
+ferrovie
+smottamento
+smottamenti
+canale
+canali
+deposito
+depositi
+telefonata
+telefonate
+telefono
+telefoni
+trasformatore
+trasformatori
+batteria
+batterie
+fumo
+fumi
+computer
+computers
+generatore
+generatori
+generatrice
+generatrici
+grandine
+grandini
+infiltrazione
+infiltrazioni
+sbalzo
+sbalzi
+asfalto
+asfalti
+fibra
+fibre
+centralina
+centraline
+fango
+fanghi
+intensità
+ghiaccio
+ghiacci
+perturbazione
+perturbazioni
+rifornimento
+rifornimenti
+tromba
+trombe
+fiamma
+fiamme
+circuito
+circuiti
+bomba
+bombe
+hacker
+hackers
+nucleo
+nuclei
+pompiere
+pompieri
+alluvione
+alluvioni
+copertura
+coperture
+traliccio
+tralicci
+tram
+scontro
+scontri
+malfunzionamento
+malfunzionamenti
+anomalia
+anomalie
+server
+network
+uragano
+uragani
+evacuazione
+evacuazioni
+diga
+dighe
+autoclave
+autoclavi
+magnitudo
+binario
+binari
+binaria
+binarie
+cisterna
+gasdotto
+gasdotti
+fuoriuscita
+fuoriuscite
+impatto
+impatti
+arteria
+arterie
+calamità
+panico
+panica
+paniche
+panici
+incubo
+incubi
+esplosione
+esplosioni
+disastro
+disastri
+morte
+morti
+tragedia
+tragedie
+circonvallazione
+circonvallazioni
