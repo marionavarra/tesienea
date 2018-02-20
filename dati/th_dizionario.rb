@@ -11,6 +11,10 @@ linee =  file_dizionario.readlines
 file_guasto = File.open("guasti_thread_#{ARGV[0]}_dizionario.txt","w")
 file_maltempo = File.open("maltempo_thread_#{ARGV[0]}_dizionario.txt","w")
 file_manutenzione = File.open("manutenzione_thread_#{ARGV[0]}_dizionario.txt","w")
+file_idrico = File.open("idrico_thread_#{ARGV[0]}_dizionario.txt","w")
+file_stradale = File.open("stradale_thread_#{ARGV[0]}_dizionario.txt","w")
+file_telecomunicazioni = File.open("telecomunicazioni_thread_#{ARGV[0]}_dizionario.txt","w")
+file_elettrico = File.open("elettrico_thread_#{ARGV[0]}_dizionario.txt","w")
 #out_file = File.open("#{Time.now.strftime('%Y%m%d%H%M%S%L')}_Out_th_dizionario.txt","w")
 #out_file.write "id,text,guasto,manutenzione,maltempo\n"#
 alerts = Alert.all.limit(ARGV[2]).offset(ARGV[1])
@@ -37,6 +41,10 @@ alerts.each do |a|
 	guasto = false
 	manutenzione = false
 	maltempo = false
+    idrico = false
+    stradale = false        
+    telecomunicazioni = false
+    elettrico = false
 	a.categories.each do |c|
 		if c.id == 101
 			guasto = true
@@ -48,10 +56,28 @@ alerts.each do |a|
 			maltempo = true
 		end		
 	end
+    a.infrastructures.each do |i|
+       if i.id == 48
+           idrico = true
+       end
+       if i.id == 49
+            stradale = true
+       end
+       if i.id == 50
+          telecomunicazioni
+       end
+       if i.id == 51
+           elettrico
+       end
+     end
      unless out==" "
-        file_guasto.write("#{a.id},#{out},#{guasto}\n")
+    file_guasto.write("#{a.id},#{out},#{guasto}\n")
 	file_manutenzione.write("#{a.id},#{out},#{manutenzione}\n")
 	file_maltempo.write("#{a.id},#{out},#{maltempo}\n")
+    file_idrico.write("#{a.id},#{out},#{guasto}\n")
+	file_stradale.write("#{a.id},#{out},#{manutenzione}\n")
+	file_telecomunicazioni.write("#{a.id},#{out},#{maltempo}\n")
+    file_elettrico.write("#{a.id},#{out},#{maltempo}\n")
      end
 
     #out_file.flush
