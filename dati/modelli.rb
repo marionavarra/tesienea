@@ -22,6 +22,6 @@ class Entry < ActiveRecord::Base
   belongs_to :alert
 end
 
-class Infrastructures < ActiveRecord::Base
+class Infrastructure < ActiveRecord::Base
   belongs_to :alert
 end
