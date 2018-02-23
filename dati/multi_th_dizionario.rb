@@ -3,7 +3,7 @@ require 'thread'
 require 'active_record'
 require 'mysql2' # or 'pg' or 'sqlite3'
 require './modelli.rb'
-numthread=10
+numthread=16
 tot = Alert.all.count
 p "total alerts: " + tot.to_s
 per_thread = tot / numthread

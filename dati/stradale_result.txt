@@ -1,0 +1,19 @@
+stradale
+Test set accuracy = 0.8844393592677345
+Confusion matrix = 
+595.0  48.0   
+53.0   178.0  
+Accuracy with metrics = 0.8844393592677345
+Recall with metrics = 0.9253499222395023
+False Positive % with metrics = 0.22943722943722944
+root
+ |-- id: integer (nullable = true)
+ |-- label: integer (nullable = true)
+ |-- features: vector (nullable = true)
+ |-- prediction: double (nullable = true)
+
+Other metrix handmade calculated
+False Positive = 48
+False Negative = 53
+True Positive = 178
+True Negative = 595

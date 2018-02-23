@@ -1,0 +1,19 @@
+telecomunicazioni
+Test set accuracy = 0.8524027459954233
+Confusion matrix = 
+745.0  0.0  
+129.0  0.0  
+Accuracy with metrics = 0.8524027459954233
+Recall with metrics = 1.0
+False Positive % with metrics = 1.0
+root
+ |-- id: integer (nullable = true)
+ |-- label: integer (nullable = true)
+ |-- features: vector (nullable = true)
+ |-- prediction: double (nullable = true)
+
+Other metrix handmade calculated
+False Positive = 0
+False Negative = 129
+True Positive = 0
+True Negative = 745

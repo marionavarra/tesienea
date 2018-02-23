@@ -64,20 +64,20 @@ alerts.each do |a|
             stradale = true
        end
        if i.id == 50
-          telecomunicazioni
+          telecomunicazioni = true
        end
        if i.id == 51
-           elettrico
+           elettrico = true
        end
      end
      unless out==" "
-    file_guasto.write("#{a.id},#{out},#{guasto}\n")
+     	file_guasto.write("#{a.id},#{out},#{guasto}\n")
 	file_manutenzione.write("#{a.id},#{out},#{manutenzione}\n")
 	file_maltempo.write("#{a.id},#{out},#{maltempo}\n")
-    file_idrico.write("#{a.id},#{out},#{guasto}\n")
-	file_stradale.write("#{a.id},#{out},#{manutenzione}\n")
-	file_telecomunicazioni.write("#{a.id},#{out},#{maltempo}\n")
-    file_elettrico.write("#{a.id},#{out},#{maltempo}\n")
+    	file_idrico.write("#{a.id},#{out},#{idrico}\n")
+	file_stradale.write("#{a.id},#{out},#{stradale}\n")
+	file_telecomunicazioni.write("#{a.id},#{out},#{telecomunicazioni}\n")
+	file_elettrico.write("#{a.id},#{out},#{elettrico}\n")
      end
 
     #out_file.flush

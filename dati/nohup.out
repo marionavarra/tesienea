@@ -1,0 +1,26 @@
+"23/02/2018 09:33:19"
+"T 0"
+"T 1"
+"T 2"
+"T 3"
+" TEST "
+" TEST "
+"T 4"
+" TEST "
+" TEST "
+" Thread Numero 0"
+"T 5"
+" Thread Numero 3"
+" TEST "
+" Thread Numero 2"
+"T 6"
+" Thread Numero 1"
+" TEST "
+" Thread Numero 4"
+" TEST "
+" Thread Numero 5"
+" Thread Numero 6"
+perceptron_multi_th.rb:24:in `block in <main>': uninitialized constant DataTime (NameError)
+Did you mean?  DateTime
+	from perceptron_multi_th.rb:24:in `each'
+	from perceptron_multi_th.rb:24:in `<main>'
