@@ -1,10 +1,11 @@
-file_guasto = File.open("manutenzione.csv","r")
-id_corti = File.open("id_da_greppare.txt","w")
- = File.open("id_da_greppare.txt","w")
-linee = file_guasto.readlines
-linee.each do |linea|
-  parole = linea.split(",")[1].size.to_s
-  if linea.split(",")[1].size < 31
-     id_corti.write(linea.split(",")[0].to_s+"\n")
+files = ["maltempo","manutenzione","guasto","telecomunicazioni","stradale","idrico","elettrico"]
+files.each do |file|
+ current_r = File.open("#{file}.csv","r")
+ current_w = File.open("#{file}.txt","w")
+ linee = current_r.readlines
+ linee.each do |linea|
+  unless linea.split(",")[1].size < 31
+   current_w.write(linea+"\n")
   end
-end  
+ end  
+end
