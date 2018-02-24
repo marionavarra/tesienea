@@ -25,7 +25,7 @@ def main(args: Array[String]) {
   val labelled = dataset.withColumn("label", toLabel(col("topic").like("%true%"))).cache
   val tokenizer = new RegexTokenizer().setInputCol("text").setOutputCol("words")
   
-  val hashingTF = new HashingTF().setInputCol(tokenizer.getOutputCol).setOutputCol("features").setNumFeatures(100)
+  val hashingTF = new HashingTF().setInputCol(tokenizer.getOutputCol).setOutputCol("features").setNumFeatures(498)
   
   val word = tokenizer.transform(labelled)   
   val featurized = hashingTF.transform(word)
@@ -34,7 +34,7 @@ def main(args: Array[String]) {
   val splits = data.randomSplit(Array(0.8, 0.2), seed = 1234L)
   val train = splits(0)
   val test = splits(1)
-  val layers = Array[Int](100, 200, 50, 10, 2)
+  val layers = Array[Int](498, 1000, 500, 250, 100, 50, 2)
   val trainer = new MultilayerPerceptronClassifier().setLayers(layers).setBlockSize(128).setSeed(1234L).setMaxIter(5000)
   val model = trainer.fit(train)
   val result = model.transform(test)

@@ -1,11 +1,11 @@
 maltempo
-Test set accuracy = 0.9267734553775744
+Test set accuracy = 0.9684848484848485
 Confusion matrix = 
-707.0  33.0   
-31.0   103.0  
-Accuracy with metrics = 0.9267734553775744
-Recall with metrics = 0.9554054054054054
-False Positive % with metrics = 0.23134328358208955
+658.0  13.0   
+13.0   141.0  
+Accuracy with metrics = 0.9684848484848485
+Recall with metrics = 0.9806259314456036
+False Positive % with metrics = 0.08441558441558442
 root
  |-- id: integer (nullable = true)
  |-- label: integer (nullable = true)
@@ -13,7 +13,7 @@ root
  |-- prediction: double (nullable = true)
 
 Other metrix handmade calculated
-False Positive = 33
-False Negative = 31
-True Positive = 103
-True Negative = 707
+False Positive = 13
+False Negative = 13
+True Positive = 141
+True Negative = 658

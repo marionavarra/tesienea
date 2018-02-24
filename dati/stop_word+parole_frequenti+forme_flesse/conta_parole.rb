@@ -5,7 +5,7 @@ files.each do |file|
  linee = current_r.readlines
  linee.each do |linea|
   unless linea.split(",")[1].size < 31
-   current_w.write(linea+"\n")
+   current_w.write(linea)
   end
  end  
 end

@@ -1,11 +1,11 @@
 manutenzione
-Test set accuracy = 0.8845714285714286
+Test set accuracy = 0.9054545454545454
 Confusion matrix = 
-256.0  53.0   
-48.0   518.0  
-Accuracy with metrics = 0.8845714285714286
-Recall with metrics = 0.8284789644012945
-False Positive % with metrics = 0.08480565371024736
+246.0  46.0   
+32.0   501.0  
+Accuracy with metrics = 0.9054545454545454
+Recall with metrics = 0.8424657534246576
+False Positive % with metrics = 0.0600375234521576
 root
  |-- id: integer (nullable = true)
  |-- label: integer (nullable = true)
@@ -13,7 +13,7 @@ root
  |-- prediction: double (nullable = true)
 
 Other metrix handmade calculated
-False Positive = 53
-False Negative = 48
-True Positive = 518
-True Negative = 256
+False Positive = 46
+False Negative = 32
+True Positive = 501
+True Negative = 246
