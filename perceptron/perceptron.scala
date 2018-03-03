@@ -18,7 +18,7 @@ def main(args: Array[String]) {
     .getOrCreate()
   import spark.implicits._
   val filename = args(0)
-  val sparkSession = SparkSession.builder().master("local").appName("Kmean maltempo").config("spark.some.config.option", "some-value").getOrCreate()
+  val sparkSession = SparkSession.builder().master("local").appName("Perceptron").config("spark.some.config.option", "some-value").getOrCreate()
   val dataset = sparkSession.read.format("com.databricks.spark.csv").option("header", "true").option("inferSchema", "true").load("/home/dimartino/Documenti/mario/codice/tesienea/submit/"+filename+".csv")
   val topic2Label: Boolean => Int = isSci => if (isSci) 1 else 0
   val toLabel = udf(topic2Label)

@@ -30,6 +30,9 @@ object LogReg {
     val lr = new LogisticRegression().setMaxIter(10000).setRegParam(0.0028).setThreshold(0.5).setTol(1.0E-3)  
     val pipeline = new Pipeline().setStages(Array(tokenizer, hashingTF, lr))
     val model = pipeline.fit(trainDF)
+    model.write.overwrite().save("./"+filename+"_spark-logistic-regression-model")
+
+
     val testPredictions = model.transform(testDF)
     
     val evaluatorParams = ParamMap(evaluator.metricName -> "areaUnderROC")
