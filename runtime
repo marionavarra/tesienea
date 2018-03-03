@@ -1,0 +1,10 @@
+import org.apache.spark.ml.PipelineModel 
+
+val sameModel = PipelineModel.load("../submit/maltempo_spark-logistic-regression-model")
+val sqlContext = new org.apache.spark.sql.SQLContext(sc)
+val df = sqlContext.read.format("com.databricks.spark.csv").option("header", "true").load("test_output.txt") 
+
+
+sameModel.transform(df)
+
+

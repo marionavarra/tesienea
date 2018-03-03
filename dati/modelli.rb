@@ -1,6 +1,5 @@
 require 'active_record'
 require 'mysql2' # or 'pg' or 'sqlite3'
-
 ActiveRecord::Base.establish_connection(
   adapter:  'mysql2', # or 'postgresql' or 'sqlite3'
   database: 'navarra',
@@ -21,7 +20,6 @@ end
 class Entry < ActiveRecord::Base
   belongs_to :alert
 end
-
 class Infrastructure < ActiveRecord::Base
   belongs_to :alert
 end

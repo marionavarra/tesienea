@@ -7,7 +7,6 @@ require './modelli.rb'
 
 file_dizionario = File.open("dizionario.txt", "r")
 linee =  file_dizionario.readlines
-#bodies = []
 file_guasto = File.open("guasti_thread_#{ARGV[0]}_dizionario.txt","w")
 file_maltempo = File.open("maltempo_thread_#{ARGV[0]}_dizionario.txt","w")
 file_manutenzione = File.open("manutenzione_thread_#{ARGV[0]}_dizionario.txt","w")
@@ -15,16 +14,12 @@ file_idrico = File.open("idrico_thread_#{ARGV[0]}_dizionario.txt","w")
 file_stradale = File.open("stradale_thread_#{ARGV[0]}_dizionario.txt","w")
 file_telecomunicazioni = File.open("telecomunicazioni_thread_#{ARGV[0]}_dizionario.txt","w")
 file_elettrico = File.open("elettrico_thread_#{ARGV[0]}_dizionario.txt","w")
-#out_file = File.open("#{Time.now.strftime('%Y%m%d%H%M%S%L')}_Out_th_dizionario.txt","w")
-#out_file.write "id,text,guasto,manutenzione,maltempo\n"#
 alerts = Alert.all.limit(ARGV[2]).offset(ARGV[1])
 alerts.each do |a|
     doc=a.title
 	a.entries.each do |entry|
 		doc+=entry.entry 
 	end
-  
-    #p "Documento da analizzare " + doc unless doc.nil?
     unless doc.nil?
 		out=doc.gsub /^\s*$/m, ''                       # Remove carriage return
 		out=out.gsub(/\s\s+/, "\s")  				#remove double space
