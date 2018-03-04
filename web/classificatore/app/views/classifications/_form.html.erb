@@ -1,0 +1,49 @@
+<%= form_for(@classification) do |f| %>
+  <% if @classification.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@classification.errors.count, "error") %> prohibited this classification from being saved:</h2>
+
+      <ul>
+      <% @classification.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :notizia %><br>
+    <%= f.text_area :notizia %>
+  </div>
+  <div class="field">
+    <%= f.label :maltempo %><br>
+    <%= f.check_box :maltempo %>
+  </div>
+  <div class="field">
+    <%= f.label :manutenzione %><br>
+    <%= f.check_box :manutenzione %>
+  </div>
+  <div class="field">
+    <%= f.label :guasto %><br>
+    <%= f.check_box :guasto %>
+  </div>
+  <div class="field">
+    <%= f.label :idrica %><br>
+    <%= f.check_box :idrica %>
+  </div>
+  <div class="field">
+    <%= f.label :stradale %><br>
+    <%= f.check_box :stradale %>
+  </div>
+  <div class="field">
+    <%= f.label :telecomunicazioni %><br>
+    <%= f.check_box :telecomunicazioni %>
+  </div>
+  <div class="field">
+    <%= f.label :elettrica %><br>
+    <%= f.check_box :elettrica %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

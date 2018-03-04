@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Classifications</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Notizia</th>
+      <th>Maltempo</th>
+      <th>Manutenzione</th>
+      <th>Guasto</th>
+      <th>Idrica</th>
+      <th>Stradale</th>
+      <th>Telecomunicazioni</th>
+      <th>Elettrica</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @classifications.each do |classification| %>
+      <tr>
+        <td><%= classification.notizia %></td>
+        <td><%= classification.maltempo %></td>
+        <td><%= classification.manutenzione %></td>
+        <td><%= classification.guasto %></td>
+        <td><%= classification.idrica %></td>
+        <td><%= classification.stradale %></td>
+        <td><%= classification.telecomunicazioni %></td>
+        <td><%= classification.elettrica %></td>
+        <td><%= link_to 'Show', classification %></td>
+        <td><%= link_to 'Edit', edit_classification_path(classification) %></td>
+        <td><%= link_to 'Destroy', classification, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Classification', new_classification_path %>

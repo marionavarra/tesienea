@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Notizia:</strong>
+  <%= @classification.notizia %>
+</p>
+
+<p>
+  <strong>Maltempo:</strong>
+  <%= @classification.maltempo %>
+</p>
+
+<p>
+  <strong>Manutenzione:</strong>
+  <%= @classification.manutenzione %>
+</p>
+
+<p>
+  <strong>Guasto:</strong>
+  <%= @classification.guasto %>
+</p>
+
+<p>
+  <strong>Idrica:</strong>
+  <%= @classification.idrica %>
+</p>
+
+<p>
+  <strong>Stradale:</strong>
+  <%= @classification.stradale %>
+</p>
+
+<p>
+  <strong>Telecomunicazioni:</strong>
+  <%= @classification.telecomunicazioni %>
+</p>
+
+<p>
+  <strong>Elettrica:</strong>
+  <%= @classification.elettrica %>
+</p>
+
+<%= link_to 'Edit', edit_classification_path(@classification) %> |
+<%= link_to 'Back', classifications_path %>

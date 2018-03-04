@@ -1,0 +1,27 @@
+I, [2018-03-04T09:11:57.199356 #7974]  INFO -- : listening on addr=0.0.0.0:8080 fd=9
+I, [2018-03-04T09:11:57.199487 #7974]  INFO -- : worker=0 spawning...
+I, [2018-03-04T09:11:57.200090 #7974]  INFO -- : master process ready
+I, [2018-03-04T09:11:57.200556 #7976]  INFO -- : worker=0 spawned pid=7976
+I, [2018-03-04T09:11:57.200805 #7976]  INFO -- : Refreshing Gem list
+I, [2018-03-04T09:11:58.351252 #7976]  INFO -- : worker=0 ready
+192.168.0.104 - - [04/Mar/2018:09:12:05 +0100] "GET / HTTP/1.1" 304 - 0.1495
+I, [2018-03-04T09:33:10.136544 #7974]  INFO -- : config_file not present, reexecuting binary
+I, [2018-03-04T09:33:10.146981 #8413]  INFO -- : executing ["/usr/local/bin/unicorn", "-l0.0.0.0:8080", {9=>#<Unicorn::TCPSrv:fd 9>}] (in /home/mario/Dropbox/Personali/tesi/repo/tesienea/web/classificatore)
+I, [2018-03-04T09:33:10.147080 #8413]  INFO -- : forked child re-executing...
+I, [2018-03-04T09:33:10.279236 #8413]  INFO -- : inherited addr=0.0.0.0:8080 fd=9
+I, [2018-03-04T09:33:10.279412 #8413]  INFO -- : worker=0 spawning...
+I, [2018-03-04T09:33:10.279887 #8413]  INFO -- : master process ready
+I, [2018-03-04T09:33:10.280246 #8418]  INFO -- : worker=0 spawned pid=8418
+I, [2018-03-04T09:33:10.280409 #8418]  INFO -- : Refreshing Gem list
+I, [2018-03-04T09:33:11.445216 #8418]  INFO -- : worker=0 ready
+192.168.0.104 - - [04/Mar/2018:09:49:12 +0100] "GET / HTTP/1.1" 404 31928 0.8546
+192.168.0.104 - - [04/Mar/2018:09:50:33 +0100] "GET / HTTP/1.1" 200 - 0.5652
+192.168.0.104 - - [04/Mar/2018:09:50:40 +0100] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.1" 200 37484 0.2913
+192.168.0.104 - - [04/Mar/2018:09:50:40 +0100] "GET /application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1 HTTP/1.1" 200 653 0.0091
+192.168.0.104 - - [04/Mar/2018:09:50:40 +0100] "GET /scaffolds.self-50b49727b6e9a16d517446b6776acc9ccc2fb9903672199bceb58c6b961accae.css?body=1 HTTP/1.1" 200 2463 0.0142
+192.168.0.104 - - [04/Mar/2018:09:50:40 +0100] "GET /classifications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 200 - 0.0096
+192.168.0.104 - - [04/Mar/2018:09:50:40 +0100] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.1" 200 21600 0.0067
+192.168.0.104 - - [04/Mar/2018:09:50:41 +0100] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.1" 200 293431 1.6740
+192.168.0.104 - - [04/Mar/2018:09:50:42 +0100] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.1" 200 581 0.0057
+192.168.0.104 - - [04/Mar/2018:09:50:42 +0100] "GET /classifications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 200 31 0.0035
+192.168.0.104 - - [04/Mar/2018:09:54:54 +0100] "GET /classifications/new HTTP/1.1" 200 - 0.0896
