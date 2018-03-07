@@ -1,4 +1,5 @@
 import org.apache.spark.sql.functions.udf
+import org.apache.spark.ml.Pipeline 
 import org.apache.spark.sql.functions.col
 import org.apache.spark.sql.{SparkSession, SQLContext}
 import org.apache.spark.{SparkConf, SparkContext}
