@@ -37,6 +37,7 @@ def main(args: Array[String]) {
   val layers = Array[Int](498, 1000, 500, 250, 100, 50, 2)
   val trainer = new MultilayerPerceptronClassifier().setLayers(layers).setBlockSize(128).setSeed(1234L).setMaxIter(5000)
   val model = trainer.fit(train)
+  model.write.overwrite().save("./"+filename+"_spark-perceptron-model")
   val result = model.transform(test)
   val evaluator = new MulticlassClassificationEvaluator().setMetricName("accuracy")
   val predictionAndLabels = result.select("prediction", "label")

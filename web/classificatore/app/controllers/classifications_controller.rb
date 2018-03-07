@@ -24,9 +24,61 @@ class ClassificationsController < ApplicationController
   # POST /classifications
   # POST /classifications.json
   def create
+    file = ["maltempo","manutenzione","guasto","telecomunicazioni","stradale","idrico","elettrico"]
     @classification = Classification.new(classification_params)
-
-    respond_to do |format|
+    file_test_output = File.open("public/data/test_output.txt", "w")
+    file_dizionario = File.open("public/data/dizionario.txt", "r")
+    linee =  file_dizionario.readlines
+    doc = @classification.notizia
+    out=doc.gsub /^\s*$/m, ''                       # Remove carriage return
+    out=out.gsub(/\s\s+/, "\s")  				#remove double space
+    body=out.downcase.gsub(/\W+/, ' ')			#remove everything but the words
+    out = rimuovi_non_in_dizionario(body,linee) unless body.nil?
+    out="text\n" + out.gsub(/\s\s+/, "\s")
+    file_test_output.write(out)
+    file_test_output.close
+    @classification.estratto = out
+    file.each do |f|
+      command = "spark-submit --class ClassifierLogReg public/scala/classifierlogreg_2.11-0.1.0-SNAPSHOT.jar #{f} 2>/dev/null > public/data/#{f}.result.txt"
+      if system(command)
+	 case f 
+          when "maltempo"
+            @classification.maltempo =  `cat public/data/#{f}.result.txt`.split(":")[1].to_i
+          when "manutenzione"
+            @classification.manutenzione =  `cat public/data/#{f}.result.txt`.split(":")[1].to_i
+          when "guasto"
+            @classification.guasto =  `cat public/data/#{f}.result.txt`.split(":")[1].to_i
+          when "telecomunicazioni"
+            @classification.telecomunicazioni =  `cat public/data/#{f}.result.txt`.split(":")[1].to_i
+          when "stradale"
+            @classification.stradale =  `cat public/data/#{f}.result.txt`.split(":")[1].to_i
+          when "idrico"
+            @classification.idrica =  `cat public/data/#{f}.result.txt`.split(":")[1].to_i
+          when "elettrico"
+            @classification.elettrica =  `cat public/data/#{f}.result.txt`.split(":")[1].to_i
+         end
+      end 
+      command2 = "spark-submit --class ClassifierPerceptron public/scala/classifierperceptron_2.11-0.1.0-SNAPSHOT.jar #{f} 2>/dev/null > public/data/#{f}.result.txt"
+       if system(command2)
+	 case f 
+          when "maltempo"
+            @classification.maltempo2 =  `cat public/data/#{f}2.result.txt`.split(":")[1].to_i
+          when "manutenzione"
+            @classification.manutenzione2 =  `cat public/data/#{f}2.result.txt`.split(":")[1].to_i
+          when "guasto"
+            @classification.guasto2 =  `cat public/data/#{f}2.result.txt`.split(":")[1].to_i
+          when "telecomunicazioni"
+            @classification.telecomunicazioni2 =  `cat public/data/#{f}2.result.txt`.split(":")[1].to_i
+          when "stradale"
+            @classification.stradale2 =  `cat public/data/#{f}2.result.txt`.split(":")[1].to_i
+          when "idrico"
+            @classification.idrica2 =  `cat public/data/#{f}2.result.txt`.split(":")[1].to_i
+          when "elettrico"
+            @classification.elettrica2 =  `cat public/data/#{f}2.result.txt`.split(":")[1].to_i
+         end
+      end 
+    end
+  respond_to do |format|
       if @classification.save
         format.html { redirect_to @classification, notice: 'Classification was successfully created.' }
         format.json { render :show, status: :created, location: @classification }
@@ -71,4 +123,20 @@ class ClassificationsController < ApplicationController
     def classification_params
       params.require(:classification).permit(:notizia, :maltempo, :manutenzione, :guasto, :idrica, :stradale, :telecomunicazioni, :elettrica)
     end
+  def rimuovi_non_in_dizionario text,dizionario
+    text.split.each do |p_text|
+      trovata = false
+      dizionario.each do |linea|
+        p_diz = linea.split[0]
+        if p_text == p_diz
+          trovata=true
+          break
+        end 
+      end
+      unless trovata
+        text = text.gsub(/\b#{p_text}\b/, '')
+      end 
+    end
+    text
+  end
 end
