@@ -16,7 +16,7 @@ object ClassifierPerceptron {
     val hashingTF = new HashingTF().setInputCol(tokenizer.getOutputCol).setOutputCol("features").setNumFeatures(498)
     val word = tokenizer.transform(df)   
     val featurized = hashingTF.transform(word)
-    val data = featurized.select("id", "label", "features")
+    val data = featurized.select("features")
     val result = sameModel.transform(data)
     val predizione = result.select("prediction")
     println(filename + ":" + predizione.head.getDouble(0))
