@@ -1,0 +1,301 @@
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/get_features.scala:14:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval articles = sqlContext.read.format("com.databricks.spark.csv").option("header", "true").load("./maltempo.csv")[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/get_features.scala:15:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval topic2Label: Boolean => Double = isSci => if (isSci) 1 else 0[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/get_features.scala:16:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval toLabel = udf(topic2Label)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/get_features.scala:17:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval labelled = articles.withColumn("label", toLabel($"topic".like("%true%"))).cache[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/get_features.scala:20:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval tokenizer = new RegexTokenizer().setInputCol("text").setOutputCol("words")[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/get_features.scala:22:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval wordsData = tokenizer.transform(labelled)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/get_features.scala:24:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval hashingTF = new HashingTF().setInputCol(tokenizer.getOutputCol).setOutputCol("features").setNumFeatures(260)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/get_features.scala:26:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval featurizedData = hashingTF.transform(wordsData)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/logistic_2.0.scala:5:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval sqlContext = new org.apache.spark.sql.SQLContext(sc)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/logistic_2.0.scala:8:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval articles = sqlContext.read.format("com.databricks.spark.csv").option("header", "true").load("maltempo.csv")[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/logistic_2.0.scala:9:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval topic2Label: Boolean => Double = isSci => if (isSci) 1 else 0[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/logistic_2.0.scala:10:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval toLabel = udf(topic2Label)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/logistic_2.0.scala:11:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval labelled = articles.withColumn("label", toLabel($"topic".like("%true%"))).cache[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/logistic_2.0.scala:12:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval Array(trainDF, testDF) = labelled.randomSplit(Array(0.75, 0.25))[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/logistic_2.0.scala:14:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval tokenizer = new RegexTokenizer().setInputCol("text").setOutputCol("words")[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/logistic_2.0.scala:17:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval hashingTF = new HashingTF().setInputCol(tokenizer.getOutputCol).setOutputCol("features").setNumFeatures(5000)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/logistic_2.0.scala:20:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval lr = new LogisticRegression().setMaxIter(20).setRegParam(0.1)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/logistic_2.0.scala:23:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval pipeline = new Pipeline().setStages(Array(tokenizer, hashingTF, lr))[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/logistic_2.0.scala:24:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval model = pipeline.fit(trainDF)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/logistic_2.0.scala:26:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval trainPredictions = model.transform(trainDF)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/logistic_2.0.scala:27:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval testPredictions = model.transform(testDF)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/logistic_2.0.scala:28:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mtrainPredictions.select('id, 'topic, 'text, 'label, 'prediction).show[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/logistic_2.0.scala:29:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mtrainPredictions.printSchema[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/logistic_2.0.scala:33:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval evaluator = new BinaryClassificationEvaluator().setMetricName("areaUnderROC")[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/logistic_2.0.scala:36:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval evaluatorParams = ParamMap(evaluator.metricName -> "areaUnderROC")[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/logistic_2.0.scala:37:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval areaTrain = evaluator.evaluate(trainPredictions, evaluatorParams)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/logistic_2.0.scala:38:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval areaTest = evaluator.evaluate(testPredictions, evaluatorParams)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/logistic_2.0.scala:41:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval paramGrid = new ParamGridBuilder()[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/logistic_2.0.scala:50:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval cv = new CrossValidator()[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/logistic_2.0.scala:56:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval cvModel = cv.fit(trainDF)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/logistic_2.0.scala:58:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval cvPredictions = cvModel.transform(testDF)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/logistic_2.0.scala:60:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mcvPredictions.select('topic, 'text, 'prediction).show[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/logistic_2.0.scala:61:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mevaluator.evaluate(cvPredictions, evaluatorParams)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/logistic_2.0.scala:63:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval bestModel = cvModel.bestModel[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/primo.scala:5:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval sqlContext = new org.apache.spark.sql.SQLContext(sc)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/primo.scala:8:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval articles = sqlContext.read.format("com.databricks.spark.csv").option("header", "true").load("/home/mario/Dropbox/Personali/tesi/codice/dati/maltempo.csv")[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/primo.scala:9:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval topic2Label: Boolean => Double = isSci => if (isSci) 1 else 0[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/primo.scala:10:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval toLabel = udf(topic2Label)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/primo.scala:11:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval labelled = articles.withColumn("label", toLabel($"topic".like("%true%"))).cache[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/primo.scala:12:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval Array(trainDF, testDF) = labelled.randomSplit(Array(0.75, 0.25))[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/primo.scala:14:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval tokenizer = new RegexTokenizer()[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/primo.scala:19:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval hashingTF = new HashingTF()[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/primo.scala:25:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval lr = new LogisticRegression().setMaxIter(20).setRegParam(0.01)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/primo.scala:28:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval pipeline = new Pipeline().setStages(Array(tokenizer, hashingTF, lr))[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/primo.scala:29:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval model = pipeline.fit(trainDF)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/primo.scala:31:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval trainPredictions = model.transform(trainDF)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/primo.scala:32:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval testPredictions = model.transform(testDF)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/primo.scala:33:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mtrainPredictions.select('id, 'topic, 'text, 'label, 'prediction).show[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/primo.scala:34:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mtrainPredictions.printSchema[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/primo.scala:38:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval evaluator = new BinaryClassificationEvaluator().setMetricName("areaUnderROC")[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/primo.scala:41:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval evaluatorParams = ParamMap(evaluator.metricName -> "areaUnderROC")[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/primo.scala:42:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval areaTrain = evaluator.evaluate(trainPredictions, evaluatorParams)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/primo.scala:43:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval areaTest = evaluator.evaluate(testPredictions, evaluatorParams)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/prova.scala:2:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval tokenizer = new RegexTokenizer()[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/prova.scala:7:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval hashingTF = new HashingTF()[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/prova.scala:13:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval lr = new LogisticRegression().setMaxIter(20).setRegParam(0.01)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/prova.scala:16:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval pipeline = new Pipeline().setStages(Array(tokenizer, hashingTF, lr))[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quarto.scala:17:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval sqlContext = new org.apache.spark.sql.SQLContext(sc)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quarto.scala:20:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval articles = sqlContext.read.format("com.databricks.spark.csv").option("header", "true").load("./maltempo.csv")[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quarto.scala:21:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval topic2Label: Boolean => Double = isSci => if (isSci) 1 else 0[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quarto.scala:22:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval toLabel = udf(topic2Label)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quarto.scala:23:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval labelled = articles.withColumn("label", toLabel($"topic".like("%true%"))).cache[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quarto.scala:24:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval Array(trainDF, testDF) = labelled.randomSplit(Array(0.75, 0.25))[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quarto.scala:26:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval tokenizer = new RegexTokenizer().setInputCol("text").setOutputCol("words")[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quarto.scala:29:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval hashingTF = new HashingTF().setInputCol(tokenizer.getOutputCol).setOutputCol("features").setNumFeatures(5000)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quarto.scala:32:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval lr = new LogisticRegression().setMaxIter(20).setRegParam(0.01)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quarto.scala:35:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval pipeline = new Pipeline().setStages(Array(tokenizer, hashingTF, lr))[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quarto.scala:40:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval trainPredictions = model.transform(trainDF)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quarto.scala:41:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval testPredictions = model.transform(testDF)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quarto.scala:42:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mtrainPredictions.select('id, 'topic, 'text, 'label, 'prediction).show[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quarto.scala:43:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mtrainPredictions.printSchema[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quarto.scala:47:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval evaluator = new BinaryClassificationEvaluator().setMetricName("areaUnderROC")[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quarto.scala:50:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval evaluatorParams = ParamMap(evaluator.metricName -> "areaUnderROC")[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quarto.scala:51:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval areaTrain = evaluator.evaluate(trainPredictions, evaluatorParams)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quarto.scala:52:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval areaTest = evaluator.evaluate(testPredictions, evaluatorParams)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quarto.scala:54:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval paramGrid = new ParamGridBuilder().addGrid(hashingTF.numFeatures, Array(100, 1000)).addGrid(lr.regParam, Array(0.05, 0.2)).addGrid(lr.maxIter, Array(5, 10, 15)).build[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quarto.scala:57:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval cv = new CrossValidator().setEstimator(pipeline).setEstimatorParamMaps(paramGrid).setEvaluator(evaluator).setNumFolds(10)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quarto.scala:59:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval cvModel = cv.fit(trainDF)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quarto.scala:61:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval cvPredictions = cvModel.transform(testDF)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quarto.scala:62:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mcvPredictions.select('topic, 'text, 'prediction).show[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quarto.scala:65:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mevaluator.evaluate(cvPredictions, evaluatorParams)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quarto.scala:66:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mcvPredictions.coalesce(1).write.option("header", "true").csv("sample_file.csv")[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quinto.scala:16:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  val sqlContext = new org.apache.spark.sql.SQLContext(sc)[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quinto.scala:18:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  val filename = "maltempo"[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quinto.scala:19:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  val sparkSession = SparkSession.builder().master("local").appName("test").config("spark.some.config.option", "some-value").getOrCreate()[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quinto.scala:21:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  val dataset = sparkSession.read.format("com.databricks.spark.csv").option("header", "true").option("inferSchema", "true").load("/home/dimartino/Documenti/mario/codice/tesienea/submit/maltempo.csv")[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quinto.scala:23:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  val splits = data.randomSplit(Array(0.8, 0.2), seed = 1234L)[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quinto.scala:24:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  val training = splits(0)[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quinto.scala:25:3: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m  val test = splits(1)[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quinto.scala:27:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval numIterations = 100[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quinto.scala:28:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval model = SVMWithSGD.train(training, numIterations)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quinto.scala:31:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mmodel.clearThreshold()[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quinto.scala:34:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval scoreAndLabels = test.map { point =>[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quinto.scala:40:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval metrics = new BinaryClassificationMetrics(scoreAndLabels)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quinto.scala:41:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval auROC = metrics.areaUnderROC()[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/quinto.scala:43:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mprintln("Area under ROC = " + auROC)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/shell.scala:13:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval sqlContext = new org.apache.spark.sql.SQLContext(sc)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/shell.scala:14:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval filename = "maltempo"[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/shell.scala:15:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval articles = sqlContext.read.format("com.databricks.spark.csv").option("header", "true").load("/home/dimartino/Documenti/mario/codice/tesienea/dati/stop_word+parole_frequenti+forme_flesse+maggiori_30_parole/"+filename+".csv")[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/dimartino/Documenti/mario/codice/tesienea/shell.scala:16:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval topic2Label: Boolean => Double = isSci => if (isSci) 1 else 0[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m129 errors found[0m

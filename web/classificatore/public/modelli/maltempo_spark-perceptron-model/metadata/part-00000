@@ -1,1 +1,1 @@
-{"class":"org.apache.spark.ml.classification.MultilayerPerceptronClassificationModel","timestamp":1520371604151,"sparkVersion":"2.2.1","uid":"mlpc_15f7cc3590c2","paramMap":{"featuresCol":"features","labelCol":"label","predictionCol":"prediction"}}
+{"class":"org.apache.spark.ml.PipelineModel","timestamp":1520408248254,"sparkVersion":"2.2.1","uid":"pipeline_b16b25d50596","paramMap":{"stageUids":["mlpc_50699cad720a"]}}
