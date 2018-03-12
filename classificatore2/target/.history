@@ -1,0 +1,17 @@
+help
+run
+help run
+run /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/data/test_output.txt
+run /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/data/test_output.txt spatk://babylon.casaccia.enea.it:7077
+run /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/data/test_output.txt spark://babylon.casaccia.enea.it:7077
+run local /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/data/test_output.txt spark://babylon.casaccia.enea.it:7077
+run local[5] /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/data/test_output.txt 
+run localcalhost:7077 /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/data/test_output.txt 
+run local[5] /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/data/test_output.txt 
+run local /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/data/test_output.txt 
+run localcalhost:7077 /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/data/test_output.txt 
+run /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/data/test_output.txt spark://babylon.casaccia.enea.it:7077
+run local[5] /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/data/test_output.txt 
+run local[5] idrico
+run  idrico
+run maltempo

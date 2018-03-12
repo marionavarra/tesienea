@@ -25,10 +25,12 @@ class ClassificationsController < ApplicationController
   # POST /classifications.json
   def create
     file = ["maltempo","manutenzione","guasto","telecomunicazioni","stradale","idrico","elettrico"]
-    @classification = Classification.new(classification_params)
+    path = "/home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/"
+	@classification = Classification.new(classification_params)
     file_test_output = File.open("public/data/test_output.txt", "w")
     file_dizionario = File.open("public/data/dizionario.txt", "r")
-    linee =  file_dizionario.readlines
+    
+	linee =  file_dizionario.readlines
     doc = @classification.notizia
     out=doc.gsub /^\s*$/m, ''                       # Remove carriage return
     out=out.gsub(/\s\s+/, "\s")  				#remove double space
@@ -38,43 +40,61 @@ class ClassificationsController < ApplicationController
     file_test_output.write(out)
     file_test_output.close
     @classification.estratto = out
-    file.each do |f|
-      command = "spark-submit --class ClassifierLogReg public/scala/classifierlogreg_2.11-0.1.0-SNAPSHOT.jar #{f} 2>/dev/null > public/data/#{f}.result.txt"
+	file.each do |f|
+      command = "spark-submit --class ClassifierLogReg #{path}public/scala/classifierlogreg_2.11-0.1.0-SNAPSHOT.jar #{f} 2>> #{path}public/data/error > #{path}public/data/#{f}.result.txt"
+	  logger.info  command
       if system(command)
-	 case f 
+		positivo = false
+		ris_letto = `cat #{path}public/data/#{f}.result.txt`.split(":")[1].split(".")[0]
+		logger.info ris_letto
+		if  ris_letto == "1"
+		  positivo = true
+		  logger.info "Positivo"
+		end
+		case f 
           when "maltempo"
-            @classification.maltempo =  `cat public/data/#{f}.result.txt`.split(":")[1].to_i
+            @classification.maltempo =  positivo
           when "manutenzione"
-            @classification.manutenzione =  `cat public/data/#{f}.result.txt`.split(":")[1].to_i
+            @classification.manutenzione =  positivo
           when "guasto"
-            @classification.guasto =  `cat public/data/#{f}.result.txt`.split(":")[1].to_i
+            @classification.guasto =  positivo
           when "telecomunicazioni"
-            @classification.telecomunicazioni =  `cat public/data/#{f}.result.txt`.split(":")[1].to_i
+             @classification.telecomunicazioni2 =  positivo
           when "stradale"
-            @classification.stradale =  `cat public/data/#{f}.result.txt`.split(":")[1].to_i
+            @classification.stradale =  positivo
           when "idrico"
-            @classification.idrica =  `cat public/data/#{f}.result.txt`.split(":")[1].to_i
+            @classification.idrica =  positivo
           when "elettrico"
-            @classification.elettrica =  `cat public/data/#{f}.result.txt`.split(":")[1].to_i
+            @classification.elettrica =  positivo
          end
       end 
-      command2 = "spark-submit --class ClassifierPerceptron public/scala/classifierperceptron_2.11-0.1.0-SNAPSHOT.jar #{f} 2>/dev/null > public/data/#{f}.result.txt"
-       if system(command2)
-	 case f 
+	end
+	file.each do |f|
+	  command2 = "spark-submit --class ClassifierPerceptron #{path}public/scala/classifierperceptron_2.11-0.1.0-SNAPSHOT.jar #{f} 2>> #{path}public/data/error2 > #{path}public/data/#{f}2.result.txt"
+      	  logger.info  command2
+		if system(command2)
+		positivo = false
+		ris_letto = `cat #{path}public/data/#{f}2.result.txt`.split(":")[1].split(".")[0]
+		logger.info ris_letto
+		if  ris_letto == "1"
+		  positivo = true
+		  logger.info "Positivo"
+		end
+		case f 
           when "maltempo"
-            @classification.maltempo2 =  `cat public/data/#{f}2.result.txt`.split(":")[1].to_i
+            @classification.maltempo2 =  positivo
           when "manutenzione"
-            @classification.manutenzione2 =  `cat public/data/#{f}2.result.txt`.split(":")[1].to_i
+            @classification.manutenzione2 =  positivo
           when "guasto"
-            @classification.guasto2 =  `cat public/data/#{f}2.result.txt`.split(":")[1].to_i
+            @classification.guasto2 =  positivo
           when "telecomunicazioni"
-            @classification.telecomunicazioni2 =  `cat public/data/#{f}2.result.txt`.split(":")[1].to_i
+             @classification.telecomunicazioni2 =  positivo
           when "stradale"
-            @classification.stradale2 =  `cat public/data/#{f}2.result.txt`.split(":")[1].to_i
+            @classification.stradale2 =  positivo
           when "idrico"
-            @classification.idrica2 =  `cat public/data/#{f}2.result.txt`.split(":")[1].to_i
+            @classification.idrica2 =  positivo
           when "elettrico"
-            @classification.elettrica2 =  `cat public/data/#{f}2.result.txt`.split(":")[1].to_i
+            @classification.elettrica2 =  positivo
          end
       end 
     end

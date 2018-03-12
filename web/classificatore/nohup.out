@@ -1250,3 +1250,566 @@ I, [2018-03-06T17:58:37.946740 #11239]  INFO -- : worker=0 ready
 85.159.196.229 - - [07/Mar/2018:07:35:38 +0100] "GET /classifications/new HTTP/1.1" 200 - 0.0271
 85.159.196.229 - - [07/Mar/2018:07:36:38 +0100] "POST /classifications HTTP/1.1" 302 - 57.4746
 85.159.196.229 - - [07/Mar/2018:07:36:38 +0100] "GET /classifications/6 HTTP/1.1" 200 - 0.0292
+85.159.196.229 - - [07/Mar/2018:10:13:07 +0100] "GET %2Ffavicon.ico HTTP/1.1" 200 - 0.0058
+85.159.196.229 - - [07/Mar/2018:10:26:29 +0100] "GET / HTTP/1.1" 200 - 0.0263
+85.159.196.229 - - [07/Mar/2018:10:26:34 +0100] "DELETE /classifications/6 HTTP/1.1" 302 - 0.1265
+85.159.196.229 - - [07/Mar/2018:10:26:34 +0100] "GET /classifications HTTP/1.1" 200 - 0.0249
+85.159.196.229 - - [07/Mar/2018:10:26:36 +0100] "GET /classifications/new HTTP/1.1" 200 - 0.0269
+85.159.196.229 - - [07/Mar/2018:10:28:16 +0100] "POST /classifications HTTP/1.1" 302 - 97.0229
+85.159.196.229 - - [07/Mar/2018:10:28:21 +0100] "GET /classifications/7 HTTP/1.1" 200 - 0.0614
+85.159.196.229 - - [07/Mar/2018:11:24:23 +0100] "GET /classifications/7 HTTP/1.1" 200 - 0.0299
+85.159.196.229 - - [07/Mar/2018:11:24:23 +0100] "GET /classifications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0063
+85.159.196.229 - - [07/Mar/2018:11:24:23 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 304 - 0.0059
+85.159.196.229 - - [07/Mar/2018:11:24:23 +0100] "GET /application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1 HTTP/1.1" 304 - 0.0064
+85.159.196.229 - - [07/Mar/2018:11:24:23 +0100] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.1" 304 - 0.0063
+85.159.196.229 - - [07/Mar/2018:11:24:23 +0100] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.1" 304 - 0.0064
+85.159.196.229 - - [07/Mar/2018:11:24:23 +0100] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.1" 304 - 0.0069
+85.159.196.229 - - [07/Mar/2018:11:24:23 +0100] "GET /classifications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0042
+85.159.196.229 - - [07/Mar/2018:11:24:23 +0100] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.1" 304 - 0.0095
+85.159.196.229 - - [07/Mar/2018:11:24:23 +0100] "GET /ko-bfeb8544980649e3285573b45a318dbb998b5402eb25e39a1fa8acf3e9d5d7ec.png HTTP/1.1" 304 - 0.0050
+I, [2018-03-07T11:41:23.261613 #11236]  INFO -- : reloading config_file=./config/unicorn.rb
+I, [2018-03-07T11:41:23.268181 #11236]  INFO -- : done reloading config_file=./config/unicorn.rb
+I, [2018-03-07T11:41:23.285864 #11236]  INFO -- : reaped #<Process::Status: pid 11239 exit 0> worker=0
+I, [2018-03-07T11:41:23.286174 #11236]  INFO -- : worker=0 spawning...
+I, [2018-03-07T11:41:23.288525 #19157]  INFO -- : worker=0 spawned pid=19157
+I, [2018-03-07T11:41:23.288879 #19157]  INFO -- : Refreshing Gem list
+I, [2018-03-07T11:41:24.620189 #19157]  INFO -- : worker=0 ready
+207.38.90.19 - - [07/Mar/2018:12:03:28 +0100] "GET / HTTP/1.1" 200 - 0.4914
+85.182.8.143 - - [07/Mar/2018:21:36:01 +0100] "GET / HTTP/1.0" 200 - 0.0296
+77.54.255.63 - - [08/Mar/2018:01:41:06 +0100] "GET / HTTP/1.0" 200 - 0.0275
+60.191.38.78 - - [08/Mar/2018:04:48:29 +0100] "GET / HTTP/1.1" 200 - 0.0241
+107.6.171.130 - - [08/Mar/2018:05:54:19 +0100] "GET / HTTP/1.1" 200 - 0.0272
+178.169.174.151 - - [08/Mar/2018:08:57:44 +0100] "GET / HTTP/1.1" 200 - 0.0270
+107.170.253.95 - - [08/Mar/2018:22:11:41 +0100] "GET / HTTP/1.1" 200 - 0.0327
+176.32.33.238 - - [08/Mar/2018:22:25:00 +0100] "GET / HTTP/1.0" 200 - 3.2537
+94.102.49.193 - - [08/Mar/2018:22:30:41 +0100] "GET / HTTP/1.1" 200 - 0.0281
+94.102.49.193 - - [08/Mar/2018:22:30:46 +0100] "GET %2Frobots.txt HTTP/1.1" 200 202 0.0349
+94.102.49.193 - - [08/Mar/2018:22:30:48 +0100] "GET /sitemap.xml HTTP/1.1" 404 25567 0.0942
+94.102.49.193 - - [08/Mar/2018:22:30:50 +0100] "GET /.well-known/security.txt HTTP/1.1" 404 25580 0.1011
+94.102.49.193 - - [08/Mar/2018:22:30:55 +0100] "GET %2Ffavicon.ico HTTP/1.1" 200 - 0.0035
+88.179.176.141 - - [09/Mar/2018:00:53:26 +0100] "GET / HTTP/1.0" 200 - 0.0410
+139.162.79.87 - - [09/Mar/2018:02:09:55 +0100] "GET / HTTP/1.1" 200 - 0.0408
+52.11.33.212 - - [09/Mar/2018:03:41:35 +0100] "GET / HTTP/1.1" 200 - 0.0398
+156.237.198.35 - - [09/Mar/2018:04:13:19 +0100] "GET / HTTP/1.1" 200 - 0.0374
+89.241.249.212 - - [09/Mar/2018:05:47:54 +0100] "GET / HTTP/1.1" 200 - 0.0304
+111.67.198.136 - - [09/Mar/2018:11:48:46 +0100] "GET / HTTP/1.1" 200 - 0.0348
+141.212.122.64 - - [09/Mar/2018:17:09:32 +0100] "GET / HTTP/1.1" 200 - 0.0336
+5.170.142.95 - - [09/Mar/2018:20:43:07 +0100] "GET / HTTP/1.1" 200 - 0.0333
+5.170.142.95 - - [09/Mar/2018:20:43:07 +0100] "GET /application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1 HTTP/1.1" 200 653 0.0070
+5.170.142.95 - - [09/Mar/2018:20:43:07 +0100] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.1" 200 293431 0.0424
+5.170.142.95 - - [09/Mar/2018:20:43:07 +0100] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.1" 200 21600 0.0072
+5.170.142.95 - - [09/Mar/2018:20:43:07 +0100] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.1" 200 37484 0.0063
+5.170.142.95 - - [09/Mar/2018:20:43:07 +0100] "GET /classifications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 200 31 0.0033
+5.170.142.95 - - [09/Mar/2018:20:43:07 +0100] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.1" 200 581 0.0053
+5.170.142.95 - - [09/Mar/2018:20:43:08 +0100] "GET /classifications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 200 - 0.0073
+5.170.142.95 - - [09/Mar/2018:20:43:08 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 200 2451 0.0060
+5.170.142.95 - - [09/Mar/2018:20:43:11 +0100] "GET %2Ffavicon.ico HTTP/1.1" 200 - 0.0021
+5.170.142.95 - - [09/Mar/2018:21:02:31 +0100] "DELETE /classifications/7 HTTP/1.1" 302 - 0.1099
+5.170.142.95 - - [09/Mar/2018:21:02:31 +0100] "GET /classifications HTTP/1.1" 200 - 0.0271
+5.170.142.95 - - [09/Mar/2018:21:02:33 +0100] "GET /classifications/new HTTP/1.1" 200 - 0.0439
+5.170.142.95 - - [09/Mar/2018:21:03:30 +0100] "POST /classifications HTTP/1.1" 500 129709 49.9087
+5.170.142.95 - - [09/Mar/2018:21:20:18 +0100] "POST /classifications HTTP/1.1" 500 123579 49.4900
+5.170.142.95 - - [09/Mar/2018:21:24:06 +0100] "POST /classifications HTTP/1.1" 500 123621 49.5394
+5.170.142.95 - - [09/Mar/2018:21:29:35 +0100] "POST /classifications HTTP/1.1" 500 123603 49.7147
+I, [2018-03-09T21:37:28.056763 #29900]  INFO -- : listening on addr=0.0.0.0:8080 fd=9
+I, [2018-03-09T21:37:28.056880 #29900]  INFO -- : worker=0 spawning...
+I, [2018-03-09T21:37:28.057758 #29900]  INFO -- : master process ready
+I, [2018-03-09T21:37:28.058634 #29903]  INFO -- : worker=0 spawned pid=29903
+I, [2018-03-09T21:37:28.058970 #29903]  INFO -- : Refreshing Gem list
+I, [2018-03-09T21:37:29.444352 #29903]  INFO -- : worker=0 ready
+5.170.142.95 - - [09/Mar/2018:21:39:31 +0100] "POST /classifications HTTP/1.1" 500 122234 50.0567
+5.170.142.95 - - [09/Mar/2018:21:48:27 +0100] "POST /classifications HTTP/1.1" 500 122234 49.4305
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+5.170.142.95 - - [09/Mar/2018:22:08:57 +0100] "POST /classifications HTTP/1.1" 302 - 71.0174
+5.170.142.95 - - [09/Mar/2018:22:08:57 +0100] "GET /classifications/8 HTTP/1.1" 200 - 0.2803
+5.170.142.95 - - [09/Mar/2018:22:08:58 +0100] "GET /classifications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0077
+5.170.142.95 - - [09/Mar/2018:22:08:58 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 304 - 0.0059
+5.170.142.95 - - [09/Mar/2018:22:08:58 +0100] "GET /application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1 HTTP/1.1" 304 - 0.0066
+5.170.142.95 - - [09/Mar/2018:22:08:58 +0100] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.1" 304 - 0.0068
+5.170.142.95 - - [09/Mar/2018:22:08:58 +0100] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.1" 304 - 0.0056
+5.170.142.95 - - [09/Mar/2018:22:08:58 +0100] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.1" 304 - 0.0068
+5.170.142.95 - - [09/Mar/2018:22:08:58 +0100] "GET /classifications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0058
+5.170.142.95 - - [09/Mar/2018:22:08:58 +0100] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.1" 304 - 0.0098
+5.170.142.95 - - [09/Mar/2018:22:08:59 +0100] "GET /ko-bfeb8544980649e3285573b45a318dbb998b5402eb25e39a1fa8acf3e9d5d7ec.png HTTP/1.1" 200 4943 0.0077
+5.170.142.95 - - [09/Mar/2018:22:11:49 +0100] "GET /classifications HTTP/1.1" 200 - 0.0663
+5.170.142.95 - - [09/Mar/2018:22:11:53 +0100] "DELETE /classifications/8 HTTP/1.1" 302 - 0.1474
+5.170.142.95 - - [09/Mar/2018:22:11:53 +0100] "GET /classifications HTTP/1.1" 200 - 0.0255
+5.170.142.95 - - [09/Mar/2018:22:11:59 +0100] "GET /classifications/new HTTP/1.1" 200 - 0.0613
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+5.170.142.95 - - [09/Mar/2018:22:12:03 +0100] "POST /classifications HTTP/1.1" 302 - 0.2233
+5.170.142.95 - - [09/Mar/2018:22:12:03 +0100] "GET /classifications/9 HTTP/1.1" 200 - 0.0315
+5.170.142.95 - - [09/Mar/2018:22:13:34 +0100] "GET /classifications HTTP/1.1" 200 - 0.0285
+5.170.142.95 - - [09/Mar/2018:22:13:39 +0100] "DELETE /classifications/9 HTTP/1.1" 302 - 0.1847
+5.170.142.95 - - [09/Mar/2018:22:13:39 +0100] "GET /classifications HTTP/1.1" 200 - 0.0283
+5.170.142.95 - - [09/Mar/2018:22:13:45 +0100] "GET /classifications/new HTTP/1.1" 200 - 0.0358
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+5.170.142.95 - - [09/Mar/2018:22:13:54 +0100] "POST /classifications HTTP/1.1" 302 - 0.2893
+5.170.142.95 - - [09/Mar/2018:22:13:54 +0100] "GET /classifications/10 HTTP/1.1" 200 - 0.0297
+I, [2018-03-09T22:15:09.720230 #29900]  INFO -- : reloading config_file=./config/unicorn.rb
+I, [2018-03-09T22:15:09.726993 #29900]  INFO -- : done reloading config_file=./config/unicorn.rb
+I, [2018-03-09T22:15:09.751913 #29900]  INFO -- : reaped #<Process::Status: pid 29903 exit 0> worker=0
+I, [2018-03-09T22:15:09.752188 #29900]  INFO -- : worker=0 spawning...
+I, [2018-03-09T22:15:09.754380 #8814]  INFO -- : worker=0 spawned pid=8814
+I, [2018-03-09T22:15:09.754724 #8814]  INFO -- : Refreshing Gem list
+I, [2018-03-09T22:15:11.070887 #8814]  INFO -- : worker=0 ready
+5.170.141.165 - - [09/Mar/2018:22:23:50 +0100] "GET /classifications HTTP/1.1" 200 - 0.4754
+5.170.141.165 - - [09/Mar/2018:22:23:52 +0100] "DELETE /classifications/10 HTTP/1.1" 302 - 0.1902
+5.170.141.165 - - [09/Mar/2018:22:23:52 +0100] "GET /classifications HTTP/1.1" 200 - 0.0269
+5.170.141.165 - - [09/Mar/2018:22:23:58 +0100] "GET /classifications/new HTTP/1.1" 200 - 0.0481
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+5.170.141.165 - - [09/Mar/2018:22:24:01 +0100] "POST /classifications HTTP/1.1" 302 - 0.2313
+5.170.141.165 - - [09/Mar/2018:22:24:01 +0100] "GET /classifications/11 HTTP/1.1" 200 - 0.0346
+58.19.57.247 - - [10/Mar/2018:01:19:52 +0100] "GET /currentsetting.htm HTTP/1.1" 404 25573 0.0812
+5.170.140.74 - - [10/Mar/2018:08:44:24 +0100] "GET /classifications HTTP/1.1" 200 - 0.0968
+5.170.140.74 - - [10/Mar/2018:08:44:27 +0100] "DELETE /classifications/11 HTTP/1.1" 302 - 0.1361
+5.170.140.74 - - [10/Mar/2018:08:44:27 +0100] "GET /classifications HTTP/1.1" 200 - 0.0329
+5.170.140.74 - - [10/Mar/2018:08:44:33 +0100] "GET /classifications/new HTTP/1.1" 200 - 0.0583
+5.170.140.74 - - [10/Mar/2018:08:44:36 +0100] "POST /classifications HTTP/1.1" 500 109309 0.3017
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+sh: 1: cannot create /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/error2: Directory nonexistent
+5.170.140.74 - - [10/Mar/2018:08:45:45 +0100] "POST /classifications HTTP/1.1" 302 - 0.2794
+5.170.140.74 - - [10/Mar/2018:08:45:46 +0100] "GET /classifications/12 HTTP/1.1" 200 - 0.0354
+5.170.140.74 - - [10/Mar/2018:08:45:47 +0100] "GET /classifications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0075
+5.170.140.74 - - [10/Mar/2018:08:45:47 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 304 - 0.0061
+5.170.140.74 - - [10/Mar/2018:08:45:47 +0100] "GET /application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1 HTTP/1.1" 304 - 0.0065
+5.170.140.74 - - [10/Mar/2018:08:45:47 +0100] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.1" 304 - 0.0065
+5.170.140.74 - - [10/Mar/2018:08:45:47 +0100] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.1" 304 - 0.0065
+5.170.140.74 - - [10/Mar/2018:08:45:47 +0100] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.1" 304 - 0.0068
+5.170.140.74 - - [10/Mar/2018:08:45:47 +0100] "GET /classifications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0054
+5.170.140.74 - - [10/Mar/2018:08:45:47 +0100] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.1" 304 - 0.0091
+5.170.140.74 - - [10/Mar/2018:08:45:48 +0100] "GET /ko-bfeb8544980649e3285573b45a318dbb998b5402eb25e39a1fa8acf3e9d5d7ec.png HTTP/1.1" 304 - 0.0061
+5.170.140.74 - - [10/Mar/2018:08:47:29 +0100] "GET /classifications HTTP/1.1" 200 - 0.0662
+5.170.140.74 - - [10/Mar/2018:08:47:32 +0100] "DELETE /classifications/12 HTTP/1.1" 302 - 0.1363
+5.170.140.74 - - [10/Mar/2018:08:47:32 +0100] "GET /classifications HTTP/1.1" 200 - 0.0271
+5.170.140.74 - - [10/Mar/2018:08:47:33 +0100] "GET /classifications/new HTTP/1.1" 200 - 0.0276
+5.170.140.74 - - [10/Mar/2018:08:48:46 +0100] "POST /classifications HTTP/1.1" 302 - 70.6928
+5.170.140.74 - - [10/Mar/2018:08:48:46 +0100] "GET /classifications/13 HTTP/1.1" 200 - 0.0701
+5.170.140.74 - - [10/Mar/2018:08:51:42 +0100] "GET /classifications HTTP/1.1" 200 - 0.0675
+5.170.140.74 - - [10/Mar/2018:08:51:52 +0100] "DELETE /classifications/13 HTTP/1.1" 302 - 0.1432
+5.170.140.74 - - [10/Mar/2018:08:51:53 +0100] "GET /classifications HTTP/1.1" 200 - 0.0253
+5.170.140.74 - - [10/Mar/2018:08:51:54 +0100] "GET /classifications/new HTTP/1.1" 200 - 0.0269
+cat: /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/maltempo.result.txt: File o directory non esistente
+cat: /home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/+public/data/manutenzione.result.txt: File o directory non esistente
+5.170.140.74 - - [10/Mar/2018:08:52:26 +0100] "POST /classifications HTTP/1.1" 500 123668 29.4007
+5.170.140.74 - - [10/Mar/2018:08:57:16 +0100] "POST /classifications HTTP/1.1" 500 123710 29.8266
+5.170.142.206 - - [10/Mar/2018:09:05:52 +0100] "POST /classifications HTTP/1.1" 500 123700 29.7465
+5.170.142.206 - - [10/Mar/2018:09:10:32 +0100] "POST /classifications HTTP/1.1" 500 123708 29.4878
+5.170.142.206 - - [10/Mar/2018:09:13:50 +0100] "POST /classifications HTTP/1.1" 500 123766 29.3637
+5.170.142.206 - - [10/Mar/2018:09:15:56 +0100] "POST /classifications HTTP/1.1" 500 123791 29.7462
+5.170.142.206 - - [10/Mar/2018:09:22:33 +0100] "POST /classifications HTTP/1.1" 302 - 139.7192
+5.170.142.206 - - [10/Mar/2018:09:22:34 +0100] "GET /classifications/14 HTTP/1.1" 200 - 0.0345
+5.170.142.206 - - [10/Mar/2018:09:22:37 +0100] "GET /classifications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0081
+5.170.142.206 - - [10/Mar/2018:09:22:37 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 304 - 0.0060
+5.170.142.206 - - [10/Mar/2018:09:22:37 +0100] "GET /application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1 HTTP/1.1" 304 - 0.0064
+5.170.142.206 - - [10/Mar/2018:09:22:37 +0100] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.1" 304 - 0.0065
+5.170.142.206 - - [10/Mar/2018:09:22:37 +0100] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.1" 304 - 0.0065
+5.170.142.206 - - [10/Mar/2018:09:22:37 +0100] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.1" 304 - 0.0069
+5.170.142.206 - - [10/Mar/2018:09:22:38 +0100] "GET /classifications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0057
+5.170.142.206 - - [10/Mar/2018:09:22:38 +0100] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.1" 304 - 0.0082
+5.170.142.206 - - [10/Mar/2018:09:22:38 +0100] "GET /ok-222dd64eeea126067e68ecc18fdf2223cd23731e051b654c73e99a7461e2c0df.png HTTP/1.1" 200 5702 0.0064
+5.170.142.206 - - [10/Mar/2018:09:22:38 +0100] "GET /ko-bfeb8544980649e3285573b45a318dbb998b5402eb25e39a1fa8acf3e9d5d7ec.png HTTP/1.1" 304 - 0.0050
+5.170.142.206 - - [10/Mar/2018:09:28:13 +0100] "GET /classifications HTTP/1.1" 200 - 0.0666
+5.170.142.206 - - [10/Mar/2018:09:28:18 +0100] "DELETE /classifications/14 HTTP/1.1" 302 - 0.1182
+5.170.142.206 - - [10/Mar/2018:09:28:18 +0100] "GET /classifications HTTP/1.1" 200 - 0.0265
+5.170.142.206 - - [10/Mar/2018:09:28:19 +0100] "GET /classifications/new HTTP/1.1" 200 - 0.0283
+5.170.142.206 - - [10/Mar/2018:09:30:42 +0100] "POST /classifications HTTP/1.1" 302 - 139.3412
+5.170.142.206 - - [10/Mar/2018:09:30:43 +0100] "GET /classifications/15 HTTP/1.1" 200 - 0.0314
+5.170.142.206 - - [10/Mar/2018:09:36:52 +0100] "GET /classifications HTTP/1.1" 200 - 0.1166
+5.170.142.206 - - [10/Mar/2018:09:36:55 +0100] "DELETE /classifications/15 HTTP/1.1" 302 - 0.1552
+5.170.142.206 - - [10/Mar/2018:09:36:55 +0100] "GET /classifications HTTP/1.1" 200 - 0.0286
+5.170.142.206 - - [10/Mar/2018:09:36:56 +0100] "GET /classifications/new HTTP/1.1" 200 - 0.0268
+5.170.142.206 - - [10/Mar/2018:09:39:22 +0100] "POST /classifications HTTP/1.1" 302 - 143.1104
+5.170.142.206 - - [10/Mar/2018:09:39:22 +0100] "GET /classifications/16 HTTP/1.1" 200 - 0.0310
+5.170.142.206 - - [10/Mar/2018:09:42:57 +0100] "GET /classifications HTTP/1.1" 200 - 0.0267
+5.170.142.206 - - [10/Mar/2018:09:42:59 +0100] "DELETE /classifications/16 HTTP/1.1" 302 - 0.2490
+5.170.142.206 - - [10/Mar/2018:09:43:00 +0100] "GET /classifications HTTP/1.1" 200 - 0.0293
+5.170.142.206 - - [10/Mar/2018:09:43:01 +0100] "GET /classifications/new HTTP/1.1" 200 - 0.0297
+5.170.142.206 - - [10/Mar/2018:09:45:48 +0100] "POST /classifications HTTP/1.1" 302 - 143.4560
+5.170.142.206 - - [10/Mar/2018:09:45:48 +0100] "GET /classifications/17 HTTP/1.1" 200 - 0.0320
+5.170.142.206 - - [10/Mar/2018:09:50:00 +0100] "GET /classifications HTTP/1.1" 200 - 0.0692
+5.170.142.206 - - [10/Mar/2018:09:50:03 +0100] "DELETE /classifications/17 HTTP/1.1" 302 - 0.1610
+5.170.142.206 - - [10/Mar/2018:09:50:03 +0100] "GET /classifications HTTP/1.1" 200 - 0.0356
+5.170.142.206 - - [10/Mar/2018:09:50:08 +0100] "GET /classifications/new HTTP/1.1" 200 - 0.0245
+5.170.142.206 - - [10/Mar/2018:09:52:35 +0100] "POST /classifications HTTP/1.1" 302 - 143.5140
+5.170.142.206 - - [10/Mar/2018:09:52:35 +0100] "GET /classifications/18 HTTP/1.1" 200 - 0.0332
+5.170.142.206 - - [10/Mar/2018:09:58:12 +0100] "GET /classifications HTTP/1.1" 200 - 0.0790
+5.170.142.206 - - [10/Mar/2018:09:58:15 +0100] "GET /classifications/18 HTTP/1.1" 200 - 0.0327
+5.170.142.206 - - [10/Mar/2018:10:00:19 +0100] "GET /classifications HTTP/1.1" 200 - 0.0282
+5.170.142.206 - - [10/Mar/2018:10:03:54 +0100] "GET /classifications HTTP/1.1" 200 - 0.0287
+5.170.142.206 - - [10/Mar/2018:10:03:54 +0100] "GET /classifications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0061
+5.170.142.206 - - [10/Mar/2018:10:03:54 +0100] "GET /application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1 HTTP/1.1" 304 - 0.0061
+5.170.142.206 - - [10/Mar/2018:10:03:54 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 304 - 0.0051
+5.170.142.206 - - [10/Mar/2018:10:03:54 +0100] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.1" 304 - 0.0036
+5.170.142.206 - - [10/Mar/2018:10:03:54 +0100] "GET /classifications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0031
+5.170.142.206 - - [10/Mar/2018:10:03:54 +0100] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.1" 304 - 0.0051
+5.170.142.206 - - [10/Mar/2018:10:03:54 +0100] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.1" 304 - 0.0062
+5.170.142.206 - - [10/Mar/2018:10:03:55 +0100] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.1" 304 - 0.0062
+5.170.143.56 - - [10/Mar/2018:14:56:33 +0100] "GET / HTTP/1.1" 200 - 0.0269
+5.170.143.56 - - [10/Mar/2018:14:56:33 +0100] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0014
+5.170.140.247 - - [10/Mar/2018:15:09:54 +0100] "DELETE /classifications/18 HTTP/1.1" 302 - 0.2935
+5.170.140.247 - - [10/Mar/2018:15:09:54 +0100] "GET /classifications HTTP/1.1" 200 - 0.0278
+5.170.140.247 - - [10/Mar/2018:15:09:55 +0100] "GET /classifications/new HTTP/1.1" 200 - 0.0283
+5.170.140.247 - - [10/Mar/2018:15:12:21 +0100] "POST /classifications HTTP/1.1" 302 - 143.1374
+5.170.140.247 - - [10/Mar/2018:15:12:21 +0100] "GET /classifications/19 HTTP/1.1" 200 - 0.0313
+5.170.140.247 - - [10/Mar/2018:15:18:17 +0100] "GET /classifications/19 HTTP/1.1" 200 - 0.0364
+5.170.140.247 - - [10/Mar/2018:15:18:17 +0100] "GET /classifications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 200 - 0.0071
+5.170.140.247 - - [10/Mar/2018:15:18:17 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 200 2451 0.0046
+5.170.140.247 - - [10/Mar/2018:15:18:17 +0100] "GET /application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1 HTTP/1.1" 200 653 0.0037
+5.170.140.247 - - [10/Mar/2018:15:18:17 +0100] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.1" 200 293431 0.0396
+5.170.140.247 - - [10/Mar/2018:15:18:17 +0100] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.1" 200 21600 0.0073
+5.170.140.247 - - [10/Mar/2018:15:18:17 +0100] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.1" 200 581 0.0087
+5.170.140.247 - - [10/Mar/2018:15:18:17 +0100] "GET /classifications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 200 31 0.0052
+5.170.140.247 - - [10/Mar/2018:15:18:17 +0100] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.1" 200 37484 0.0068
+5.170.140.247 - - [10/Mar/2018:15:18:18 +0100] "GET /ok-64dda38d2c0dc60cbd4021a1bc9029f3dbcbe2c0e68e9a6eaf1a3eade6f420ac.png HTTP/1.1" 200 3752 0.0069
+5.170.140.247 - - [10/Mar/2018:15:18:18 +0100] "GET /ko-6439844b5a04f2f3bc7d0d2551500619b4f9462e7a4cb9f7c09e6885166a7822.png HTTP/1.1" 200 3543 0.0057
+5.170.140.247 - - [10/Mar/2018:15:18:33 +0100] "GET /classifications HTTP/1.1" 200 - 0.0268
+5.170.140.247 - - [10/Mar/2018:15:25:29 +0100] "GET /classifications/new HTTP/1.1" 200 - 0.0769
+5.170.140.247 - - [10/Mar/2018:15:26:04 +0100] "POST /classifications HTTP/1.1" 500 123591 29.6202
+5.170.140.247 - - [10/Mar/2018:15:28:12 +0100] "POST /classifications HTTP/1.1" 500 123633 29.5544
+5.170.140.247 - - [10/Mar/2018:15:29:12 +0100] "POST /classifications HTTP/1.1" 500 123633 29.6233
+5.170.140.247 - - [10/Mar/2018:15:31:50 +0100] "POST /classifications HTTP/1.1" 500 123633 29.5679
+5.170.140.247 - - [10/Mar/2018:15:35:41 +0100] "POST /classifications HTTP/1.1" 500 123633 29.3997
+5.170.140.247 - - [10/Mar/2018:15:39:33 +0100] "POST /classifications HTTP/1.1" 302 - 143.7290
+5.170.140.247 - - [10/Mar/2018:15:39:33 +0100] "GET /classifications/20 HTTP/1.1" 200 - 0.0352
+5.170.140.247 - - [10/Mar/2018:15:39:33 +0100] "GET /classifications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0062
+5.170.140.247 - - [10/Mar/2018:15:39:33 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 304 - 0.0057
+5.170.140.247 - - [10/Mar/2018:15:39:33 +0100] "GET /application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1 HTTP/1.1" 304 - 0.0063
+5.170.140.247 - - [10/Mar/2018:15:39:33 +0100] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.1" 304 - 0.0063
+5.170.140.247 - - [10/Mar/2018:15:39:33 +0100] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.1" 304 - 0.0053
+5.170.140.247 - - [10/Mar/2018:15:39:33 +0100] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.1" 304 - 0.0053
+5.170.140.247 - - [10/Mar/2018:15:39:34 +0100] "GET /classifications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0045
+5.170.140.247 - - [10/Mar/2018:15:39:34 +0100] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.1" 304 - 0.0093
+5.170.140.247 - - [10/Mar/2018:15:39:34 +0100] "GET /ko-6439844b5a04f2f3bc7d0d2551500619b4f9462e7a4cb9f7c09e6885166a7822.png HTTP/1.1" 304 - 0.0058
+5.170.140.247 - - [10/Mar/2018:15:39:34 +0100] "GET /ok-64dda38d2c0dc60cbd4021a1bc9029f3dbcbe2c0e68e9a6eaf1a3eade6f420ac.png HTTP/1.1" 304 - 0.0053
+5.170.140.247 - - [10/Mar/2018:15:39:41 +0100] "GET /classifications HTTP/1.1" 200 - 0.0289
+5.170.142.24 - - [10/Mar/2018:15:44:46 +0100] "DELETE /classifications/20 HTTP/1.1" 302 - 0.1622
+5.170.142.24 - - [10/Mar/2018:15:44:46 +0100] "GET /classifications HTTP/1.1" 200 - 0.0263
+5.170.142.24 - - [10/Mar/2018:15:44:49 +0100] "DELETE /classifications/19 HTTP/1.1" 302 - 0.1329
+5.170.142.24 - - [10/Mar/2018:15:44:49 +0100] "GET /classifications HTTP/1.1" 200 - 0.0359
+5.170.142.24 - - [10/Mar/2018:15:44:54 +0100] "GET /classifications/new HTTP/1.1" 200 - 0.0393
+5.170.142.24 - - [10/Mar/2018:15:47:32 +0100] "POST /classifications HTTP/1.1" 302 - 142.5741
+5.170.142.24 - - [10/Mar/2018:15:47:32 +0100] "GET /classifications/21 HTTP/1.1" 200 - 0.0336
+5.170.142.24 - - [10/Mar/2018:16:03:34 +0100] "GET /classifications HTTP/1.1" 200 - 0.0382
+5.170.142.24 - - [10/Mar/2018:16:04:02 +0100] "GET /classifications/new HTTP/1.1" 200 - 0.0676
+5.170.142.24 - - [10/Mar/2018:16:06:27 +0100] "POST /classifications HTTP/1.1" 302 - 143.1940
+5.170.142.24 - - [10/Mar/2018:16:06:27 +0100] "GET /classifications HTTP/1.1" 200 - 0.0369
+5.170.142.24 - - [10/Mar/2018:16:06:28 +0100] "GET /classifications/22 HTTP/1.1" 200 - 0.0317
+5.170.142.24 - - [10/Mar/2018:16:07:29 +0100] "GET /classifications/new HTTP/1.1" 200 - 0.0671
+5.170.142.24 - - [10/Mar/2018:16:09:54 +0100] "POST /classifications HTTP/1.1" 302 - 143.2778
+5.170.142.24 - - [10/Mar/2018:16:09:54 +0100] "GET /classifications HTTP/1.1" 200 - 0.0274
+5.170.142.24 - - [10/Mar/2018:16:09:54 +0100] "GET /classifications/23 HTTP/1.1" 200 - 0.0324
+5.170.142.24 - - [10/Mar/2018:16:20:04 +0100] "GET /classifications HTTP/1.1" 200 - 0.0275
+5.170.142.24 - - [10/Mar/2018:16:20:04 +0100] "GET /classifications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0054
+5.170.142.24 - - [10/Mar/2018:16:20:04 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 304 - 0.0058
+5.170.142.24 - - [10/Mar/2018:16:20:04 +0100] "GET /application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1 HTTP/1.1" 304 - 0.0062
+5.170.142.24 - - [10/Mar/2018:16:20:04 +0100] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.1" 304 - 0.0035
+5.170.142.24 - - [10/Mar/2018:16:20:04 +0100] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.1" 304 - 0.0035
+5.170.142.24 - - [10/Mar/2018:16:20:04 +0100] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.1" 304 - 0.0037
+5.170.142.24 - - [10/Mar/2018:16:20:04 +0100] "GET /classifications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0051
+5.170.142.24 - - [10/Mar/2018:16:20:05 +0100] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.1" 304 - 0.0089
+5.170.142.24 - - [10/Mar/2018:16:20:06 +0100] "GET /classifications/new HTTP/1.1" 200 - 0.0266
+5.170.142.24 - - [10/Mar/2018:16:22:37 +0100] "POST /classifications HTTP/1.1" 302 - 142.9732
+5.170.142.24 - - [10/Mar/2018:16:22:37 +0100] "GET /classifications/1 HTTP/1.1" 200 - 0.0331
+5.170.142.24 - - [10/Mar/2018:16:23:01 +0100] "GET /classifications HTTP/1.1" 200 - 0.0284
+I, [2018-03-10T16:24:10.727059 #16837]  INFO -- : listening on addr=0.0.0.0:8080 fd=9
+I, [2018-03-10T16:24:10.727227 #16837]  INFO -- : worker=0 spawning...
+I, [2018-03-10T16:24:10.728140 #16837]  INFO -- : master process ready
+I, [2018-03-10T16:24:10.728955 #16843]  INFO -- : worker=0 spawned pid=16843
+I, [2018-03-10T16:24:10.729340 #16843]  INFO -- : Refreshing Gem list
+I, [2018-03-10T16:24:12.088040 #16843]  INFO -- : worker=0 ready
+5.170.142.24 - - [10/Mar/2018:16:24:23 +0100] "GET /classifications HTTP/1.1" 200 - 0.4865
+5.170.142.24 - - [10/Mar/2018:16:24:27 +0100] "DELETE /classifications/1 HTTP/1.1" 302 - 0.1297
+5.170.142.24 - - [10/Mar/2018:16:24:27 +0100] "GET /classifications HTTP/1.1" 200 - 0.0264
+5.170.142.24 - - [10/Mar/2018:16:24:28 +0100] "GET /classifications/new HTTP/1.1" 200 - 0.0482
+5.170.142.24 - - [10/Mar/2018:16:26:53 +0100] "POST /classifications HTTP/1.1" 302 - 142.9541
+5.170.142.24 - - [10/Mar/2018:16:27:01 +0100] "GET /classifications/2 HTTP/1.1" 200 - 0.0369
+5.170.142.24 - - [10/Mar/2018:16:27:10 +0100] "GET /classifications HTTP/1.1" 200 - 0.0308
+5.170.142.24 - - [10/Mar/2018:16:27:10 +0100] "GET /classifications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0079
+5.170.142.24 - - [10/Mar/2018:16:27:10 +0100] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.1" 304 - 0.0072
+5.170.142.24 - - [10/Mar/2018:16:27:10 +0100] "GET /application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1 HTTP/1.1" 304 - 0.0057
+5.170.142.24 - - [10/Mar/2018:16:27:10 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 304 - 0.0037
+5.170.142.24 - - [10/Mar/2018:16:27:10 +0100] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.1" 304 - 0.0041
+5.170.142.24 - - [10/Mar/2018:16:27:10 +0100] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.1" 304 - 0.0043
+5.170.142.24 - - [10/Mar/2018:16:27:10 +0100] "GET /classifications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0061
+5.170.142.24 - - [10/Mar/2018:16:27:10 +0100] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.1" 304 - 0.0098
+5.170.142.24 - - [10/Mar/2018:16:29:35 +0100] "GET /classifications/new HTTP/1.1" 200 - 0.1024
+5.170.142.24 - - [10/Mar/2018:16:32:00 +0100] "POST /classifications HTTP/1.1" 302 - 142.6115
+5.170.142.24 - - [10/Mar/2018:16:32:01 +0100] "GET /classifications/3 HTTP/1.1" 200 - 0.0352
+5.170.142.24 - - [10/Mar/2018:16:34:20 +0100] "GET /classifications HTTP/1.1" 200 - 0.0369
+117.50.7.159 - - [10/Mar/2018:17:20:15 +0100] "GET / HTTP/1.0" 200 - 0.0256
+109.25.12.90 - - [10/Mar/2018:19:01:46 +0100] "GET / HTTP/1.0" 200 - 0.0289
+106.75.2.81 - - [10/Mar/2018:21:11:45 +0100] "GET / HTTP/1.1" 200 - 0.0265
+112.112.185.112 - - [10/Mar/2018:21:14:52 +0100] "GET / HTTP/1.0" 200 - 0.0274
+180.212.210.113 - - [10/Mar/2018:21:15:25 +0100] "GET / HTTP/1.1" 200 - 0.0277
+5.170.140.191 - - [10/Mar/2018:21:59:23 +0100] "GET / HTTP/1.1" 200 - 0.0285
+I, [2018-03-11T04:40:01.062127 #10346]  INFO -- : listening on addr=0.0.0.0:8080 fd=9
+I, [2018-03-11T04:40:01.062242 #10346]  INFO -- : worker=0 spawning...
+I, [2018-03-11T04:40:01.063137 #10346]  INFO -- : master process ready
+I, [2018-03-11T04:40:01.064043 #10349]  INFO -- : worker=0 spawned pid=10349
+I, [2018-03-11T04:40:01.064454 #10349]  INFO -- : Refreshing Gem list
+I, [2018-03-11T04:40:02.414551 #10349]  INFO -- : worker=0 ready
+151.37.137.190 - - [11/Mar/2018:04:40:37 +0100] "GET / HTTP/1.1" 200 - 0.4585
+I, [2018-03-11T04:54:45.989207 #13274]  INFO -- : listening on addr=0.0.0.0:3000 fd=9
+I, [2018-03-11T04:54:45.989327 #13274]  INFO -- : worker=0 spawning...
+I, [2018-03-11T04:54:45.990198 #13274]  INFO -- : master process ready
+I, [2018-03-11T04:54:45.991138 #13277]  INFO -- : worker=0 spawned pid=13277
+I, [2018-03-11T04:54:45.991523 #13277]  INFO -- : Refreshing Gem list
+I, [2018-03-11T04:54:47.379844 #13277]  INFO -- : worker=0 ready
+151.37.137.190 - - [11/Mar/2018:04:55:50 +0100] "GET / HTTP/1.1" 200 - 0.4679
+151.37.137.190 - - [11/Mar/2018:04:55:52 +0100] "GET /classifications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 200 - 0.0077
+151.37.137.190 - - [11/Mar/2018:04:55:55 +0100] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.1" 200 293431 2.1188
+151.37.137.190 - - [11/Mar/2018:04:55:55 +0100] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.1" 200 21600 0.0083
+151.37.137.190 - - [11/Mar/2018:04:55:55 +0100] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.1" 200 37484 0.0061
+151.37.137.190 - - [11/Mar/2018:04:55:55 +0100] "GET /classifications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 200 31 0.0034
+151.37.137.190 - - [11/Mar/2018:04:55:55 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 200 2451 0.0036
+151.37.137.190 - - [11/Mar/2018:04:55:58 +0100] "GET /application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1 HTTP/1.1" 200 653 0.0076
+151.37.137.190 - - [11/Mar/2018:04:55:58 +0100] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.1" 200 581 0.0069
+151.37.137.190 - - [11/Mar/2018:04:55:58 +0100] "GET %2Ffavicon.ico HTTP/1.1" 200 - 0.0019
+5.170.142.201 - - [11/Mar/2018:14:26:40 +0100] "GET / HTTP/1.1" 200 - 0.0275
+5.170.142.201 - - [11/Mar/2018:14:26:45 +0100] "GET /classifications/2 HTTP/1.1" 200 - 0.0682
+5.170.142.201 - - [11/Mar/2018:14:26:46 +0100] "GET /ok-64dda38d2c0dc60cbd4021a1bc9029f3dbcbe2c0e68e9a6eaf1a3eade6f420ac.png HTTP/1.1" 200 3752 0.0074
+5.170.142.201 - - [11/Mar/2018:14:26:46 +0100] "GET /ko-6439844b5a04f2f3bc7d0d2551500619b4f9462e7a4cb9f7c09e6885166a7822.png HTTP/1.1" 200 3543 0.0061
+5.170.142.201 - - [11/Mar/2018:14:31:12 +0100] "GET /classifications/2 HTTP/1.1" 200 - 0.0331
+5.170.142.201 - - [11/Mar/2018:14:31:12 +0100] "GET /classifications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0062
+5.170.142.201 - - [11/Mar/2018:14:31:12 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 304 - 0.0057
+5.170.142.201 - - [11/Mar/2018:14:31:12 +0100] "GET /application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1 HTTP/1.1" 304 - 0.0061
+5.170.142.201 - - [11/Mar/2018:14:31:12 +0100] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.1" 304 - 0.0064
+5.170.142.201 - - [11/Mar/2018:14:31:12 +0100] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.1" 304 - 0.0057
+5.170.142.201 - - [11/Mar/2018:14:31:12 +0100] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.1" 304 - 0.0068
+5.170.142.201 - - [11/Mar/2018:14:31:12 +0100] "GET /classifications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0056
+5.170.142.201 - - [11/Mar/2018:14:31:12 +0100] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.1" 304 - 0.0351
+5.170.142.201 - - [11/Mar/2018:14:31:12 +0100] "GET /ok-64dda38d2c0dc60cbd4021a1bc9029f3dbcbe2c0e68e9a6eaf1a3eade6f420ac.png HTTP/1.1" 304 - 0.0067
+5.170.142.201 - - [11/Mar/2018:14:31:12 +0100] "GET /ko-6439844b5a04f2f3bc7d0d2551500619b4f9462e7a4cb9f7c09e6885166a7822.png HTTP/1.1" 304 - 0.0056
+5.170.142.201 - - [11/Mar/2018:14:32:45 +0100] "GET /classifications/2 HTTP/1.1" 200 - 0.0392
+5.170.142.201 - - [11/Mar/2018:14:32:45 +0100] "GET /classifications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0069
+5.170.142.201 - - [11/Mar/2018:14:32:45 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 304 - 0.0065
+5.170.142.201 - - [11/Mar/2018:14:32:45 +0100] "GET /application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1 HTTP/1.1" 304 - 0.0054
+5.170.142.201 - - [11/Mar/2018:14:32:45 +0100] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.1" 304 - 0.0040
+5.170.142.201 - - [11/Mar/2018:14:32:45 +0100] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.1" 304 - 0.0040
+5.170.142.201 - - [11/Mar/2018:14:32:45 +0100] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.1" 304 - 0.0045
+5.170.142.201 - - [11/Mar/2018:14:32:45 +0100] "GET /classifications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0063
+5.170.142.201 - - [11/Mar/2018:14:32:45 +0100] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.1" 304 - 0.0104
+5.170.142.201 - - [11/Mar/2018:14:32:46 +0100] "GET /ok-64dda38d2c0dc60cbd4021a1bc9029f3dbcbe2c0e68e9a6eaf1a3eade6f420ac.png HTTP/1.1" 304 - 0.0058
+5.170.142.201 - - [11/Mar/2018:14:32:46 +0100] "GET /ko-6439844b5a04f2f3bc7d0d2551500619b4f9462e7a4cb9f7c09e6885166a7822.png HTTP/1.1" 304 - 0.0058
+196.52.43.89 - - [11/Mar/2018:14:35:41 +0100] "GET / HTTP/1.0" 200 - 0.0537
+5.170.142.201 - - [11/Mar/2018:14:37:28 +0100] "GET /classifications/2 HTTP/1.1" 200 - 0.0733
+5.170.142.201 - - [11/Mar/2018:14:37:28 +0100] "GET /classifications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 200 - 0.0080
+5.170.142.201 - - [11/Mar/2018:14:37:28 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 200 2451 0.0081
+5.170.142.201 - - [11/Mar/2018:14:37:28 +0100] "GET /application.self-cf60eb8ad33c8a59bad9f28803bdea52d58e6a391d542548a7b5e4d5cafd3d57.css?body=1 HTTP/1.1" 200 728 0.0092
+5.170.142.201 - - [11/Mar/2018:14:37:29 +0100] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.1" 200 293431 0.4270
+5.170.142.201 - - [11/Mar/2018:14:37:29 +0100] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.1" 200 21600 0.0091
+5.170.142.201 - - [11/Mar/2018:14:37:29 +0100] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.1" 200 37484 0.2703
+5.170.142.201 - - [11/Mar/2018:14:37:29 +0100] "GET /classifications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 200 31 0.0083
+5.170.142.201 - - [11/Mar/2018:14:37:29 +0100] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.1" 200 581 0.0093
+5.170.142.201 - - [11/Mar/2018:14:37:29 +0100] "GET /ok-64dda38d2c0dc60cbd4021a1bc9029f3dbcbe2c0e68e9a6eaf1a3eade6f420ac.png HTTP/1.1" 200 3752 0.0101
+5.170.142.201 - - [11/Mar/2018:14:37:29 +0100] "GET /ko-6439844b5a04f2f3bc7d0d2551500619b4f9462e7a4cb9f7c09e6885166a7822.png HTTP/1.1" 200 3543 0.0055
+5.170.142.201 - - [11/Mar/2018:14:37:30 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 200 2451 0.0074
+5.170.142.201 - - [11/Mar/2018:14:38:04 +0100] "GET /classifications/2 HTTP/1.1" 200 - 0.0391
+5.170.142.201 - - [11/Mar/2018:14:38:04 +0100] "GET /classifications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 200 - 0.0067
+5.170.142.201 - - [11/Mar/2018:14:38:04 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 200 2451 0.0063
+5.170.142.201 - - [11/Mar/2018:14:38:04 +0100] "GET /application.self-a4058b2bcd5a099f77f805d0e4d1f975a8bfd153e44f749a25e4468b19498ca1.css?body=1 HTTP/1.1" 200 728 0.0056
+5.170.142.201 - - [11/Mar/2018:14:38:04 +0100] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.1" 200 293431 0.4041
+5.170.142.201 - - [11/Mar/2018:14:38:04 +0100] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.1" 200 21600 0.0078
+5.170.142.201 - - [11/Mar/2018:14:38:05 +0100] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.1" 200 37484 0.2392
+5.170.142.201 - - [11/Mar/2018:14:38:05 +0100] "GET /classifications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 200 31 0.0068
+5.170.142.201 - - [11/Mar/2018:14:38:05 +0100] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.1" 200 581 0.0085
+5.170.142.201 - - [11/Mar/2018:14:38:05 +0100] "GET /ok-64dda38d2c0dc60cbd4021a1bc9029f3dbcbe2c0e68e9a6eaf1a3eade6f420ac.png HTTP/1.1" 200 3752 0.0063
+5.170.142.201 - - [11/Mar/2018:14:38:05 +0100] "GET /ko-6439844b5a04f2f3bc7d0d2551500619b4f9462e7a4cb9f7c09e6885166a7822.png HTTP/1.1" 200 3543 0.0047
+5.170.142.201 - - [11/Mar/2018:14:38:05 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 200 2451 0.0065
+5.170.142.201 - - [11/Mar/2018:14:39:07 +0100] "GET /classifications/2 HTTP/1.1" 200 - 0.0372
+5.170.142.201 - - [11/Mar/2018:14:39:07 +0100] "GET /classifications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0064
+5.170.142.201 - - [11/Mar/2018:14:39:07 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 304 - 0.0057
+5.170.142.201 - - [11/Mar/2018:14:39:07 +0100] "GET /application.self-a4058b2bcd5a099f77f805d0e4d1f975a8bfd153e44f749a25e4468b19498ca1.css?body=1 HTTP/1.1" 304 - 0.0059
+5.170.142.201 - - [11/Mar/2018:14:39:07 +0100] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.1" 304 - 0.0036
+5.170.142.201 - - [11/Mar/2018:14:39:07 +0100] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.1" 304 - 0.0058
+5.170.142.201 - - [11/Mar/2018:14:39:07 +0100] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.1" 304 - 0.0103
+5.170.142.201 - - [11/Mar/2018:14:39:07 +0100] "GET /classifications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0032
+5.170.142.201 - - [11/Mar/2018:14:39:07 +0100] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.1" 304 - 0.0061
+5.170.142.201 - - [11/Mar/2018:14:39:08 +0100] "GET /ok-64dda38d2c0dc60cbd4021a1bc9029f3dbcbe2c0e68e9a6eaf1a3eade6f420ac.png HTTP/1.1" 304 - 0.0059
+5.170.142.201 - - [11/Mar/2018:14:39:08 +0100] "GET /ko-6439844b5a04f2f3bc7d0d2551500619b4f9462e7a4cb9f7c09e6885166a7822.png HTTP/1.1" 304 - 0.0051
+5.170.142.201 - - [11/Mar/2018:14:40:46 +0100] "GET /classifications/2 HTTP/1.1" 200 - 0.0736
+5.170.142.201 - - [11/Mar/2018:14:40:46 +0100] "GET /classifications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 200 - 0.0066
+5.170.142.201 - - [11/Mar/2018:14:40:47 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 200 2451 0.0065
+5.170.142.201 - - [11/Mar/2018:14:40:47 +0100] "GET /application.self-11834b3a201eed82a45011a1c11d8af4d46f5245897f70686d596b35a95ccfbd.css?body=1 HTTP/1.1" 200 754 0.0065
+5.170.142.201 - - [11/Mar/2018:14:40:48 +0100] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.1" 200 293431 0.9431
+5.170.142.201 - - [11/Mar/2018:14:40:48 +0100] "GET /classifications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 200 31 0.0066
+5.170.142.201 - - [11/Mar/2018:14:40:48 +0100] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.1" 200 581 0.0075
+5.170.142.201 - - [11/Mar/2018:14:40:48 +0100] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.1" 200 21600 0.0043
+5.170.142.201 - - [11/Mar/2018:14:40:48 +0100] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.1" 200 37484 0.8457
+5.170.142.201 - - [11/Mar/2018:14:40:49 +0100] "GET /ok-64dda38d2c0dc60cbd4021a1bc9029f3dbcbe2c0e68e9a6eaf1a3eade6f420ac.png HTTP/1.1" 200 3752 0.0070
+5.170.142.201 - - [11/Mar/2018:14:40:49 +0100] "GET /ko-6439844b5a04f2f3bc7d0d2551500619b4f9462e7a4cb9f7c09e6885166a7822.png HTTP/1.1" 200 3543 0.0054
+5.170.142.201 - - [11/Mar/2018:14:40:49 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 200 2451 0.0062
+5.170.142.201 - - [11/Mar/2018:14:41:45 +0100] "GET /classifications/2 HTTP/1.1" 200 - 0.0386
+5.170.142.201 - - [11/Mar/2018:14:41:45 +0100] "GET /classifications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0065
+5.170.142.201 - - [11/Mar/2018:14:41:45 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 304 - 0.0060
+5.170.142.201 - - [11/Mar/2018:14:41:45 +0100] "GET /application.self-275debc46bd307cc365d70bbc0e24d6e7463b116b0609413e3fc226fab844a6d.css?body=1 HTTP/1.1" 200 782 0.0066
+5.170.142.201 - - [11/Mar/2018:14:41:45 +0100] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.1" 304 - 0.0066
+5.170.142.201 - - [11/Mar/2018:14:41:45 +0100] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.1" 304 - 0.0066
+5.170.142.201 - - [11/Mar/2018:14:41:45 +0100] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.1" 304 - 0.0095
+5.170.142.201 - - [11/Mar/2018:14:41:45 +0100] "GET /classifications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0057
+5.170.142.201 - - [11/Mar/2018:14:41:45 +0100] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.1" 304 - 0.0071
+5.170.142.201 - - [11/Mar/2018:14:41:45 +0100] "GET /ok-64dda38d2c0dc60cbd4021a1bc9029f3dbcbe2c0e68e9a6eaf1a3eade6f420ac.png HTTP/1.1" 304 - 0.0063
+5.170.142.201 - - [11/Mar/2018:14:41:45 +0100] "GET /ko-6439844b5a04f2f3bc7d0d2551500619b4f9462e7a4cb9f7c09e6885166a7822.png HTTP/1.1" 304 - 0.0045
+5.170.142.201 - - [11/Mar/2018:14:44:05 +0100] "GET /classifications/2 HTTP/1.1" 200 - 0.0315
+5.170.142.201 - - [11/Mar/2018:14:44:05 +0100] "GET /classifications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 200 - 0.0057
+5.170.142.201 - - [11/Mar/2018:14:44:05 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 200 2451 0.0061
+5.170.142.201 - - [11/Mar/2018:14:44:05 +0100] "GET /application.self-c472cb2ad794ec436c0d88c4c41f491dc4170730621419b00e4f589de656fb6b.css?body=1 HTTP/1.1" 200 824 0.0135
+5.170.142.201 - - [11/Mar/2018:14:44:05 +0100] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.1" 200 293431 0.5407
+5.170.142.201 - - [11/Mar/2018:14:44:05 +0100] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.1" 200 21600 0.0448
+5.170.142.201 - - [11/Mar/2018:14:44:05 +0100] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.1" 200 581 0.0085
+5.170.142.201 - - [11/Mar/2018:14:44:05 +0100] "GET /classifications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 200 31 0.0034
+5.170.142.201 - - [11/Mar/2018:14:44:05 +0100] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.1" 200 37484 0.0051
+5.170.142.201 - - [11/Mar/2018:14:44:06 +0100] "GET /ok-64dda38d2c0dc60cbd4021a1bc9029f3dbcbe2c0e68e9a6eaf1a3eade6f420ac.png HTTP/1.1" 200 3752 0.0079
+5.170.142.201 - - [11/Mar/2018:14:44:06 +0100] "GET /ko-6439844b5a04f2f3bc7d0d2551500619b4f9462e7a4cb9f7c09e6885166a7822.png HTTP/1.1" 200 3543 0.0051
+5.170.142.201 - - [11/Mar/2018:14:44:06 +0100] "GET /application.self-c472cb2ad794ec436c0d88c4c41f491dc4170730621419b00e4f589de656fb6b.css?body=1 HTTP/1.1" 200 824 0.0067
+5.170.142.201 - - [11/Mar/2018:14:44:28 +0100] "GET /classifications HTTP/1.1" 200 - 0.0278
+5.170.142.201 - - [11/Mar/2018:14:47:56 +0100] "GET /classifications HTTP/1.1" 200 - 0.0281
+5.170.142.201 - - [11/Mar/2018:14:47:56 +0100] "GET /classifications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0065
+5.170.142.201 - - [11/Mar/2018:14:47:56 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 304 - 0.0058
+5.170.142.201 - - [11/Mar/2018:14:47:56 +0100] "GET /application.self-c472cb2ad794ec436c0d88c4c41f491dc4170730621419b00e4f589de656fb6b.css?body=1 HTTP/1.1" 304 - 0.0059
+5.170.142.201 - - [11/Mar/2018:14:47:56 +0100] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.1" 304 - 0.0036
+5.170.142.201 - - [11/Mar/2018:14:47:56 +0100] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.1" 304 - 0.0035
+5.170.142.201 - - [11/Mar/2018:14:47:56 +0100] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.1" 304 - 0.0044
+5.170.142.201 - - [11/Mar/2018:14:47:56 +0100] "GET /classifications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0057
+5.170.142.201 - - [11/Mar/2018:14:47:56 +0100] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.1" 304 - 0.0097
+5.170.142.201 - - [11/Mar/2018:14:48:08 +0100] "GET /classifications HTTP/1.1" 200 - 0.0267
+5.170.142.201 - - [11/Mar/2018:14:48:08 +0100] "GET /classifications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 200 - 0.0060
+5.170.142.201 - - [11/Mar/2018:14:48:08 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 200 2451 0.0056
+5.170.142.201 - - [11/Mar/2018:14:48:08 +0100] "GET /application.self-c472cb2ad794ec436c0d88c4c41f491dc4170730621419b00e4f589de656fb6b.css?body=1 HTTP/1.1" 200 824 0.0050
+5.170.142.201 - - [11/Mar/2018:14:48:09 +0100] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.1" 200 293431 1.0312
+5.170.142.201 - - [11/Mar/2018:14:48:09 +0100] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.1" 200 37484 0.1292
+5.170.142.201 - - [11/Mar/2018:14:48:09 +0100] "GET /classifications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 200 31 0.0058
+5.170.142.201 - - [11/Mar/2018:14:48:09 +0100] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.1" 200 581 0.0078
+5.170.142.201 - - [11/Mar/2018:14:48:09 +0100] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.1" 200 21600 0.0042
+5.170.142.201 - - [11/Mar/2018:14:49:12 +0100] "GET /classifications HTTP/1.1" 200 - 0.0301
+5.170.142.201 - - [11/Mar/2018:14:49:12 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 304 - 0.0064
+5.170.142.201 - - [11/Mar/2018:14:49:12 +0100] "GET /classifications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0057
+5.170.142.201 - - [11/Mar/2018:14:49:12 +0100] "GET /application.self-c472cb2ad794ec436c0d88c4c41f491dc4170730621419b00e4f589de656fb6b.css?body=1 HTTP/1.1" 304 - 0.0065
+5.170.142.201 - - [11/Mar/2018:14:49:12 +0100] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.1" 304 - 0.0065
+5.170.142.201 - - [11/Mar/2018:14:49:12 +0100] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.1" 304 - 0.0047
+5.170.142.201 - - [11/Mar/2018:14:49:12 +0100] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.1" 304 - 0.0095
+5.170.142.201 - - [11/Mar/2018:14:49:12 +0100] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.1" 304 - 0.0072
+5.170.142.201 - - [11/Mar/2018:14:49:12 +0100] "GET /classifications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0042
+5.170.142.201 - - [11/Mar/2018:14:52:33 +0100] "GET /classifications HTTP/1.1" 500 147385 0.5199
+5.170.142.201 - - [11/Mar/2018:14:53:13 +0100] "GET /classifications HTTP/1.1" 200 - 0.0348
+5.170.142.201 - - [11/Mar/2018:14:53:13 +0100] "GET /classifications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0071
+5.170.142.201 - - [11/Mar/2018:14:53:13 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 304 - 0.0060
+5.170.142.201 - - [11/Mar/2018:14:53:13 +0100] "GET /application.self-c472cb2ad794ec436c0d88c4c41f491dc4170730621419b00e4f589de656fb6b.css?body=1 HTTP/1.1" 304 - 0.0063
+5.170.142.201 - - [11/Mar/2018:14:53:13 +0100] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.1" 304 - 0.0038
+5.170.142.201 - - [11/Mar/2018:14:53:13 +0100] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.1" 304 - 0.0037
+5.170.142.201 - - [11/Mar/2018:14:53:13 +0100] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.1" 304 - 0.0040
+5.170.142.201 - - [11/Mar/2018:14:53:13 +0100] "GET /classifications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0059
+5.170.142.201 - - [11/Mar/2018:14:53:13 +0100] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.1" 304 - 0.0095
+5.170.142.201 - - [11/Mar/2018:14:53:13 +0100] "GET /ok-64dda38d2c0dc60cbd4021a1bc9029f3dbcbe2c0e68e9a6eaf1a3eade6f420ac.png HTTP/1.1" 304 - 0.0054
+5.170.142.201 - - [11/Mar/2018:14:53:13 +0100] "GET /ko-6439844b5a04f2f3bc7d0d2551500619b4f9462e7a4cb9f7c09e6885166a7822.png HTTP/1.1" 304 - 0.0051
+5.170.142.201 - - [11/Mar/2018:14:54:27 +0100] "GET /classifications HTTP/1.1" 200 - 0.0433
+5.170.142.201 - - [11/Mar/2018:14:54:27 +0100] "GET /classifications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0069
+5.170.142.201 - - [11/Mar/2018:14:54:27 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 304 - 0.0064
+5.170.142.201 - - [11/Mar/2018:14:54:28 +0100] "GET /application.self-c472cb2ad794ec436c0d88c4c41f491dc4170730621419b00e4f589de656fb6b.css?body=1 HTTP/1.1" 304 - 0.0066
+5.170.142.201 - - [11/Mar/2018:14:54:28 +0100] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.1" 304 - 0.0052
+5.170.142.201 - - [11/Mar/2018:14:54:28 +0100] "GET /classifications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0032
+5.170.142.201 - - [11/Mar/2018:14:54:28 +0100] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.1" 304 - 0.0091
+5.170.142.201 - - [11/Mar/2018:14:54:28 +0100] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.1" 304 - 0.0063
+5.170.142.201 - - [11/Mar/2018:14:54:28 +0100] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.1" 304 - 0.0066
+5.170.142.201 - - [11/Mar/2018:14:54:28 +0100] "GET /ok-64dda38d2c0dc60cbd4021a1bc9029f3dbcbe2c0e68e9a6eaf1a3eade6f420ac.png HTTP/1.1" 304 - 0.0052
+5.170.142.201 - - [11/Mar/2018:14:54:28 +0100] "GET /ko-6439844b5a04f2f3bc7d0d2551500619b4f9462e7a4cb9f7c09e6885166a7822.png HTTP/1.1" 304 - 0.0051
+5.170.142.201 - - [11/Mar/2018:14:55:44 +0100] "GET /classifications HTTP/1.1" 200 - 0.0370
+5.170.142.201 - - [11/Mar/2018:14:55:44 +0100] "GET /classifications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0049
+5.170.142.201 - - [11/Mar/2018:14:55:44 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 304 - 0.0060
+5.170.142.201 - - [11/Mar/2018:14:55:44 +0100] "GET /application.self-c472cb2ad794ec436c0d88c4c41f491dc4170730621419b00e4f589de656fb6b.css?body=1 HTTP/1.1" 304 - 0.0063
+5.170.142.201 - - [11/Mar/2018:14:55:44 +0100] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.1" 304 - 0.0039
+5.170.142.201 - - [11/Mar/2018:14:55:44 +0100] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.1" 304 - 0.0036
+5.170.142.201 - - [11/Mar/2018:14:55:44 +0100] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.1" 304 - 0.0038
+5.170.142.201 - - [11/Mar/2018:14:55:45 +0100] "GET /classifications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0057
+5.170.142.201 - - [11/Mar/2018:14:55:45 +0100] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.1" 304 - 0.0092
+5.170.142.201 - - [11/Mar/2018:14:55:45 +0100] "GET /ok-64dda38d2c0dc60cbd4021a1bc9029f3dbcbe2c0e68e9a6eaf1a3eade6f420ac.png HTTP/1.1" 304 - 0.0059
+5.170.142.201 - - [11/Mar/2018:14:55:45 +0100] "GET /ko-6439844b5a04f2f3bc7d0d2551500619b4f9462e7a4cb9f7c09e6885166a7822.png HTTP/1.1" 304 - 0.0051
+5.170.142.201 - - [11/Mar/2018:14:56:17 +0100] "GET /classifications HTTP/1.1" 200 - 0.0382
+5.170.142.201 - - [11/Mar/2018:14:56:17 +0100] "GET /classifications.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0063
+5.170.142.201 - - [11/Mar/2018:14:56:17 +0100] "GET /scaffolds.self-781b0f273aa8c51aad55971e525ecbb82a7655ac92d58fd037c6a9ade3e09e1d.css?body=1 HTTP/1.1" 304 - 0.0059
+5.170.142.201 - - [11/Mar/2018:14:56:17 +0100] "GET /application.self-c472cb2ad794ec436c0d88c4c41f491dc4170730621419b00e4f589de656fb6b.css?body=1 HTTP/1.1" 304 - 0.0059
+5.170.142.201 - - [11/Mar/2018:14:56:17 +0100] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.1" 304 - 0.0037
+5.170.142.201 - - [11/Mar/2018:14:56:17 +0100] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.1" 304 - 0.0036
+5.170.142.201 - - [11/Mar/2018:14:56:17 +0100] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.1" 304 - 0.0039
+5.170.142.201 - - [11/Mar/2018:14:56:17 +0100] "GET /classifications.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0063
+5.170.142.201 - - [11/Mar/2018:14:56:17 +0100] "GET /application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1 HTTP/1.1" 304 - 0.0094
+5.170.142.201 - - [11/Mar/2018:14:56:17 +0100] "GET /ok-64dda38d2c0dc60cbd4021a1bc9029f3dbcbe2c0e68e9a6eaf1a3eade6f420ac.png HTTP/1.1" 304 - 0.0049
+5.170.142.201 - - [11/Mar/2018:14:56:17 +0100] "GET /ko-6439844b5a04f2f3bc7d0d2551500619b4f9462e7a4cb9f7c09e6885166a7822.png HTTP/1.1" 304 - 0.0049
+5.170.142.201 - - [11/Mar/2018:14:57:46 +0100] "GET /classifications/new HTTP/1.1" 200 - 0.0482
+5.170.142.201 - - [11/Mar/2018:15:00:13 +0100] "POST /classifications HTTP/1.1" 302 - 142.6522
+5.170.142.201 - - [11/Mar/2018:15:00:14 +0100] "GET /classifications/4 HTTP/1.1" 200 - 0.0290
+5.170.142.201 - - [11/Mar/2018:15:06:03 +0100] "GET /classifications HTTP/1.1" 200 - 0.0391
+5.170.142.201 - - [11/Mar/2018:15:07:46 +0100] "GET /classifications/new HTTP/1.1" 200 - 0.0263
+5.170.142.201 - - [11/Mar/2018:15:10:14 +0100] "POST /classifications HTTP/1.1" 302 - 142.3006
+5.170.142.201 - - [11/Mar/2018:15:10:14 +0100] "GET /classifications/5 HTTP/1.1" 200 - 0.0290
+5.170.142.201 - - [11/Mar/2018:15:11:05 +0100] "GET /classifications HTTP/1.1" 200 - 0.0382
+5.170.142.201 - - [11/Mar/2018:15:11:11 +0100] "GET /classifications/new HTTP/1.1" 200 - 0.0260
+5.170.142.201 - - [11/Mar/2018:15:24:03 +0100] "POST /classifications HTTP/1.1" 302 - 143.5820
+5.170.142.201 - - [11/Mar/2018:15:24:03 +0100] "GET /classifications/6 HTTP/1.1" 200 - 0.0302
+198.199.117.194 - - [11/Mar/2018:15:54:16 +0100] "GET / HTTP/1.1" 200 - 0.0558
+71.6.158.166 - - [12/Mar/2018:04:17:22 +0100] "GET / HTTP/1.1" 200 - 0.0524
+71.6.158.166 - - [12/Mar/2018:04:17:24 +0100] "GET %2Ffavicon.ico HTTP/1.1" 200 - 0.0019
+209.126.136.5 - - [12/Mar/2018:10:34:48 +0100] "GET / HTTP/1.1" 200 - 0.0508
+5.170.130.146 - - [12/Mar/2018:11:20:31 +0100] "GET / HTTP/1.1" 200 - 0.0465
+5.170.130.146 - - [12/Mar/2018:11:20:32 +0100] "GET %2Ffavicon.ico HTTP/1.1" 304 - 0.0015
+5.170.130.146 - - [12/Mar/2018:11:56:34 +0100] "GET /classifications/new HTTP/1.1" 200 - 0.0243
+5.170.130.146 - - [12/Mar/2018:11:56:34 +0100] "GET /classifications/new HTTP/1.1" 200 - 0.0252
+5.170.130.146 - - [12/Mar/2018:11:59:32 +0100] "POST /classifications HTTP/1.1" 302 - 142.8766
+5.170.130.146 - - [12/Mar/2018:11:59:32 +0100] "GET /classifications/7 HTTP/1.1" 200 - 0.0313

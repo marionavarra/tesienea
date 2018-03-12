@@ -10,120 +10,139 @@
   <%= @classification.estratto %>
 </p>
 
-<table>
+<table style="widht; 100%">
+  <tr>
+     <th>
+	 </th>
+     <th>
+      <strong>Maltempo</strong>  
+	 </th>
+	 <th>
+      <strong>Manutenzione</strong>
+	 </th>
+     <th>
+      <strong>Guasto</strong>
+	 </th>
+     <th>
+      <strong>Idrica</strong>
+	 </th>
+     <th>
+      <strong>Stradale</strong>
+	 </th>
+     <th>
+      <strong>Telecomunicazioni</strong>
+	 </th>
+     <th>
+      <strong>Elettrica</strong>
+	 </th>
+  </tr>
   <tr>
     <td>
-      <strong>Maltempo:</strong>  
+      Logistic<br/>
+	  Regression
+	</td>
+    <td>
       <% if @classification.maltempo %>
-        <%= image_tag("ok.png")  %>
+        <%= image_tag("ok.png", size: "40")  %>
       <% else %>
-        <%= image_tag("ko.png")  %>
+        <%= image_tag("ko.png", size: "40")  %>
       <% end %>
     </td>
     <td>
-      <strong>Manutenzione:</strong>
       <% if @classification.manutenzione %>
-        <%= image_tag("ok.png")  %>
+        <%= image_tag("ok.png", size: "40")  %>
       <% else %>
-        <%= image_tag("ko.png")  %>
+        <%= image_tag("ko.png", size: "40")  %>
       <% end %>
     </td>
     <td>
-      <strong>Guasto:</strong>
       <% if @classification.guasto %>
-        <%= image_tag("ok.png")  %>
+        <%= image_tag("ok.png", size: "40")  %>
       <% else %>
-        <%= image_tag("ko.png")  %>
+        <%= image_tag("ko.png", size: "40")  %>
       <% end %>
     </td>
     <td>
-      <strong>Idrica:</strong>
       <% if @classification.idrica %>
-        <%= image_tag("ok.png")  %>
+        <%= image_tag("ok.png", size: "40")  %>
       <% else %>
-        <%= image_tag("ko.png")  %>
+        <%= image_tag("ko.png", size: "40")  %>
       <% end %>
     </td>
     <td>
-      <strong>Stradale:</strong>
       <% if @classification.stradale %>
-        <%= image_tag("ok.png")  %>
+        <%= image_tag("ok.png", size: "40")  %>
       <% else %>
-        <%= image_tag("ko.png")  %>
+        <%= image_tag("ko.png", size: "40")  %>
       <% end %>
     </td>
     <td>
-      <strong>Telecomunicazioni:</strong>
       <% if @classification.telecomunicazioni %>
-        <%= image_tag("ok.png")  %>
+        <%= image_tag("ok.png", size: "40")  %>
       <% else %>
-        <%= image_tag("ko.png")  %>
+        <%= image_tag("ko.png", size: "40")  %>
       <% end %>
     </td>
     <td>
-      <strong>Elettrica:</strong>
       <% if @classification.elettrica %>
-        <%= image_tag("ok.png")  %>
+        <%= image_tag("ok.png", size: "40")  %>
       <% else %>
-        <%= image_tag("ko.png")  %>
+        <%= image_tag("ko.png", size: "40")  %>
       <% end %>
     </td>
   </tr>
   <tr>
     <td>
-      <strong>Maltempo:</strong>  
+	  Multilayer<br/>
+	  Perceptron
+	</td>
+    <td>
       <% if @classification.maltempo2 %>
-        <%= image_tag("ok.png")  %>
+        <%= image_tag("ok.png", size: "40")  %>
       <% else %>
-        <%= image_tag("ko.png")  %>
+        <%= image_tag("ko.png", size: "40")  %>
       <% end %>
     </td>
     <td>
-      <strong>Manutenzione:</strong>
       <% if @classification.manutenzione2 %>
-        <%= image_tag("ok.png")  %>
+        <%= image_tag("ok.png", size: "40")  %>
       <% else %>
-        <%= image_tag("ko.png")  %>
+        <%= image_tag("ko.png", size: "40")  %>
       <% end %>
     </td>
     <td>
-      <strong>Guasto:</strong>
       <% if @classification.guasto2 %>
-        <%= image_tag("ok.png")  %>
+        <%= image_tag("ok.png", size: "40")  %>
       <% else %>
-        <%= image_tag("ko.png")  %>
+        <%= image_tag("ko.png", size: "40")  %>
       <% end %>
     </td>
     <td>
-      <strong>Idrica:</strong>
       <% if @classification.idrica2 %>
-        <%= image_tag("ok.png")  %>
+        <%= image_tag("ok.png", size: "40")  %>
       <% else %>
-        <%= image_tag("ko.png")  %>
+        <%= image_tag("ko.png", size: "40")  %>
       <% end %>
     </td>
     <td>
-      <strong>Stradale:</strong>
       <% if @classification.stradale2 %>
-        <%= image_tag("ok.png")  %>
+        <%= image_tag("ok.png", size: "40")  %>
       <% else %>
-        <%= image_tag("ko.png")  %>
+        <%= image_tag("ko.png", size: "40")  %>
       <% end %>
     </td>
     <td>
-      <strong>Telecomunicazioni:</strong>
       <% if @classification.telecomunicazioni2 %>
-        <%= image_tag("ok.png")  %>
+        <%= image_tag("ok.png", size: "40")  %>
       <% else %>
-        <%= image_tag("ko.png")  %>
+        <%= image_tag("ko.png", size: "40")  %>
       <% end %>
     </td>
     <td>
-      <strong>Elettrica:</strong>
       <% if @classification.elettrica2 %>
-        <%= image_tag("ok.png")  %>
+        <%= image_tag("ok.png", size: "40")  %>
       <% else %>
-        <%= image_tag("ko.png")  %>
+        <%= image_tag("ko.png", size: "40")  %>
       <% end %>
     </td>
   </tr>
