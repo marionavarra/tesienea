@@ -4,7 +4,7 @@ files.each do |file|
  current_w = File.open("#{file}.txt","w")
  linee = current_r.readlines
  linee.each do |linea|
-  unless linea.split(",")[1].size < 31
+  unless linea.split(",")[1].split.size < 11
    current_w.write(linea)
   end
  end  
