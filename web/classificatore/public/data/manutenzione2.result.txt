@@ -1,1 +1,1 @@
-manutenzione:0.0
+manutenzione:1.0

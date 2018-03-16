@@ -1,1 +1,1 @@
-guasto:0.0
+guasto:1.0

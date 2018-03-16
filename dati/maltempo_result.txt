@@ -1,0 +1,19 @@
+maltempo
+Test set accuracy = 0.9552752293577982
+Confusion matrix = 
+727.0  13.0   
+26.0   106.0  
+Accuracy with metrics = 0.9552752293577982
+Recall with metrics = 0.803030303030303
+False Positive % with metrics = 0.01756756756756757
+root
+ |-- id: integer (nullable = true)
+ |-- label: integer (nullable = true)
+ |-- features: vector (nullable = true)
+ |-- prediction: double (nullable = true)
+
+Other metrix handmade calculated
+False Positive = 13
+False Negative = 26
+True Positive = 106
+True Negative = 727

@@ -1,1 +1,1 @@
-elettrico:1.0
+elettrico:0.0
