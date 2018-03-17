@@ -1,0 +1,773 @@
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+18/03/16 23:40:40 INFO SparkContext: Running Spark version 2.2.1
+18/03/16 23:40:41 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/03/16 23:40:41 INFO SparkContext: Submitted application: ClassifierPerceptron
+18/03/16 23:40:41 INFO SecurityManager: Changing view acls to: dimartino
+18/03/16 23:40:41 INFO SecurityManager: Changing modify acls to: dimartino
+18/03/16 23:40:41 INFO SecurityManager: Changing view acls groups to: 
+18/03/16 23:40:41 INFO SecurityManager: Changing modify acls groups to: 
+18/03/16 23:40:41 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(dimartino); groups with view permissions: Set(); users  with modify permissions: Set(dimartino); groups with modify permissions: Set()
+18/03/16 23:40:41 INFO Utils: Successfully started service 'sparkDriver' on port 44315.
+18/03/16 23:40:41 INFO SparkEnv: Registering MapOutputTracker
+18/03/16 23:40:41 INFO SparkEnv: Registering BlockManagerMaster
+18/03/16 23:40:41 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+18/03/16 23:40:41 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+18/03/16 23:40:41 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-6e5c0b4b-ac95-4458-afb4-0fab8e7b594f
+18/03/16 23:40:41 INFO MemoryStore: MemoryStore started with capacity 366.3 MB
+18/03/16 23:40:41 INFO SparkEnv: Registering OutputCommitCoordinator
+18/03/16 23:40:42 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+18/03/16 23:40:42 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://192.107.77.12:4040
+18/03/16 23:40:42 INFO SparkContext: Added JAR file:/home/dimartino/Documenti/mario/codice/tesienea/classificatore2/target/scala-2.11/classifierperceptron_2.11-0.1.0-SNAPSHOT.jar at spark://192.107.77.12:44315/jars/classifierperceptron_2.11-0.1.0-SNAPSHOT.jar with timestamp 1521240042124
+18/03/16 23:40:42 INFO Executor: Starting executor ID driver on host localhost
+18/03/16 23:40:42 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 44075.
+18/03/16 23:40:42 INFO NettyBlockTransferService: Server created on 192.107.77.12:44075
+18/03/16 23:40:42 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+18/03/16 23:40:42 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 192.107.77.12, 44075, None)
+18/03/16 23:40:42 INFO BlockManagerMasterEndpoint: Registering block manager 192.107.77.12:44075 with 366.3 MB RAM, BlockManagerId(driver, 192.107.77.12, 44075, None)
+18/03/16 23:40:42 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 192.107.77.12, 44075, None)
+18/03/16 23:40:42 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 192.107.77.12, 44075, None)
+18/03/16 23:40:42 WARN SparkContext: Using an existing SparkContext; some configuration may not take effect.
+18/03/16 23:40:43 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 236.5 KB, free 366.1 MB)
+18/03/16 23:40:43 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 22.9 KB, free 366.0 MB)
+18/03/16 23:40:43 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 192.107.77.12:44075 (size: 22.9 KB, free: 366.3 MB)
+18/03/16 23:40:43 INFO SparkContext: Created broadcast 0 from textFile at ReadWrite.scala:382
+18/03/16 23:40:43 INFO FileInputFormat: Total input paths to process : 1
+18/03/16 23:40:43 INFO SparkContext: Starting job: first at ReadWrite.scala:382
+18/03/16 23:40:43 INFO DAGScheduler: Got job 0 (first at ReadWrite.scala:382) with 1 output partitions
+18/03/16 23:40:43 INFO DAGScheduler: Final stage: ResultStage 0 (first at ReadWrite.scala:382)
+18/03/16 23:40:43 INFO DAGScheduler: Parents of final stage: List()
+18/03/16 23:40:43 INFO DAGScheduler: Missing parents: List()
+18/03/16 23:40:43 INFO DAGScheduler: Submitting ResultStage 0 (/home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/modelli/idrico_spark-perceptron-model/metadata MapPartitionsRDD[1] at textFile at ReadWrite.scala:382), which has no missing parents
+18/03/16 23:40:43 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 3.4 KB, free 366.0 MB)
+18/03/16 23:40:43 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.0 KB, free 366.0 MB)
+18/03/16 23:40:43 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 192.107.77.12:44075 (size: 2.0 KB, free: 366.3 MB)
+18/03/16 23:40:43 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1006
+18/03/16 23:40:43 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (/home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/modelli/idrico_spark-perceptron-model/metadata MapPartitionsRDD[1] at textFile at ReadWrite.scala:382) (first 15 tasks are for partitions Vector(0))
+18/03/16 23:40:43 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks
+18/03/16 23:40:43 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 4956 bytes)
+18/03/16 23:40:43 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+18/03/16 23:40:43 INFO Executor: Fetching spark://192.107.77.12:44315/jars/classifierperceptron_2.11-0.1.0-SNAPSHOT.jar with timestamp 1521240042124
+18/03/16 23:40:43 INFO TransportClientFactory: Successfully created connection to /192.107.77.12:44315 after 31 ms (0 ms spent in bootstraps)
+18/03/16 23:40:43 INFO Utils: Fetching spark://192.107.77.12:44315/jars/classifierperceptron_2.11-0.1.0-SNAPSHOT.jar to /tmp/spark-2ec62806-88e9-4c0a-96e2-735b217c5321/userFiles-3153669f-e7c1-4ffe-be73-d7bcadcb2ddd/fetchFileTemp1722812725992695994.tmp
+18/03/16 23:40:43 INFO Executor: Adding file:/tmp/spark-2ec62806-88e9-4c0a-96e2-735b217c5321/userFiles-3153669f-e7c1-4ffe-be73-d7bcadcb2ddd/classifierperceptron_2.11-0.1.0-SNAPSHOT.jar to class loader
+18/03/16 23:40:43 INFO HadoopRDD: Input split: file:/home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/modelli/idrico_spark-perceptron-model/metadata/part-00000:0+172
+18/03/16 23:40:43 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 968 bytes result sent to driver
+18/03/16 23:40:43 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 258 ms on localhost (executor driver) (1/1)
+18/03/16 23:40:43 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+18/03/16 23:40:43 INFO DAGScheduler: ResultStage 0 (first at ReadWrite.scala:382) finished in 0,284 s
+18/03/16 23:40:43 INFO DAGScheduler: Job 0 finished: first at ReadWrite.scala:382, took 0,380389 s
+18/03/16 23:40:43 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 236.5 KB, free 365.8 MB)
+18/03/16 23:40:43 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 22.9 KB, free 365.8 MB)
+18/03/16 23:40:43 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 192.107.77.12:44075 (size: 22.9 KB, free: 366.3 MB)
+18/03/16 23:40:43 INFO SparkContext: Created broadcast 2 from textFile at ReadWrite.scala:382
+18/03/16 23:40:43 INFO FileInputFormat: Total input paths to process : 1
+18/03/16 23:40:43 INFO SparkContext: Starting job: first at ReadWrite.scala:382
+18/03/16 23:40:43 INFO DAGScheduler: Got job 1 (first at ReadWrite.scala:382) with 1 output partitions
+18/03/16 23:40:43 INFO DAGScheduler: Final stage: ResultStage 1 (first at ReadWrite.scala:382)
+18/03/16 23:40:43 INFO DAGScheduler: Parents of final stage: List()
+18/03/16 23:40:43 INFO DAGScheduler: Missing parents: List()
+18/03/16 23:40:43 INFO DAGScheduler: Submitting ResultStage 1 (/home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/modelli/idrico_spark-perceptron-model/stages/0_mlpc_ea6aa9435e45/metadata MapPartitionsRDD[3] at textFile at ReadWrite.scala:382), which has no missing parents
+18/03/16 23:40:43 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 3.4 KB, free 365.8 MB)
+18/03/16 23:40:43 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 2.0 KB, free 365.8 MB)
+18/03/16 23:40:43 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 192.107.77.12:44075 (size: 2.0 KB, free: 366.3 MB)
+18/03/16 23:40:43 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1006
+18/03/16 23:40:43 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (/home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/modelli/idrico_spark-perceptron-model/stages/0_mlpc_ea6aa9435e45/metadata MapPartitionsRDD[3] at textFile at ReadWrite.scala:382) (first 15 tasks are for partitions Vector(0))
+18/03/16 23:40:43 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks
+18/03/16 23:40:43 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1, localhost, executor driver, partition 0, PROCESS_LOCAL, 4983 bytes)
+18/03/16 23:40:43 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+18/03/16 23:40:43 INFO HadoopRDD: Input split: file:/home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/modelli/idrico_spark-perceptron-model/stages/0_mlpc_ea6aa9435e45/metadata/part-00000:0+248
+18/03/16 23:40:43 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 1047 bytes result sent to driver
+18/03/16 23:40:43 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 17 ms on localhost (executor driver) (1/1)
+18/03/16 23:40:43 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+18/03/16 23:40:43 INFO DAGScheduler: ResultStage 1 (first at ReadWrite.scala:382) finished in 0,018 s
+18/03/16 23:40:43 INFO DAGScheduler: Job 1 finished: first at ReadWrite.scala:382, took 0,030449 s
+18/03/16 23:40:43 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 236.5 KB, free 365.6 MB)
+18/03/16 23:40:43 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 22.9 KB, free 365.5 MB)
+18/03/16 23:40:43 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 192.107.77.12:44075 (size: 22.9 KB, free: 366.2 MB)
+18/03/16 23:40:43 INFO SparkContext: Created broadcast 4 from textFile at ReadWrite.scala:382
+18/03/16 23:40:43 INFO FileInputFormat: Total input paths to process : 1
+18/03/16 23:40:43 INFO SparkContext: Starting job: first at ReadWrite.scala:382
+18/03/16 23:40:43 INFO DAGScheduler: Got job 2 (first at ReadWrite.scala:382) with 1 output partitions
+18/03/16 23:40:43 INFO DAGScheduler: Final stage: ResultStage 2 (first at ReadWrite.scala:382)
+18/03/16 23:40:43 INFO DAGScheduler: Parents of final stage: List()
+18/03/16 23:40:43 INFO DAGScheduler: Missing parents: List()
+18/03/16 23:40:43 INFO DAGScheduler: Submitting ResultStage 2 (/home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/modelli/idrico_spark-perceptron-model/stages/0_mlpc_ea6aa9435e45/metadata MapPartitionsRDD[5] at textFile at ReadWrite.scala:382), which has no missing parents
+18/03/16 23:40:43 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 3.4 KB, free 365.5 MB)
+18/03/16 23:40:43 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 2.0 KB, free 365.5 MB)
+18/03/16 23:40:43 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 192.107.77.12:44075 (size: 2.0 KB, free: 366.2 MB)
+18/03/16 23:40:43 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1006
+18/03/16 23:40:43 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (/home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/modelli/idrico_spark-perceptron-model/stages/0_mlpc_ea6aa9435e45/metadata MapPartitionsRDD[5] at textFile at ReadWrite.scala:382) (first 15 tasks are for partitions Vector(0))
+18/03/16 23:40:43 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks
+18/03/16 23:40:43 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2, localhost, executor driver, partition 0, PROCESS_LOCAL, 4983 bytes)
+18/03/16 23:40:43 INFO Executor: Running task 0.0 in stage 2.0 (TID 2)
+18/03/16 23:40:43 INFO HadoopRDD: Input split: file:/home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/modelli/idrico_spark-perceptron-model/stages/0_mlpc_ea6aa9435e45/metadata/part-00000:0+248
+18/03/16 23:40:43 INFO Executor: Finished task 0.0 in stage 2.0 (TID 2). 1047 bytes result sent to driver
+18/03/16 23:40:44 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 11 ms on localhost (executor driver) (1/1)
+18/03/16 23:40:44 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+18/03/16 23:40:44 INFO DAGScheduler: ResultStage 2 (first at ReadWrite.scala:382) finished in 0,013 s
+18/03/16 23:40:44 INFO DAGScheduler: Job 2 finished: first at ReadWrite.scala:382, took 0,023092 s
+18/03/16 23:40:44 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/home/dimartino/Documenti/mario/codice/tesienea/classificatore2/spark-warehouse/').
+18/03/16 23:40:44 INFO SharedState: Warehouse path is 'file:/home/dimartino/Documenti/mario/codice/tesienea/classificatore2/spark-warehouse/'.
+18/03/16 23:40:44 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+18/03/16 23:40:44 INFO SparkContext: Starting job: parquet at MultilayerPerceptronClassifier.scala:379
+18/03/16 23:40:44 INFO DAGScheduler: Got job 3 (parquet at MultilayerPerceptronClassifier.scala:379) with 1 output partitions
+18/03/16 23:40:44 INFO DAGScheduler: Final stage: ResultStage 3 (parquet at MultilayerPerceptronClassifier.scala:379)
+18/03/16 23:40:44 INFO DAGScheduler: Parents of final stage: List()
+18/03/16 23:40:44 INFO DAGScheduler: Missing parents: List()
+18/03/16 23:40:44 INFO DAGScheduler: Submitting ResultStage 3 (MapPartitionsRDD[7] at parquet at MultilayerPerceptronClassifier.scala:379), which has no missing parents
+18/03/16 23:40:44 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 70.1 KB, free 365.5 MB)
+18/03/16 23:40:44 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 24.9 KB, free 365.4 MB)
+18/03/16 23:40:44 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 192.107.77.12:44075 (size: 24.9 KB, free: 366.2 MB)
+18/03/16 23:40:44 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1006
+18/03/16 23:40:44 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 3 (MapPartitionsRDD[7] at parquet at MultilayerPerceptronClassifier.scala:379) (first 15 tasks are for partitions Vector(0))
+18/03/16 23:40:44 INFO TaskSchedulerImpl: Adding task set 3.0 with 1 tasks
+18/03/16 23:40:44 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 3, localhost, executor driver, partition 0, PROCESS_LOCAL, 5142 bytes)
+18/03/16 23:40:44 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 192.107.77.12:44075 in memory (size: 2.0 KB, free: 366.2 MB)
+18/03/16 23:40:44 INFO Executor: Running task 0.0 in stage 3.0 (TID 3)
+18/03/16 23:40:44 INFO BlockManagerInfo: Removed broadcast_2_piece0 on 192.107.77.12:44075 in memory (size: 22.9 KB, free: 366.2 MB)
+18/03/16 23:40:44 INFO BlockManagerInfo: Removed broadcast_5_piece0 on 192.107.77.12:44075 in memory (size: 2.0 KB, free: 366.2 MB)
+18/03/16 23:40:44 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 192.107.77.12:44075 in memory (size: 2.0 KB, free: 366.2 MB)
+18/03/16 23:40:44 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 192.107.77.12:44075 in memory (size: 22.9 KB, free: 366.3 MB)
+18/03/16 23:40:44 INFO Executor: Finished task 0.0 in stage 3.0 (TID 3). 1737 bytes result sent to driver
+18/03/16 23:40:44 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 3) in 192 ms on localhost (executor driver) (1/1)
+18/03/16 23:40:44 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+18/03/16 23:40:44 INFO DAGScheduler: ResultStage 3 (parquet at MultilayerPerceptronClassifier.scala:379) finished in 0,194 s
+18/03/16 23:40:44 INFO DAGScheduler: Job 3 finished: parquet at MultilayerPerceptronClassifier.scala:379, took 0,252256 s
+18/03/16 23:40:45 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 192.107.77.12:44075 in memory (size: 22.9 KB, free: 366.3 MB)
+18/03/16 23:40:45 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 192.107.77.12:44075 in memory (size: 24.9 KB, free: 366.3 MB)
+18/03/16 23:40:46 INFO FileSourceStrategy: Pruning directories with: 
+18/03/16 23:40:46 INFO FileSourceStrategy: Post-Scan Filters: 
+18/03/16 23:40:46 INFO FileSourceStrategy: Output Data Schema: struct<layers: array<int>, weights: vector>
+18/03/16 23:40:46 INFO FileSourceScanExec: Pushed Filters: 
+18/03/16 23:40:46 INFO CodeGenerator: Code generated in 225.258941 ms
+18/03/16 23:40:46 INFO CodeGenerator: Code generated in 40.043812 ms
+18/03/16 23:40:46 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 281.5 KB, free 366.0 MB)
+18/03/16 23:40:46 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 24.4 KB, free 366.0 MB)
+18/03/16 23:40:46 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 192.107.77.12:44075 (size: 24.4 KB, free: 366.3 MB)
+18/03/16 23:40:46 INFO SparkContext: Created broadcast 7 from head at MultilayerPerceptronClassifier.scala:379
+18/03/16 23:40:47 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+18/03/16 23:40:47 INFO SparkContext: Starting job: head at MultilayerPerceptronClassifier.scala:379
+18/03/16 23:40:47 INFO DAGScheduler: Got job 4 (head at MultilayerPerceptronClassifier.scala:379) with 1 output partitions
+18/03/16 23:40:47 INFO DAGScheduler: Final stage: ResultStage 4 (head at MultilayerPerceptronClassifier.scala:379)
+18/03/16 23:40:47 INFO DAGScheduler: Parents of final stage: List()
+18/03/16 23:40:47 INFO DAGScheduler: Missing parents: List()
+18/03/16 23:40:47 INFO DAGScheduler: Submitting ResultStage 4 (MapPartitionsRDD[10] at head at MultilayerPerceptronClassifier.scala:379), which has no missing parents
+18/03/16 23:40:47 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 12.4 KB, free 366.0 MB)
+18/03/16 23:40:47 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 5.3 KB, free 366.0 MB)
+18/03/16 23:40:47 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 192.107.77.12:44075 (size: 5.3 KB, free: 366.3 MB)
+18/03/16 23:40:47 INFO SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:1006
+18/03/16 23:40:47 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 4 (MapPartitionsRDD[10] at head at MultilayerPerceptronClassifier.scala:379) (first 15 tasks are for partitions Vector(0))
+18/03/16 23:40:47 INFO TaskSchedulerImpl: Adding task set 4.0 with 1 tasks
+18/03/16 23:40:47 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 4, localhost, executor driver, partition 0, PROCESS_LOCAL, 5455 bytes)
+18/03/16 23:40:47 INFO Executor: Running task 0.0 in stage 4.0 (TID 4)
+18/03/16 23:40:47 INFO FileScanRDD: Reading File path: file:///home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/modelli/idrico_spark-perceptron-model/stages/0_mlpc_ea6aa9435e45/data/part-00000-fa636bb8-6e34-4982-8522-9df8d6438df0-c000.snappy.parquet, range: 0-1926883, partition values: [empty row]
+18/03/16 23:40:47 INFO ParquetReadSupport: Going to read the following fields from the Parquet file:
+
+Parquet form:
+message spark_schema {
+  optional group layers (LIST) {
+    repeated group list {
+      required int32 element;
+    }
+  }
+  optional group weights {
+    required int32 type (INT_8);
+    optional int32 size;
+    optional group indices (LIST) {
+      repeated group list {
+        required int32 element;
+      }
+    }
+    optional group values (LIST) {
+      repeated group list {
+        required double element;
+      }
+    }
+  }
+}
+
+Catalyst form:
+StructType(StructField(layers,ArrayType(IntegerType,true),true), StructField(weights,org.apache.spark.ml.linalg.VectorUDT@3bfc3ba7,true))
+       
+18/03/16 23:40:47 INFO CodeGenerator: Code generated in 29.05726 ms
+18/03/16 23:40:47 INFO CodeGenerator: Code generated in 20.229125 ms
+18/03/16 23:40:47 INFO InternalParquetRecordReader: RecordReader initialized will read a total of 1 records.
+18/03/16 23:40:47 INFO InternalParquetRecordReader: at row 0. reading next block
+18/03/16 23:40:47 INFO CodecPool: Got brand-new decompressor [.snappy]
+18/03/16 23:40:47 INFO InternalParquetRecordReader: block read in memory in 31 ms. row count = 1
+18/03/16 23:40:47 INFO MemoryStore: Block taskresult_4 stored as bytes in memory (estimated size 1891.8 KB, free 364.1 MB)
+18/03/16 23:40:47 INFO BlockManagerInfo: Added taskresult_4 in memory on 192.107.77.12:44075 (size: 1891.8 KB, free: 364.4 MB)
+18/03/16 23:40:47 INFO Executor: Finished task 0.0 in stage 4.0 (TID 4). 1937183 bytes result sent via BlockManager)
+18/03/16 23:40:47 INFO TransportClientFactory: Successfully created connection to /192.107.77.12:44075 after 2 ms (0 ms spent in bootstraps)
+18/03/16 23:40:47 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 4) in 526 ms on localhost (executor driver) (1/1)
+18/03/16 23:40:47 INFO TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+18/03/16 23:40:47 INFO DAGScheduler: ResultStage 4 (head at MultilayerPerceptronClassifier.scala:379) finished in 0,528 s
+18/03/16 23:40:47 INFO BlockManagerInfo: Removed taskresult_4 on 192.107.77.12:44075 in memory (size: 1891.8 KB, free: 366.3 MB)
+18/03/16 23:40:47 INFO DAGScheduler: Job 4 finished: head at MultilayerPerceptronClassifier.scala:379, took 0,549048 s
+18/03/16 23:40:47 INFO BlockManagerInfo: Removed broadcast_7_piece0 on 192.107.77.12:44075 in memory (size: 24.4 KB, free: 366.3 MB)
+18/03/16 23:40:47 INFO BlockManagerInfo: Removed broadcast_8_piece0 on 192.107.77.12:44075 in memory (size: 5.3 KB, free: 366.3 MB)
+18/03/16 23:40:48 INFO FileSourceStrategy: Pruning directories with: 
+18/03/16 23:40:48 INFO FileSourceStrategy: Post-Scan Filters: (length(trim(value#11)) > 0)
+18/03/16 23:40:48 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+18/03/16 23:40:48 INFO FileSourceScanExec: Pushed Filters: 
+18/03/16 23:40:48 INFO CodeGenerator: Code generated in 11.304422 ms
+18/03/16 23:40:48 INFO CodeGenerator: Code generated in 11.489387 ms
+18/03/16 23:40:48 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 277.3 KB, free 366.0 MB)
+18/03/16 23:40:48 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 23.4 KB, free 366.0 MB)
+18/03/16 23:40:48 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 192.107.77.12:44075 (size: 23.4 KB, free: 366.3 MB)
+18/03/16 23:40:48 INFO SparkContext: Created broadcast 9 from load at classificatorePerceptron.scala:16
+18/03/16 23:40:48 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+18/03/16 23:40:48 INFO SparkContext: Starting job: load at classificatorePerceptron.scala:16
+18/03/16 23:40:48 INFO DAGScheduler: Got job 5 (load at classificatorePerceptron.scala:16) with 1 output partitions
+18/03/16 23:40:48 INFO DAGScheduler: Final stage: ResultStage 5 (load at classificatorePerceptron.scala:16)
+18/03/16 23:40:48 INFO DAGScheduler: Parents of final stage: List()
+18/03/16 23:40:48 INFO DAGScheduler: Missing parents: List()
+18/03/16 23:40:48 INFO DAGScheduler: Submitting ResultStage 5 (MapPartitionsRDD[13] at load at classificatorePerceptron.scala:16), which has no missing parents
+18/03/16 23:40:48 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 8.2 KB, free 366.0 MB)
+18/03/16 23:40:48 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 4.3 KB, free 366.0 MB)
+18/03/16 23:40:48 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 192.107.77.12:44075 (size: 4.3 KB, free: 366.3 MB)
+18/03/16 23:40:48 INFO SparkContext: Created broadcast 10 from broadcast at DAGScheduler.scala:1006
+18/03/16 23:40:48 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 5 (MapPartitionsRDD[13] at load at classificatorePerceptron.scala:16) (first 15 tasks are for partitions Vector(0))
+18/03/16 23:40:48 INFO TaskSchedulerImpl: Adding task set 5.0 with 1 tasks
+18/03/16 23:40:48 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 5, localhost, executor driver, partition 0, PROCESS_LOCAL, 5338 bytes)
+18/03/16 23:40:48 INFO Executor: Running task 0.0 in stage 5.0 (TID 5)
+18/03/16 23:40:48 INFO FileScanRDD: Reading File path: file:///home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/data/test_output.txt, range: 0-169, partition values: [empty row]
+18/03/16 23:40:48 INFO CodeGenerator: Code generated in 8.489204 ms
+18/03/16 23:40:48 INFO Executor: Finished task 0.0 in stage 5.0 (TID 5). 1267 bytes result sent to driver
+18/03/16 23:40:48 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 5) in 29 ms on localhost (executor driver) (1/1)
+18/03/16 23:40:48 INFO TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+18/03/16 23:40:48 INFO DAGScheduler: ResultStage 5 (load at classificatorePerceptron.scala:16) finished in 0,029 s
+18/03/16 23:40:48 INFO DAGScheduler: Job 5 finished: load at classificatorePerceptron.scala:16, took 0,048618 s
+18/03/16 23:40:48 INFO FileSourceStrategy: Pruning directories with: 
+18/03/16 23:40:48 INFO FileSourceStrategy: Post-Scan Filters: 
+18/03/16 23:40:48 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+18/03/16 23:40:48 INFO FileSourceScanExec: Pushed Filters: 
+18/03/16 23:40:48 INFO CodeGenerator: Code generated in 7.307027 ms
+18/03/16 23:40:48 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 277.3 KB, free 365.7 MB)
+18/03/16 23:40:48 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 23.4 KB, free 365.7 MB)
+18/03/16 23:40:48 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on 192.107.77.12:44075 (size: 23.4 KB, free: 366.3 MB)
+18/03/16 23:40:48 INFO SparkContext: Created broadcast 11 from load at classificatorePerceptron.scala:16
+18/03/16 23:40:48 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+18/03/16 23:40:49 INFO FileSourceStrategy: Pruning directories with: 
+18/03/16 23:40:49 INFO FileSourceStrategy: Post-Scan Filters: 
+18/03/16 23:40:49 INFO FileSourceStrategy: Output Data Schema: struct<text: string>
+18/03/16 23:40:49 INFO FileSourceScanExec: Pushed Filters: 
+18/03/16 23:40:49 INFO CodeGenerator: Code generated in 8.929715 ms
+18/03/16 23:40:49 INFO CodeGenerator: Code generated in 26.168713 ms
+18/03/16 23:40:49 INFO MemoryStore: Block broadcast_12 stored as values in memory (estimated size 277.4 KB, free 365.4 MB)
+18/03/16 23:40:49 INFO MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 23.5 KB, free 365.4 MB)
+18/03/16 23:40:49 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 192.107.77.12:44075 (size: 23.5 KB, free: 366.2 MB)
+18/03/16 23:40:49 INFO SparkContext: Created broadcast 12 from head at classificatorePerceptron.scala:25
+18/03/16 23:40:49 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+18/03/16 23:40:49 INFO SparkContext: Starting job: head at classificatorePerceptron.scala:25
+18/03/16 23:40:49 INFO DAGScheduler: Got job 6 (head at classificatorePerceptron.scala:25) with 1 output partitions
+18/03/16 23:40:49 INFO DAGScheduler: Final stage: ResultStage 6 (head at classificatorePerceptron.scala:25)
+18/03/16 23:40:49 INFO DAGScheduler: Parents of final stage: List()
+18/03/16 23:40:49 INFO DAGScheduler: Missing parents: List()
+18/03/16 23:40:49 INFO DAGScheduler: Submitting ResultStage 6 (MapPartitionsRDD[21] at head at classificatorePerceptron.scala:25), which has no missing parents
+18/03/16 23:40:49 INFO MemoryStore: Block broadcast_13 stored as values in memory (estimated size 1903.1 KB, free 363.5 MB)
+18/03/16 23:40:49 INFO MemoryStore: Block broadcast_13_piece0 stored as bytes in memory (estimated size 1893.1 KB, free 361.7 MB)
+18/03/16 23:40:49 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on 192.107.77.12:44075 (size: 1893.1 KB, free: 364.4 MB)
+18/03/16 23:40:49 INFO SparkContext: Created broadcast 13 from broadcast at DAGScheduler.scala:1006
+18/03/16 23:40:49 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 6 (MapPartitionsRDD[21] at head at classificatorePerceptron.scala:25) (first 15 tasks are for partitions Vector(0))
+18/03/16 23:40:49 INFO TaskSchedulerImpl: Adding task set 6.0 with 1 tasks
+18/03/16 23:40:49 INFO TaskSetManager: Starting task 0.0 in stage 6.0 (TID 6, localhost, executor driver, partition 0, PROCESS_LOCAL, 5338 bytes)
+18/03/16 23:40:49 INFO Executor: Running task 0.0 in stage 6.0 (TID 6)
+18/03/16 23:40:49 INFO FileScanRDD: Reading File path: file:///home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/data/test_output.txt, range: 0-169, partition values: [empty row]
+18/03/16 23:40:49 ERROR Executor: Exception in task 0.0 in stage 6.0 (TID 6)
+org.apache.spark.SparkException: Failed to execute user defined function($anonfun$1: (vector) => double)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIterator.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8$$anon$1.hasNext(WholeStageCodegenExec.scala:395)
+	at org.apache.spark.sql.execution.SparkPlan$$anonfun$2.apply(SparkPlan.scala:234)
+	at org.apache.spark.sql.execution.SparkPlan$$anonfun$2.apply(SparkPlan.scala:228)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsInternal$1$$anonfun$apply$25.apply(RDD.scala:827)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsInternal$1$$anonfun$apply$25.apply(RDD.scala:827)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:38)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
+	at org.apache.spark.scheduler.Task.run(Task.scala:108)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:338)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: requirement failed: A & B Dimension mismatch!
+	at scala.Predef$.require(Predef.scala:224)
+	at org.apache.spark.ml.ann.BreezeUtil$.dgemm(BreezeUtil.scala:41)
+	at org.apache.spark.ml.ann.AffineLayerModel.eval(Layer.scala:164)
+	at org.apache.spark.ml.ann.FeedForwardModel.forward(Layer.scala:483)
+	at org.apache.spark.ml.ann.FeedForwardModel.predict(Layer.scala:530)
+	at org.apache.spark.ml.classification.MultilayerPerceptronClassificationModel.predict(MultilayerPerceptronClassifier.scala:327)
+	at org.apache.spark.ml.classification.MultilayerPerceptronClassificationModel.predict(MultilayerPerceptronClassifier.scala:301)
+	at org.apache.spark.ml.PredictionModel$$anonfun$1.apply(Predictor.scala:215)
+	at org.apache.spark.ml.PredictionModel$$anonfun$1.apply(Predictor.scala:214)
+	... 16 more
+18/03/16 23:40:49 WARN TaskSetManager: Lost task 0.0 in stage 6.0 (TID 6, localhost, executor driver): org.apache.spark.SparkException: Failed to execute user defined function($anonfun$1: (vector) => double)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIterator.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8$$anon$1.hasNext(WholeStageCodegenExec.scala:395)
+	at org.apache.spark.sql.execution.SparkPlan$$anonfun$2.apply(SparkPlan.scala:234)
+	at org.apache.spark.sql.execution.SparkPlan$$anonfun$2.apply(SparkPlan.scala:228)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsInternal$1$$anonfun$apply$25.apply(RDD.scala:827)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsInternal$1$$anonfun$apply$25.apply(RDD.scala:827)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:38)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
+	at org.apache.spark.scheduler.Task.run(Task.scala:108)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:338)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: requirement failed: A & B Dimension mismatch!
+	at scala.Predef$.require(Predef.scala:224)
+	at org.apache.spark.ml.ann.BreezeUtil$.dgemm(BreezeUtil.scala:41)
+	at org.apache.spark.ml.ann.AffineLayerModel.eval(Layer.scala:164)
+	at org.apache.spark.ml.ann.FeedForwardModel.forward(Layer.scala:483)
+	at org.apache.spark.ml.ann.FeedForwardModel.predict(Layer.scala:530)
+	at org.apache.spark.ml.classification.MultilayerPerceptronClassificationModel.predict(MultilayerPerceptronClassifier.scala:327)
+	at org.apache.spark.ml.classification.MultilayerPerceptronClassificationModel.predict(MultilayerPerceptronClassifier.scala:301)
+	at org.apache.spark.ml.PredictionModel$$anonfun$1.apply(Predictor.scala:215)
+	at org.apache.spark.ml.PredictionModel$$anonfun$1.apply(Predictor.scala:214)
+	... 16 more
+
+18/03/16 23:40:49 ERROR TaskSetManager: Task 0 in stage 6.0 failed 1 times; aborting job
+18/03/16 23:40:49 INFO TaskSchedulerImpl: Removed TaskSet 6.0, whose tasks have all completed, from pool 
+18/03/16 23:40:49 INFO TaskSchedulerImpl: Cancelling stage 6
+18/03/16 23:40:49 INFO DAGScheduler: ResultStage 6 (head at classificatorePerceptron.scala:25) failed in 0,087 s due to Job aborted due to stage failure: Task 0 in stage 6.0 failed 1 times, most recent failure: Lost task 0.0 in stage 6.0 (TID 6, localhost, executor driver): org.apache.spark.SparkException: Failed to execute user defined function($anonfun$1: (vector) => double)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIterator.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8$$anon$1.hasNext(WholeStageCodegenExec.scala:395)
+	at org.apache.spark.sql.execution.SparkPlan$$anonfun$2.apply(SparkPlan.scala:234)
+	at org.apache.spark.sql.execution.SparkPlan$$anonfun$2.apply(SparkPlan.scala:228)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsInternal$1$$anonfun$apply$25.apply(RDD.scala:827)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsInternal$1$$anonfun$apply$25.apply(RDD.scala:827)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:38)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
+	at org.apache.spark.scheduler.Task.run(Task.scala:108)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:338)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: requirement failed: A & B Dimension mismatch!
+	at scala.Predef$.require(Predef.scala:224)
+	at org.apache.spark.ml.ann.BreezeUtil$.dgemm(BreezeUtil.scala:41)
+	at org.apache.spark.ml.ann.AffineLayerModel.eval(Layer.scala:164)
+	at org.apache.spark.ml.ann.FeedForwardModel.forward(Layer.scala:483)
+	at org.apache.spark.ml.ann.FeedForwardModel.predict(Layer.scala:530)
+	at org.apache.spark.ml.classification.MultilayerPerceptronClassificationModel.predict(MultilayerPerceptronClassifier.scala:327)
+	at org.apache.spark.ml.classification.MultilayerPerceptronClassificationModel.predict(MultilayerPerceptronClassifier.scala:301)
+	at org.apache.spark.ml.PredictionModel$$anonfun$1.apply(Predictor.scala:215)
+	at org.apache.spark.ml.PredictionModel$$anonfun$1.apply(Predictor.scala:214)
+	... 16 more
+
+Driver stacktrace:
+18/03/16 23:40:49 INFO DAGScheduler: Job 6 failed: head at classificatorePerceptron.scala:25, took 0,109204 s
+Exception in thread "main" org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 6.0 failed 1 times, most recent failure: Lost task 0.0 in stage 6.0 (TID 6, localhost, executor driver): org.apache.spark.SparkException: Failed to execute user defined function($anonfun$1: (vector) => double)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIterator.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8$$anon$1.hasNext(WholeStageCodegenExec.scala:395)
+	at org.apache.spark.sql.execution.SparkPlan$$anonfun$2.apply(SparkPlan.scala:234)
+	at org.apache.spark.sql.execution.SparkPlan$$anonfun$2.apply(SparkPlan.scala:228)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsInternal$1$$anonfun$apply$25.apply(RDD.scala:827)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsInternal$1$$anonfun$apply$25.apply(RDD.scala:827)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:38)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
+	at org.apache.spark.scheduler.Task.run(Task.scala:108)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:338)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: requirement failed: A & B Dimension mismatch!
+	at scala.Predef$.require(Predef.scala:224)
+	at org.apache.spark.ml.ann.BreezeUtil$.dgemm(BreezeUtil.scala:41)
+	at org.apache.spark.ml.ann.AffineLayerModel.eval(Layer.scala:164)
+	at org.apache.spark.ml.ann.FeedForwardModel.forward(Layer.scala:483)
+	at org.apache.spark.ml.ann.FeedForwardModel.predict(Layer.scala:530)
+	at org.apache.spark.ml.classification.MultilayerPerceptronClassificationModel.predict(MultilayerPerceptronClassifier.scala:327)
+	at org.apache.spark.ml.classification.MultilayerPerceptronClassificationModel.predict(MultilayerPerceptronClassifier.scala:301)
+	at org.apache.spark.ml.PredictionModel$$anonfun$1.apply(Predictor.scala:215)
+	at org.apache.spark.ml.PredictionModel$$anonfun$1.apply(Predictor.scala:214)
+	... 16 more
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1517)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1505)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1504)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1504)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:814)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:814)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:814)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1732)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1687)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1676)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:630)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2029)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2050)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2069)
+	at org.apache.spark.sql.execution.SparkPlan.executeTake(SparkPlan.scala:336)
+	at org.apache.spark.sql.execution.CollectLimitExec.executeCollect(limit.scala:38)
+	at org.apache.spark.sql.Dataset.org$apache$spark$sql$Dataset$$collectFromPlan(Dataset.scala:2861)
+	at org.apache.spark.sql.Dataset$$anonfun$head$1.apply(Dataset.scala:2150)
+	at org.apache.spark.sql.Dataset$$anonfun$head$1.apply(Dataset.scala:2150)
+	at org.apache.spark.sql.Dataset$$anonfun$55.apply(Dataset.scala:2842)
+	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:65)
+	at org.apache.spark.sql.Dataset.withAction(Dataset.scala:2841)
+	at org.apache.spark.sql.Dataset.head(Dataset.scala:2150)
+	at org.apache.spark.sql.Dataset.head(Dataset.scala:2157)
+	at ClassifierPerceptron$.main(classificatorePerceptron.scala:25)
+	at ClassifierPerceptron.main(classificatorePerceptron.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.spark.deploy.SparkSubmit$.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:775)
+	at org.apache.spark.deploy.SparkSubmit$.doRunMain$1(SparkSubmit.scala:180)
+	at org.apache.spark.deploy.SparkSubmit$.submit(SparkSubmit.scala:205)
+	at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:119)
+	at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+Caused by: org.apache.spark.SparkException: Failed to execute user defined function($anonfun$1: (vector) => double)
+	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIterator.processNext(Unknown Source)
+	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+	at org.apache.spark.sql.execution.WholeStageCodegenExec$$anonfun$8$$anon$1.hasNext(WholeStageCodegenExec.scala:395)
+	at org.apache.spark.sql.execution.SparkPlan$$anonfun$2.apply(SparkPlan.scala:234)
+	at org.apache.spark.sql.execution.SparkPlan$$anonfun$2.apply(SparkPlan.scala:228)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsInternal$1$$anonfun$apply$25.apply(RDD.scala:827)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitionsInternal$1$$anonfun$apply$25.apply(RDD.scala:827)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:38)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:323)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:287)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:87)
+	at org.apache.spark.scheduler.Task.run(Task.scala:108)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:338)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalArgumentException: requirement failed: A & B Dimension mismatch!
+	at scala.Predef$.require(Predef.scala:224)
+	at org.apache.spark.ml.ann.BreezeUtil$.dgemm(BreezeUtil.scala:41)
+	at org.apache.spark.ml.ann.AffineLayerModel.eval(Layer.scala:164)
+	at org.apache.spark.ml.ann.FeedForwardModel.forward(Layer.scala:483)
+	at org.apache.spark.ml.ann.FeedForwardModel.predict(Layer.scala:530)
+	at org.apache.spark.ml.classification.MultilayerPerceptronClassificationModel.predict(MultilayerPerceptronClassifier.scala:327)
+	at org.apache.spark.ml.classification.MultilayerPerceptronClassificationModel.predict(MultilayerPerceptronClassifier.scala:301)
+	at org.apache.spark.ml.PredictionModel$$anonfun$1.apply(Predictor.scala:215)
+	at org.apache.spark.ml.PredictionModel$$anonfun$1.apply(Predictor.scala:214)
+	... 16 more
+18/03/16 23:40:49 INFO SparkContext: Invoking stop() from shutdown hook
+18/03/16 23:40:49 INFO SparkUI: Stopped Spark web UI at http://192.107.77.12:4040
+18/03/16 23:40:49 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+18/03/16 23:40:49 INFO MemoryStore: MemoryStore cleared
+18/03/16 23:40:49 INFO BlockManager: BlockManager stopped
+18/03/16 23:40:49 INFO BlockManagerMaster: BlockManagerMaster stopped
+18/03/16 23:40:49 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+18/03/16 23:40:49 INFO SparkContext: Successfully stopped SparkContext
+18/03/16 23:40:49 INFO ShutdownHookManager: Shutdown hook called
+18/03/16 23:40:49 INFO ShutdownHookManager: Deleting directory /tmp/spark-2ec62806-88e9-4c0a-96e2-735b217c5321
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+18/03/16 23:44:06 INFO SparkContext: Running Spark version 2.2.1
+18/03/16 23:44:06 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/03/16 23:44:06 INFO SparkContext: Submitted application: ClassifierPerceptron
+18/03/16 23:44:06 INFO SecurityManager: Changing view acls to: dimartino
+18/03/16 23:44:06 INFO SecurityManager: Changing modify acls to: dimartino
+18/03/16 23:44:06 INFO SecurityManager: Changing view acls groups to: 
+18/03/16 23:44:06 INFO SecurityManager: Changing modify acls groups to: 
+18/03/16 23:44:06 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(dimartino); groups with view permissions: Set(); users  with modify permissions: Set(dimartino); groups with modify permissions: Set()
+18/03/16 23:44:07 INFO Utils: Successfully started service 'sparkDriver' on port 45095.
+18/03/16 23:44:07 INFO SparkEnv: Registering MapOutputTracker
+18/03/16 23:44:07 INFO SparkEnv: Registering BlockManagerMaster
+18/03/16 23:44:07 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+18/03/16 23:44:07 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+18/03/16 23:44:07 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-0332d948-6def-453c-b48d-bf8d98eddfac
+18/03/16 23:44:07 INFO MemoryStore: MemoryStore started with capacity 366.3 MB
+18/03/16 23:44:07 INFO SparkEnv: Registering OutputCommitCoordinator
+18/03/16 23:44:07 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+18/03/16 23:44:07 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://192.107.77.12:4040
+18/03/16 23:44:07 INFO SparkContext: Added JAR file:/home/dimartino/Documenti/mario/codice/tesienea/classificatore2/target/scala-2.11/classifierperceptron_2.11-0.1.0-SNAPSHOT.jar at spark://192.107.77.12:45095/jars/classifierperceptron_2.11-0.1.0-SNAPSHOT.jar with timestamp 1521240247526
+18/03/16 23:44:07 INFO Executor: Starting executor ID driver on host localhost
+18/03/16 23:44:07 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 40885.
+18/03/16 23:44:07 INFO NettyBlockTransferService: Server created on 192.107.77.12:40885
+18/03/16 23:44:07 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+18/03/16 23:44:07 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 192.107.77.12, 40885, None)
+18/03/16 23:44:07 INFO BlockManagerMasterEndpoint: Registering block manager 192.107.77.12:40885 with 366.3 MB RAM, BlockManagerId(driver, 192.107.77.12, 40885, None)
+18/03/16 23:44:07 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 192.107.77.12, 40885, None)
+18/03/16 23:44:07 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 192.107.77.12, 40885, None)
+18/03/16 23:44:07 WARN SparkContext: Using an existing SparkContext; some configuration may not take effect.
+18/03/16 23:44:08 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 236.5 KB, free 366.1 MB)
+18/03/16 23:44:08 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 22.9 KB, free 366.0 MB)
+18/03/16 23:44:08 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 192.107.77.12:40885 (size: 22.9 KB, free: 366.3 MB)
+18/03/16 23:44:08 INFO SparkContext: Created broadcast 0 from textFile at ReadWrite.scala:382
+18/03/16 23:44:08 INFO FileInputFormat: Total input paths to process : 1
+18/03/16 23:44:08 INFO SparkContext: Starting job: first at ReadWrite.scala:382
+18/03/16 23:44:08 INFO DAGScheduler: Got job 0 (first at ReadWrite.scala:382) with 1 output partitions
+18/03/16 23:44:08 INFO DAGScheduler: Final stage: ResultStage 0 (first at ReadWrite.scala:382)
+18/03/16 23:44:08 INFO DAGScheduler: Parents of final stage: List()
+18/03/16 23:44:08 INFO DAGScheduler: Missing parents: List()
+18/03/16 23:44:08 INFO DAGScheduler: Submitting ResultStage 0 (/home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/modelli/idrico_spark-perceptron-model/metadata MapPartitionsRDD[1] at textFile at ReadWrite.scala:382), which has no missing parents
+18/03/16 23:44:08 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 3.4 KB, free 366.0 MB)
+18/03/16 23:44:08 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.0 KB, free 366.0 MB)
+18/03/16 23:44:08 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 192.107.77.12:40885 (size: 2.0 KB, free: 366.3 MB)
+18/03/16 23:44:08 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1006
+18/03/16 23:44:08 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (/home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/modelli/idrico_spark-perceptron-model/metadata MapPartitionsRDD[1] at textFile at ReadWrite.scala:382) (first 15 tasks are for partitions Vector(0))
+18/03/16 23:44:08 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks
+18/03/16 23:44:08 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, executor driver, partition 0, PROCESS_LOCAL, 4956 bytes)
+18/03/16 23:44:08 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+18/03/16 23:44:08 INFO Executor: Fetching spark://192.107.77.12:45095/jars/classifierperceptron_2.11-0.1.0-SNAPSHOT.jar with timestamp 1521240247526
+18/03/16 23:44:08 INFO TransportClientFactory: Successfully created connection to /192.107.77.12:45095 after 32 ms (0 ms spent in bootstraps)
+18/03/16 23:44:08 INFO Utils: Fetching spark://192.107.77.12:45095/jars/classifierperceptron_2.11-0.1.0-SNAPSHOT.jar to /tmp/spark-86302215-ef6a-4c3a-b23a-3b609c5751b8/userFiles-9f9d5e95-f840-445d-8455-83f0bc369ac4/fetchFileTemp2335708866460692279.tmp
+18/03/16 23:44:09 INFO Executor: Adding file:/tmp/spark-86302215-ef6a-4c3a-b23a-3b609c5751b8/userFiles-9f9d5e95-f840-445d-8455-83f0bc369ac4/classifierperceptron_2.11-0.1.0-SNAPSHOT.jar to class loader
+18/03/16 23:44:09 INFO HadoopRDD: Input split: file:/home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/modelli/idrico_spark-perceptron-model/metadata/part-00000:0+172
+18/03/16 23:44:09 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1011 bytes result sent to driver
+18/03/16 23:44:09 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 254 ms on localhost (executor driver) (1/1)
+18/03/16 23:44:09 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+18/03/16 23:44:09 INFO DAGScheduler: ResultStage 0 (first at ReadWrite.scala:382) finished in 0,280 s
+18/03/16 23:44:09 INFO DAGScheduler: Job 0 finished: first at ReadWrite.scala:382, took 0,381614 s
+18/03/16 23:44:09 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 236.5 KB, free 365.8 MB)
+18/03/16 23:44:09 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 22.9 KB, free 365.8 MB)
+18/03/16 23:44:09 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 192.107.77.12:40885 (size: 22.9 KB, free: 366.3 MB)
+18/03/16 23:44:09 INFO SparkContext: Created broadcast 2 from textFile at ReadWrite.scala:382
+18/03/16 23:44:09 INFO FileInputFormat: Total input paths to process : 1
+18/03/16 23:44:09 INFO SparkContext: Starting job: first at ReadWrite.scala:382
+18/03/16 23:44:09 INFO DAGScheduler: Got job 1 (first at ReadWrite.scala:382) with 1 output partitions
+18/03/16 23:44:09 INFO DAGScheduler: Final stage: ResultStage 1 (first at ReadWrite.scala:382)
+18/03/16 23:44:09 INFO DAGScheduler: Parents of final stage: List()
+18/03/16 23:44:09 INFO DAGScheduler: Missing parents: List()
+18/03/16 23:44:09 INFO DAGScheduler: Submitting ResultStage 1 (/home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/modelli/idrico_spark-perceptron-model/stages/0_mlpc_ea6aa9435e45/metadata MapPartitionsRDD[3] at textFile at ReadWrite.scala:382), which has no missing parents
+18/03/16 23:44:09 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 3.4 KB, free 365.8 MB)
+18/03/16 23:44:09 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 2.0 KB, free 365.8 MB)
+18/03/16 23:44:09 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 192.107.77.12:40885 (size: 2.0 KB, free: 366.3 MB)
+18/03/16 23:44:09 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1006
+18/03/16 23:44:09 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (/home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/modelli/idrico_spark-perceptron-model/stages/0_mlpc_ea6aa9435e45/metadata MapPartitionsRDD[3] at textFile at ReadWrite.scala:382) (first 15 tasks are for partitions Vector(0))
+18/03/16 23:44:09 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks
+18/03/16 23:44:09 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1, localhost, executor driver, partition 0, PROCESS_LOCAL, 4983 bytes)
+18/03/16 23:44:09 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+18/03/16 23:44:09 INFO HadoopRDD: Input split: file:/home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/modelli/idrico_spark-perceptron-model/stages/0_mlpc_ea6aa9435e45/metadata/part-00000:0+248
+18/03/16 23:44:09 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 1047 bytes result sent to driver
+18/03/16 23:44:09 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 17 ms on localhost (executor driver) (1/1)
+18/03/16 23:44:09 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+18/03/16 23:44:09 INFO DAGScheduler: ResultStage 1 (first at ReadWrite.scala:382) finished in 0,018 s
+18/03/16 23:44:09 INFO DAGScheduler: Job 1 finished: first at ReadWrite.scala:382, took 0,031700 s
+18/03/16 23:44:09 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 236.5 KB, free 365.6 MB)
+18/03/16 23:44:09 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 22.9 KB, free 365.5 MB)
+18/03/16 23:44:09 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 192.107.77.12:40885 (size: 22.9 KB, free: 366.2 MB)
+18/03/16 23:44:09 INFO SparkContext: Created broadcast 4 from textFile at ReadWrite.scala:382
+18/03/16 23:44:09 INFO FileInputFormat: Total input paths to process : 1
+18/03/16 23:44:09 INFO SparkContext: Starting job: first at ReadWrite.scala:382
+18/03/16 23:44:09 INFO DAGScheduler: Got job 2 (first at ReadWrite.scala:382) with 1 output partitions
+18/03/16 23:44:09 INFO DAGScheduler: Final stage: ResultStage 2 (first at ReadWrite.scala:382)
+18/03/16 23:44:09 INFO DAGScheduler: Parents of final stage: List()
+18/03/16 23:44:09 INFO DAGScheduler: Missing parents: List()
+18/03/16 23:44:09 INFO DAGScheduler: Submitting ResultStage 2 (/home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/modelli/idrico_spark-perceptron-model/stages/0_mlpc_ea6aa9435e45/metadata MapPartitionsRDD[5] at textFile at ReadWrite.scala:382), which has no missing parents
+18/03/16 23:44:09 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 3.4 KB, free 365.5 MB)
+18/03/16 23:44:09 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 2.0 KB, free 365.5 MB)
+18/03/16 23:44:09 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 192.107.77.12:40885 (size: 2.0 KB, free: 366.2 MB)
+18/03/16 23:44:09 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1006
+18/03/16 23:44:09 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 2 (/home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/modelli/idrico_spark-perceptron-model/stages/0_mlpc_ea6aa9435e45/metadata MapPartitionsRDD[5] at textFile at ReadWrite.scala:382) (first 15 tasks are for partitions Vector(0))
+18/03/16 23:44:09 INFO TaskSchedulerImpl: Adding task set 2.0 with 1 tasks
+18/03/16 23:44:09 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2, localhost, executor driver, partition 0, PROCESS_LOCAL, 4983 bytes)
+18/03/16 23:44:09 INFO Executor: Running task 0.0 in stage 2.0 (TID 2)
+18/03/16 23:44:09 INFO HadoopRDD: Input split: file:/home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/modelli/idrico_spark-perceptron-model/stages/0_mlpc_ea6aa9435e45/metadata/part-00000:0+248
+18/03/16 23:44:09 INFO Executor: Finished task 0.0 in stage 2.0 (TID 2). 1047 bytes result sent to driver
+18/03/16 23:44:09 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 13 ms on localhost (executor driver) (1/1)
+18/03/16 23:44:09 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+18/03/16 23:44:09 INFO DAGScheduler: ResultStage 2 (first at ReadWrite.scala:382) finished in 0,014 s
+18/03/16 23:44:09 INFO DAGScheduler: Job 2 finished: first at ReadWrite.scala:382, took 0,028232 s
+18/03/16 23:44:09 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/home/dimartino/Documenti/mario/codice/tesienea/classificatore2/spark-warehouse/').
+18/03/16 23:44:09 INFO SharedState: Warehouse path is 'file:/home/dimartino/Documenti/mario/codice/tesienea/classificatore2/spark-warehouse/'.
+18/03/16 23:44:09 INFO StateStoreCoordinatorRef: Registered StateStoreCoordinator endpoint
+18/03/16 23:44:10 INFO SparkContext: Starting job: parquet at MultilayerPerceptronClassifier.scala:379
+18/03/16 23:44:10 INFO DAGScheduler: Got job 3 (parquet at MultilayerPerceptronClassifier.scala:379) with 1 output partitions
+18/03/16 23:44:10 INFO DAGScheduler: Final stage: ResultStage 3 (parquet at MultilayerPerceptronClassifier.scala:379)
+18/03/16 23:44:10 INFO DAGScheduler: Parents of final stage: List()
+18/03/16 23:44:10 INFO DAGScheduler: Missing parents: List()
+18/03/16 23:44:10 INFO DAGScheduler: Submitting ResultStage 3 (MapPartitionsRDD[7] at parquet at MultilayerPerceptronClassifier.scala:379), which has no missing parents
+18/03/16 23:44:10 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 70.1 KB, free 365.5 MB)
+18/03/16 23:44:10 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 24.9 KB, free 365.4 MB)
+18/03/16 23:44:10 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 192.107.77.12:40885 (size: 24.9 KB, free: 366.2 MB)
+18/03/16 23:44:10 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1006
+18/03/16 23:44:10 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 3 (MapPartitionsRDD[7] at parquet at MultilayerPerceptronClassifier.scala:379) (first 15 tasks are for partitions Vector(0))
+18/03/16 23:44:10 INFO TaskSchedulerImpl: Adding task set 3.0 with 1 tasks
+18/03/16 23:44:10 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 3, localhost, executor driver, partition 0, PROCESS_LOCAL, 5142 bytes)
+18/03/16 23:44:10 INFO Executor: Running task 0.0 in stage 3.0 (TID 3)
+18/03/16 23:44:10 INFO BlockManagerInfo: Removed broadcast_2_piece0 on 192.107.77.12:40885 in memory (size: 22.9 KB, free: 366.2 MB)
+18/03/16 23:44:10 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 192.107.77.12:40885 in memory (size: 2.0 KB, free: 366.2 MB)
+18/03/16 23:44:10 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 192.107.77.12:40885 in memory (size: 2.0 KB, free: 366.2 MB)
+18/03/16 23:44:10 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 192.107.77.12:40885 in memory (size: 22.9 KB, free: 366.3 MB)
+18/03/16 23:44:10 INFO BlockManagerInfo: Removed broadcast_5_piece0 on 192.107.77.12:40885 in memory (size: 2.0 KB, free: 366.3 MB)
+18/03/16 23:44:10 INFO Executor: Finished task 0.0 in stage 3.0 (TID 3). 1737 bytes result sent to driver
+18/03/16 23:44:10 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 3) in 202 ms on localhost (executor driver) (1/1)
+18/03/16 23:44:10 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+18/03/16 23:44:10 INFO DAGScheduler: ResultStage 3 (parquet at MultilayerPerceptronClassifier.scala:379) finished in 0,203 s
+18/03/16 23:44:10 INFO DAGScheduler: Job 3 finished: parquet at MultilayerPerceptronClassifier.scala:379, took 0,256361 s
+18/03/16 23:44:11 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 192.107.77.12:40885 in memory (size: 22.9 KB, free: 366.3 MB)
+18/03/16 23:44:11 INFO BlockManagerInfo: Removed broadcast_6_piece0 on 192.107.77.12:40885 in memory (size: 24.9 KB, free: 366.3 MB)
+18/03/16 23:44:11 INFO FileSourceStrategy: Pruning directories with: 
+18/03/16 23:44:11 INFO FileSourceStrategy: Post-Scan Filters: 
+18/03/16 23:44:11 INFO FileSourceStrategy: Output Data Schema: struct<layers: array<int>, weights: vector>
+18/03/16 23:44:11 INFO FileSourceScanExec: Pushed Filters: 
+18/03/16 23:44:12 INFO CodeGenerator: Code generated in 238.035735 ms
+18/03/16 23:44:12 INFO CodeGenerator: Code generated in 40.694832 ms
+18/03/16 23:44:12 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 281.5 KB, free 366.0 MB)
+18/03/16 23:44:12 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 24.4 KB, free 366.0 MB)
+18/03/16 23:44:12 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 192.107.77.12:40885 (size: 24.4 KB, free: 366.3 MB)
+18/03/16 23:44:12 INFO SparkContext: Created broadcast 7 from head at MultilayerPerceptronClassifier.scala:379
+18/03/16 23:44:12 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+18/03/16 23:44:12 INFO SparkContext: Starting job: head at MultilayerPerceptronClassifier.scala:379
+18/03/16 23:44:12 INFO DAGScheduler: Got job 4 (head at MultilayerPerceptronClassifier.scala:379) with 1 output partitions
+18/03/16 23:44:12 INFO DAGScheduler: Final stage: ResultStage 4 (head at MultilayerPerceptronClassifier.scala:379)
+18/03/16 23:44:12 INFO DAGScheduler: Parents of final stage: List()
+18/03/16 23:44:12 INFO DAGScheduler: Missing parents: List()
+18/03/16 23:44:12 INFO DAGScheduler: Submitting ResultStage 4 (MapPartitionsRDD[10] at head at MultilayerPerceptronClassifier.scala:379), which has no missing parents
+18/03/16 23:44:12 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 12.4 KB, free 366.0 MB)
+18/03/16 23:44:12 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 5.3 KB, free 366.0 MB)
+18/03/16 23:44:12 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 192.107.77.12:40885 (size: 5.3 KB, free: 366.3 MB)
+18/03/16 23:44:12 INFO SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:1006
+18/03/16 23:44:12 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 4 (MapPartitionsRDD[10] at head at MultilayerPerceptronClassifier.scala:379) (first 15 tasks are for partitions Vector(0))
+18/03/16 23:44:12 INFO TaskSchedulerImpl: Adding task set 4.0 with 1 tasks
+18/03/16 23:44:12 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 4, localhost, executor driver, partition 0, PROCESS_LOCAL, 5455 bytes)
+18/03/16 23:44:12 INFO Executor: Running task 0.0 in stage 4.0 (TID 4)
+18/03/16 23:44:12 INFO FileScanRDD: Reading File path: file:///home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/modelli/idrico_spark-perceptron-model/stages/0_mlpc_ea6aa9435e45/data/part-00000-fa636bb8-6e34-4982-8522-9df8d6438df0-c000.snappy.parquet, range: 0-1926883, partition values: [empty row]
+18/03/16 23:44:12 INFO ParquetReadSupport: Going to read the following fields from the Parquet file:
+
+Parquet form:
+message spark_schema {
+  optional group layers (LIST) {
+    repeated group list {
+      required int32 element;
+    }
+  }
+  optional group weights {
+    required int32 type (INT_8);
+    optional int32 size;
+    optional group indices (LIST) {
+      repeated group list {
+        required int32 element;
+      }
+    }
+    optional group values (LIST) {
+      repeated group list {
+        required double element;
+      }
+    }
+  }
+}
+
+Catalyst form:
+StructType(StructField(layers,ArrayType(IntegerType,true),true), StructField(weights,org.apache.spark.ml.linalg.VectorUDT@3bfc3ba7,true))
+       
+18/03/16 23:44:12 INFO CodeGenerator: Code generated in 30.621005 ms
+18/03/16 23:44:12 INFO CodeGenerator: Code generated in 19.119994 ms
+18/03/16 23:44:12 INFO InternalParquetRecordReader: RecordReader initialized will read a total of 1 records.
+18/03/16 23:44:12 INFO InternalParquetRecordReader: at row 0. reading next block
+18/03/16 23:44:12 INFO CodecPool: Got brand-new decompressor [.snappy]
+18/03/16 23:44:12 INFO InternalParquetRecordReader: block read in memory in 30 ms. row count = 1
+18/03/16 23:44:12 INFO MemoryStore: Block taskresult_4 stored as bytes in memory (estimated size 1891.8 KB, free 364.1 MB)
+18/03/16 23:44:12 INFO BlockManagerInfo: Added taskresult_4 in memory on 192.107.77.12:40885 (size: 1891.8 KB, free: 364.4 MB)
+18/03/16 23:44:12 INFO Executor: Finished task 0.0 in stage 4.0 (TID 4). 1937183 bytes result sent via BlockManager)
+18/03/16 23:44:12 INFO TransportClientFactory: Successfully created connection to /192.107.77.12:40885 after 3 ms (0 ms spent in bootstraps)
+18/03/16 23:44:13 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 4) in 536 ms on localhost (executor driver) (1/1)
+18/03/16 23:44:13 INFO TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+18/03/16 23:44:13 INFO DAGScheduler: ResultStage 4 (head at MultilayerPerceptronClassifier.scala:379) finished in 0,538 s
+18/03/16 23:44:13 INFO BlockManagerInfo: Removed taskresult_4 on 192.107.77.12:40885 in memory (size: 1891.8 KB, free: 366.3 MB)
+18/03/16 23:44:13 INFO DAGScheduler: Job 4 finished: head at MultilayerPerceptronClassifier.scala:379, took 0,562180 s
+18/03/16 23:44:13 INFO BlockManagerInfo: Removed broadcast_7_piece0 on 192.107.77.12:40885 in memory (size: 24.4 KB, free: 366.3 MB)
+18/03/16 23:44:13 INFO ContextCleaner: Cleaned accumulator 122
+18/03/16 23:44:13 INFO ContextCleaner: Cleaned accumulator 120
+18/03/16 23:44:13 INFO ContextCleaner: Cleaned accumulator 123
+18/03/16 23:44:13 INFO ContextCleaner: Cleaned accumulator 121
+18/03/16 23:44:13 INFO ContextCleaner: Cleaned accumulator 124
+18/03/16 23:44:13 INFO BlockManagerInfo: Removed broadcast_8_piece0 on 192.107.77.12:40885 in memory (size: 5.3 KB, free: 366.3 MB)
+18/03/16 23:44:14 INFO FileSourceStrategy: Pruning directories with: 
+18/03/16 23:44:14 INFO FileSourceStrategy: Post-Scan Filters: (length(trim(value#11)) > 0)
+18/03/16 23:44:14 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+18/03/16 23:44:14 INFO FileSourceScanExec: Pushed Filters: 
+18/03/16 23:44:14 INFO CodeGenerator: Code generated in 11.427777 ms
+18/03/16 23:44:14 INFO CodeGenerator: Code generated in 10.969233 ms
+18/03/16 23:44:14 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 277.3 KB, free 366.0 MB)
+18/03/16 23:44:14 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 23.4 KB, free 366.0 MB)
+18/03/16 23:44:14 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on 192.107.77.12:40885 (size: 23.4 KB, free: 366.3 MB)
+18/03/16 23:44:14 INFO SparkContext: Created broadcast 9 from load at classificatorePerceptron.scala:16
+18/03/16 23:44:14 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+18/03/16 23:44:14 INFO SparkContext: Starting job: load at classificatorePerceptron.scala:16
+18/03/16 23:44:14 INFO DAGScheduler: Got job 5 (load at classificatorePerceptron.scala:16) with 1 output partitions
+18/03/16 23:44:14 INFO DAGScheduler: Final stage: ResultStage 5 (load at classificatorePerceptron.scala:16)
+18/03/16 23:44:14 INFO DAGScheduler: Parents of final stage: List()
+18/03/16 23:44:14 INFO DAGScheduler: Missing parents: List()
+18/03/16 23:44:14 INFO DAGScheduler: Submitting ResultStage 5 (MapPartitionsRDD[13] at load at classificatorePerceptron.scala:16), which has no missing parents
+18/03/16 23:44:14 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 8.2 KB, free 366.0 MB)
+18/03/16 23:44:14 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 4.3 KB, free 366.0 MB)
+18/03/16 23:44:14 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on 192.107.77.12:40885 (size: 4.3 KB, free: 366.3 MB)
+18/03/16 23:44:14 INFO SparkContext: Created broadcast 10 from broadcast at DAGScheduler.scala:1006
+18/03/16 23:44:14 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 5 (MapPartitionsRDD[13] at load at classificatorePerceptron.scala:16) (first 15 tasks are for partitions Vector(0))
+18/03/16 23:44:14 INFO TaskSchedulerImpl: Adding task set 5.0 with 1 tasks
+18/03/16 23:44:14 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 5, localhost, executor driver, partition 0, PROCESS_LOCAL, 5338 bytes)
+18/03/16 23:44:14 INFO Executor: Running task 0.0 in stage 5.0 (TID 5)
+18/03/16 23:44:14 INFO FileScanRDD: Reading File path: file:///home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/data/test_output.txt, range: 0-169, partition values: [empty row]
+18/03/16 23:44:14 INFO CodeGenerator: Code generated in 8.773353 ms
+18/03/16 23:44:14 INFO Executor: Finished task 0.0 in stage 5.0 (TID 5). 1267 bytes result sent to driver
+18/03/16 23:44:14 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 5) in 28 ms on localhost (executor driver) (1/1)
+18/03/16 23:44:14 INFO TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+18/03/16 23:44:14 INFO DAGScheduler: ResultStage 5 (load at classificatorePerceptron.scala:16) finished in 0,029 s
+18/03/16 23:44:14 INFO DAGScheduler: Job 5 finished: load at classificatorePerceptron.scala:16, took 0,046765 s
+18/03/16 23:44:14 INFO FileSourceStrategy: Pruning directories with: 
+18/03/16 23:44:14 INFO FileSourceStrategy: Post-Scan Filters: 
+18/03/16 23:44:14 INFO FileSourceStrategy: Output Data Schema: struct<value: string>
+18/03/16 23:44:14 INFO FileSourceScanExec: Pushed Filters: 
+18/03/16 23:44:14 INFO CodeGenerator: Code generated in 6.805649 ms
+18/03/16 23:44:14 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 277.3 KB, free 365.7 MB)
+18/03/16 23:44:14 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 23.4 KB, free 365.7 MB)
+18/03/16 23:44:14 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on 192.107.77.12:40885 (size: 23.4 KB, free: 366.3 MB)
+18/03/16 23:44:14 INFO SparkContext: Created broadcast 11 from load at classificatorePerceptron.scala:16
+18/03/16 23:44:14 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+18/03/16 23:44:14 INFO FileSourceStrategy: Pruning directories with: 
+18/03/16 23:44:14 INFO FileSourceStrategy: Post-Scan Filters: 
+18/03/16 23:44:14 INFO FileSourceStrategy: Output Data Schema: struct<text: string>
+18/03/16 23:44:14 INFO FileSourceScanExec: Pushed Filters: 
+18/03/16 23:44:14 INFO CodeGenerator: Code generated in 8.457023 ms
+18/03/16 23:44:14 INFO CodeGenerator: Code generated in 25.674128 ms
+18/03/16 23:44:14 INFO MemoryStore: Block broadcast_12 stored as values in memory (estimated size 277.4 KB, free 365.4 MB)
+18/03/16 23:44:14 INFO MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 23.5 KB, free 365.4 MB)
+18/03/16 23:44:14 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on 192.107.77.12:40885 (size: 23.5 KB, free: 366.2 MB)
+18/03/16 23:44:14 INFO SparkContext: Created broadcast 12 from head at classificatorePerceptron.scala:25
+18/03/16 23:44:14 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes.
+18/03/16 23:44:14 INFO SparkContext: Starting job: head at classificatorePerceptron.scala:25
+18/03/16 23:44:14 INFO DAGScheduler: Got job 6 (head at classificatorePerceptron.scala:25) with 1 output partitions
+18/03/16 23:44:14 INFO DAGScheduler: Final stage: ResultStage 6 (head at classificatorePerceptron.scala:25)
+18/03/16 23:44:14 INFO DAGScheduler: Parents of final stage: List()
+18/03/16 23:44:14 INFO DAGScheduler: Missing parents: List()
+18/03/16 23:44:14 INFO DAGScheduler: Submitting ResultStage 6 (MapPartitionsRDD[21] at head at classificatorePerceptron.scala:25), which has no missing parents
+18/03/16 23:44:14 INFO MemoryStore: Block broadcast_13 stored as values in memory (estimated size 1903.1 KB, free 363.5 MB)
+18/03/16 23:44:14 INFO MemoryStore: Block broadcast_13_piece0 stored as bytes in memory (estimated size 1893.1 KB, free 361.7 MB)
+18/03/16 23:44:14 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on 192.107.77.12:40885 (size: 1893.1 KB, free: 364.4 MB)
+18/03/16 23:44:14 INFO SparkContext: Created broadcast 13 from broadcast at DAGScheduler.scala:1006
+18/03/16 23:44:14 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 6 (MapPartitionsRDD[21] at head at classificatorePerceptron.scala:25) (first 15 tasks are for partitions Vector(0))
+18/03/16 23:44:14 INFO TaskSchedulerImpl: Adding task set 6.0 with 1 tasks
+18/03/16 23:44:14 INFO TaskSetManager: Starting task 0.0 in stage 6.0 (TID 6, localhost, executor driver, partition 0, PROCESS_LOCAL, 5338 bytes)
+18/03/16 23:44:14 INFO Executor: Running task 0.0 in stage 6.0 (TID 6)
+18/03/16 23:44:14 INFO FileScanRDD: Reading File path: file:///home/dimartino/Documenti/mario/codice/tesienea/web/classificatore/public/data/test_output.txt, range: 0-169, partition values: [empty row]
+18/03/16 23:44:14 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+18/03/16 23:44:14 WARN BLAS: Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+18/03/16 23:44:14 INFO Executor: Finished task 0.0 in stage 6.0 (TID 6). 1190 bytes result sent to driver
+18/03/16 23:44:14 INFO TaskSetManager: Finished task 0.0 in stage 6.0 (TID 6) in 89 ms on localhost (executor driver) (1/1)
+18/03/16 23:44:14 INFO TaskSchedulerImpl: Removed TaskSet 6.0, whose tasks have all completed, from pool 
+18/03/16 23:44:14 INFO DAGScheduler: ResultStage 6 (head at classificatorePerceptron.scala:25) finished in 0,090 s
+18/03/16 23:44:14 INFO DAGScheduler: Job 6 finished: head at classificatorePerceptron.scala:25, took 0,110939 s
+18/03/16 23:44:14 INFO SparkContext: Invoking stop() from shutdown hook
+18/03/16 23:44:14 INFO SparkUI: Stopped Spark web UI at http://192.107.77.12:4040
+18/03/16 23:44:14 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+18/03/16 23:44:14 INFO MemoryStore: MemoryStore cleared
+18/03/16 23:44:14 INFO BlockManager: BlockManager stopped
+18/03/16 23:44:14 INFO BlockManagerMaster: BlockManagerMaster stopped
+18/03/16 23:44:14 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+18/03/16 23:44:14 INFO SparkContext: Successfully stopped SparkContext
+18/03/16 23:44:14 INFO ShutdownHookManager: Shutdown hook called
+18/03/16 23:44:14 INFO ShutdownHookManager: Deleting directory /tmp/spark-86302215-ef6a-4c3a-b23a-3b609c5751b8

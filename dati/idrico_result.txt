@@ -1,11 +1,11 @@
 idrico
-Test set accuracy = 0.9495412844036697
+Test set accuracy = 0.9288990825688074
 Confusion matrix = 
-367.0  23.0   
-21.0   461.0  
-Accuracy with metrics = 0.9495412844036697
-Recall with metrics = 0.9564315352697096
-False Positive % with metrics = 0.05897435897435897
+357.0  33.0   
+29.0   453.0  
+Accuracy with metrics = 0.9288990825688074
+Recall with metrics = 0.9398340248962656
+False Positive % with metrics = 0.08461538461538462
 root
  |-- id: integer (nullable = true)
  |-- label: integer (nullable = true)
@@ -13,7 +13,7 @@ root
  |-- prediction: double (nullable = true)
 
 Other metrix handmade calculated
-False Positive = 23
-False Negative = 21
-True Positive = 461
-True Negative = 367
+False Positive = 33
+False Negative = 29
+True Positive = 453
+True Negative = 357

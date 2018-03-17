@@ -1,0 +1,133 @@
+elettrico                                                                                                                
+Test set accuracy = 0.9392201834862385                                                                                   
+Confusion matrix =                                                                                                       
+451.0  17.0                                                                                                              
+36.0   368.0                                                                                                             
+Accuracy with metrics = 0.9392201834862385                                                                               
+Recall with metrics = 0.9108910891089109                                                                                 
+False Positive % with metrics = 0.03632478632478633                                                                      
+root                                                                                                                     
+ |-- id: integer (nullable = true)                                                                                       
+ |-- label: integer (nullable = true)                                                                                    
+ |-- features: vector (nullable = true)                                                                                  
+ |-- prediction: double (nullable = true)                                                                                
+                                                                                                                         
+Other metrix handmade calculated                                                                                         
+False Positive = 17                                                                                                      
+False Negative = 36                                                                                                      
+True Positive = 368                                                                                                      
+True Negative = 451                                                                                                      
+guasto                                                                                                                   
+Test set accuracy = 0.9208715596330275                                                                                   
+Confusion matrix =                                                                                                       
+473.0  38.0                                                                                                              
+31.0   330.0                                                                                                             
+Accuracy with metrics = 0.9208715596330275                                                                               
+Recall with metrics = 0.9141274238227147                                                                                 
+False Positive % with metrics = 0.07436399217221135                                                                      
+root                                                                                                                     
+ |-- id: integer (nullable = true)                                                                                       
+ |-- label: integer (nullable = true)                                                                                    
+ |-- features: vector (nullable = true)                                                                                  
+ |-- prediction: double (nullable = true)                                                                                
+                                                                                                                         
+Other metrix handmade calculated                                                                                         
+False Positive = 38                                                                                                      
+False Negative = 31                                                                                                      
+True Positive = 330                                                                                                      
+True Negative = 473                                                                                                      
+idrico                                                                                                                   
+Test set accuracy = 0.9495412844036697                                                                                   
+Confusion matrix =                                                                                                       
+367.0  23.0                                                                                                              
+21.0   461.0                                                                                                             
+Accuracy with metrics = 0.9495412844036697                                                                               
+Recall with metrics = 0.9564315352697096                                                                                 
+False Positive % with metrics = 0.05897435897435897                                                                      
+root                                                                                                                     
+ |-- id: integer (nullable = true)                                                                                       
+ |-- label: integer (nullable = true)                                                                                    
+ |-- features: vector (nullable = true)                                                                                  
+ |-- prediction: double (nullable = true)                                                                                
+                                                                                                                         
+Other metrix handmade calculated                                                                                         
+False Positive = 23                                                                                                      
+False Negative = 21                                                                                                      
+True Positive = 461                                                                                                      
+True Negative = 367                                                                                                      
+maltempo                                                                                                                 
+Test set accuracy = 0.9552752293577982                                                                                   
+Confusion matrix =                                                                                                       
+727.0  13.0                                                                                                              
+26.0   106.0                                                                                                             
+Accuracy with metrics = 0.9552752293577982                                                                               
+Recall with metrics = 0.803030303030303                                                                                  
+False Positive % with metrics = 0.01756756756756757                                                                      
+root                                                                                                                     
+ |-- id: integer (nullable = true)                                                                                       
+ |-- label: integer (nullable = true)                                                                                    
+ |-- features: vector (nullable = true)                                                                                  
+ |-- prediction: double (nullable = true)                                                                                
+                                                                                                                         
+Other metrix handmade calculated                                                                                         
+False Positive = 13                                                                                                      
+False Negative = 26                                                                                                      
+True Positive = 106                                                                                                      
+True Negative = 727                                                                                                      
+manutenzione                                                                                                             
+Test set accuracy = 0.8795871559633027                                                                                   
+Confusion matrix =                                                                                                       
+259.0  51.0                                                                                                              
+54.0   508.0                                                                                                             
+Accuracy with metrics = 0.8795871559633027                                                                               
+Recall with metrics = 0.9039145907473309                                                                                 
+False Positive % with metrics = 0.16451612903225807                                                                      
+root                                                                                                                     
+ |-- id: integer (nullable = true)                                                                                       
+ |-- label: integer (nullable = true)                                                                                    
+ |-- features: vector (nullable = true)                                                                                  
+ |-- prediction: double (nullable = true)                                                                                
+                                                                                                                         
+Other metrix handmade calculated                                                                                         
+False Positive = 51                                                                                                      
+False Negative = 54                                                                                                      
+True Positive = 508                                                                                                      
+True Negative = 259                                                                                                      
+stradale                                                                                                                 
+Test set accuracy = 0.9231651376146789                                                                                   
+Confusion matrix =                                                                                                       
+627.0  36.0                                                                                                              
+31.0   178.0                                                                                                             
+Accuracy with metrics = 0.9231651376146789                                                                               
+Recall with metrics = 0.8516746411483254                                                                                 
+False Positive % with metrics = 0.05429864253393665                                                                      
+root                                                                                                                     
+ |-- id: integer (nullable = true)                                                                                       
+ |-- label: integer (nullable = true)                                                                                    
+ |-- features: vector (nullable = true)                                                                                  
+ |-- prediction: double (nullable = true)                                                                                
+                                                                                                                         
+Other metrix handmade calculated                                                                                         
+False Positive = 36                                                                                                      
+False Negative = 31                                                                                                      
+True Positive = 178                                                                                                      
+True Negative = 627                                                                                                      
+telecomunicazioni                                                                                                        
+Test set accuracy = 0.9277522935779816                                                                                   
+Confusion matrix =                                                                                                       
+705.0  34.0                                                                                                              
+29.0   104.0                                                                                                             
+Accuracy with metrics = 0.9277522935779816                                                                               
+Recall with metrics = 0.7819548872180451                                                                                 
+False Positive % with metrics = 0.046008119079837616                                                                     
+root                                                                                                                     
+ |-- id: integer (nullable = true)                                                                                       
+ |-- label: integer (nullable = true)                                                                                    
+ |-- features: vector (nullable = true)                                                                                  
+ |-- prediction: double (nullable = true)                                                                                
+                                                                                                                         
+Other metrix handmade calculated                                                                                         
+False Positive = 34                                                                                                      
+False Negative = 29                                                                                                      
+True Positive = 104                                                                                                      
+True Negative = 705                                                                                                      

@@ -5,7 +5,7 @@ require 'nokogiri'      #
 require "./rimuovi_non_in_dizionario.rb"
 require './modelli.rb'
 
-file_dizionario = File.open("dizionario.txt", "r")
+file_dizionario = File.open("dizionario2.txt", "r")
 linee =  file_dizionario.readlines
 file_guasto = File.open("guasti_thread_#{ARGV[0]}_dizionario.txt","w")
 file_maltempo = File.open("maltempo_thread_#{ARGV[0]}_dizionario.txt","w")
@@ -32,6 +32,7 @@ alerts.each do |a|
     #out_file.write "\nripulito # " + rimuovi_non_in_dizionario(body,linee) unless body.nil?
     #bodies.push + bodies.last
 	out = rimuovi_non_in_dizionario(body,linee) unless body.nil?
+	#out = lemmatizza_dizionario out
 	out=out.gsub(/\s\s+/, "\s")
 	guasto = false
 	manutenzione = false

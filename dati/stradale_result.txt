@@ -1,11 +1,11 @@
 stradale
-Test set accuracy = 0.9231651376146789
+Test set accuracy = 0.9254587155963303
 Confusion matrix = 
-627.0  36.0   
-31.0   178.0  
-Accuracy with metrics = 0.9231651376146789
-Recall with metrics = 0.8516746411483254
-False Positive % with metrics = 0.05429864253393665
+633.0  30.0   
+35.0   174.0  
+Accuracy with metrics = 0.9254587155963303
+Recall with metrics = 0.8325358851674641
+False Positive % with metrics = 0.04524886877828054
 root
  |-- id: integer (nullable = true)
  |-- label: integer (nullable = true)
@@ -13,7 +13,7 @@ root
  |-- prediction: double (nullable = true)
 
 Other metrix handmade calculated
-False Positive = 36
-False Negative = 31
-True Positive = 178
-True Negative = 627
+False Positive = 30
+False Negative = 35
+True Positive = 174
+True Negative = 633

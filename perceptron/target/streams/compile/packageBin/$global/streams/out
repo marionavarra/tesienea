@@ -1,11 +1,1 @@
-[0m[[0m[0minfo[0m] [0m[0mPackaging /home/dimartino/Documenti/mario/codice/tesienea/perceptron/target/scala-2.11/perceptron_2.11-0.1.0-SNAPSHOT.jar ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Perceptron.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/dimartino/Documenti/mario/codice/tesienea/perceptron/target/scala-2.11/classes/Perceptron.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Perceptron$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/dimartino/Documenti/mario/codice/tesienea/perceptron/target/scala-2.11/classes/Perceptron$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Perceptron$$typecreator2$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/dimartino/Documenti/mario/codice/tesienea/perceptron/target/scala-2.11/classes/Perceptron$$typecreator2$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Perceptron$$anonfun$1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/dimartino/Documenti/mario/codice/tesienea/perceptron/target/scala-2.11/classes/Perceptron$$anonfun$1.class[0m
-[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
+[0m[[0m[0mdebug[0m] [0m[0mJar uptodate: /home/dimartino/Documenti/mario/codice/tesienea/perceptron/target/scala-2.11/perceptron_2.11-0.1.0-SNAPSHOT.jar[0m

@@ -1,0 +1,156 @@
+manutenzione
+Test set accuracy = 0.8864678899082569
+Confusion matrix =
+250.0  60.0
+39.0   523.0
+Accuracy with metrics = 0.8864678899082569
+Recall with metrics = 0.9306049822064056
+False Positive % with metrics = 0.1935483870967742
+root
+ |-- id: integer (nullable = true)
+ |-- label: integer (nullable = true)
+ |-- features: vector (nullable = true)
+ |-- prediction: double (nullable = true)
+
+Other metrix handmade calculated
+False Positive = 60
+False Negative = 39
+True Positive = 523
+True Negative = 250
+dimartino@babylon:~/Documenti/mario/codice/tesienea/dati$ python cm.py
+dimartino@babylon:~/Documenti/mario/codice/tesienea/dati$ mv output.png manutenzione.png
+dimartino@babylon:~/Documenti/mario/codice/tesienea/dati$
+dimartino@babylon:~/Documenti/mario/codice/tesienea/dati$ cat *_result.txt
+elettrico
+Test set accuracy = 0.9415137614678899
+Confusion matrix =
+450.0  18.0
+33.0   371.0
+Accuracy with metrics = 0.9415137614678899
+Recall with metrics = 0.9183168316831684
+False Positive % with metrics = 0.038461538461538464
+root
+ |-- id: integer (nullable = true)
+ |-- label: integer (nullable = true)
+ |-- features: vector (nullable = true)
+ |-- prediction: double (nullable = true)
+
+Other metrix handmade calculated
+False Positive = 18
+False Negative = 33
+True Positive = 371
+True Negative = 450
+guasto
+Test set accuracy = 0.9254587155963303
+Confusion matrix =
+479.0  32.0
+33.0   328.0
+Accuracy with metrics = 0.9254587155963303
+Recall with metrics = 0.9085872576177285
+False Positive % with metrics = 0.06262230919765166
+root
+ |-- id: integer (nullable = true)
+ |-- label: integer (nullable = true)
+ |-- features: vector (nullable = true)
+ |-- prediction: double (nullable = true)
+
+Other metrix handmade calculated
+False Positive = 32
+False Negative = 33
+True Positive = 328
+True Negative = 479
+idrico
+Test set accuracy = 0.9288990825688074
+Confusion matrix =
+357.0  33.0
+29.0   453.0
+Accuracy with metrics = 0.9288990825688074
+Recall with metrics = 0.9398340248962656
+False Positive % with metrics = 0.08461538461538462
+root
+ |-- id: integer (nullable = true)
+ |-- label: integer (nullable = true)
+ |-- features: vector (nullable = true)
+ |-- prediction: double (nullable = true)
+
+Other metrix handmade calculated
+False Positive = 33
+False Negative = 29
+True Positive = 453
+True Negative = 357
+maltempo
+Test set accuracy = 0.966743119266055
+Confusion matrix =
+730.0  10.0
+19.0   113.0
+Accuracy with metrics = 0.966743119266055
+Recall with metrics = 0.8560606060606061
+False Positive % with metrics = 0.013513513513513514
+root
+ |-- id: integer (nullable = true)
+ |-- label: integer (nullable = true)
+ |-- features: vector (nullable = true)
+ |-- prediction: double (nullable = true)
+
+Other metrix handmade calculated
+False Positive = 10
+False Negative = 19
+True Positive = 113
+True Negative = 730
+manutenzione
+Test set accuracy = 0.8864678899082569
+Confusion matrix =
+250.0  60.0
+39.0   523.0
+Accuracy with metrics = 0.8864678899082569
+Recall with metrics = 0.9306049822064056
+False Positive % with metrics = 0.1935483870967742
+root
+ |-- id: integer (nullable = true)
+ |-- label: integer (nullable = true)
+ |-- features: vector (nullable = true)
+ |-- prediction: double (nullable = true)
+
+Other metrix handmade calculated
+False Positive = 60
+False Negative = 39
+True Positive = 523
+True Negative = 250
+stradale
+Test set accuracy = 0.9254587155963303
+Confusion matrix =
+633.0  30.0
+35.0   174.0
+Accuracy with metrics = 0.9254587155963303
+Recall with metrics = 0.8325358851674641
+False Positive % with metrics = 0.04524886877828054
+root
+ |-- id: integer (nullable = true)
+ |-- label: integer (nullable = true)
+ |-- features: vector (nullable = true)
+ |-- prediction: double (nullable = true)
+
+Other metrix handmade calculated
+False Positive = 30
+False Negative = 35
+True Positive = 174
+True Negative = 633
+telecomunicazioni
+Test set accuracy = 0.9357798165137615
+Confusion matrix =
+712.0  27.0
+29.0   104.0
+Accuracy with metrics = 0.9357798165137615
+Recall with metrics = 0.7819548872180451
+False Positive % with metrics = 0.036535859269282815
+root
+ |-- id: integer (nullable = true)
+ |-- label: integer (nullable = true)
+ |-- features: vector (nullable = true)
+ |-- prediction: double (nullable = true)
+
+Other metrix handmade calculated
+False Positive = 27
+False Negative = 29
+True Positive = 104
+True Negative = 712
