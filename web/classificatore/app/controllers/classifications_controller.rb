@@ -1,4 +1,5 @@
 class ClassificationsController < ApplicationController
+  protect_from_forgery with: :null_session
   before_action :set_classification, only: [:show, :edit, :update, :destroy]
 
   # GET /classifications

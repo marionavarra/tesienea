@@ -3,14 +3,9 @@ Test set accuracy = 0.8864678899082569
 Confusion matrix =
 250.0  60.0
 39.0   523.0
-Accuracy with metrics = 0.8864678899082569
-Recall with metrics = 0.9306049822064056
-False Positive % with metrics = 0.1935483870967742
-root
- |-- id: integer (nullable = true)
- |-- label: integer (nullable = true)
- |-- features: vector (nullable = true)
- |-- prediction: double (nullable = true)
+Accuracy = 88,65%
+Recall = 93,06%
+False Positive = 19,35%
 
 Other metrix handmade calculated
 False Positive = 60
@@ -26,14 +21,9 @@ Test set accuracy = 0.9415137614678899
 Confusion matrix =
 450.0  18.0
 33.0   371.0
-Accuracy with metrics = 0.9415137614678899
-Recall with metrics = 0.9183168316831684
-False Positive % with metrics = 0.038461538461538464
-root
- |-- id: integer (nullable = true)
- |-- label: integer (nullable = true)
- |-- features: vector (nullable = true)
- |-- prediction: double (nullable = true)
+Accuracy = 94,15%
+Recall = 91,83%
+False Positive = 3,85%
 
 Other metrix handmade calculated
 False Positive = 18
@@ -45,14 +35,9 @@ Test set accuracy = 0.9254587155963303
 Confusion matrix =
 479.0  32.0
 33.0   328.0
-Accuracy with metrics = 0.9254587155963303
-Recall with metrics = 0.9085872576177285
-False Positive % with metrics = 0.06262230919765166
-root
- |-- id: integer (nullable = true)
- |-- label: integer (nullable = true)
- |-- features: vector (nullable = true)
- |-- prediction: double (nullable = true)
+Accuracy = 92,55%
+Recall = 90,86%
+False Positive = 6,26%
 
 Other metrix handmade calculated
 False Positive = 32
@@ -64,14 +49,9 @@ Test set accuracy = 0.9288990825688074
 Confusion matrix =
 357.0  33.0
 29.0   453.0
-Accuracy with metrics = 0.9288990825688074
-Recall with metrics = 0.9398340248962656
-False Positive % with metrics = 0.08461538461538462
-root
- |-- id: integer (nullable = true)
- |-- label: integer (nullable = true)
- |-- features: vector (nullable = true)
- |-- prediction: double (nullable = true)
+Accuracy = 92,89%
+Recall = 93,98%
+False Positive = 9,14%
 
 Other metrix handmade calculated
 False Positive = 33
@@ -83,14 +63,9 @@ Test set accuracy = 0.966743119266055
 Confusion matrix =
 730.0  10.0
 19.0   113.0
-Accuracy with metrics = 0.966743119266055
-Recall with metrics = 0.8560606060606061
-False Positive % with metrics = 0.013513513513513514
-root
- |-- id: integer (nullable = true)
- |-- label: integer (nullable = true)
- |-- features: vector (nullable = true)
- |-- prediction: double (nullable = true)
+Accuracy = 96,67%
+Recall = 85,60%
+False Positive = 1,35%
 
 Other metrix handmade calculated
 False Positive = 10
@@ -102,14 +77,9 @@ Test set accuracy = 0.8864678899082569
 Confusion matrix =
 250.0  60.0
 39.0   523.0
-Accuracy with metrics = 0.8864678899082569
-Recall with metrics = 0.9306049822064056
-False Positive % with metrics = 0.1935483870967742
-root
- |-- id: integer (nullable = true)
- |-- label: integer (nullable = true)
- |-- features: vector (nullable = true)
- |-- prediction: double (nullable = true)
+Accuracy = 88,65%
+Recall = 93,06%
+False Positive = 19,35%
 
 Other metrix handmade calculated
 False Positive = 60
@@ -121,14 +91,9 @@ Test set accuracy = 0.9254587155963303
 Confusion matrix =
 633.0  30.0
 35.0   174.0
-Accuracy with metrics = 0.9254587155963303
-Recall with metrics = 0.8325358851674641
-False Positive % with metrics = 0.04524886877828054
-root
- |-- id: integer (nullable = true)
- |-- label: integer (nullable = true)
- |-- features: vector (nullable = true)
- |-- prediction: double (nullable = true)
+Accuracy = 92,55%
+Recall = 83,25%
+False Positive = 4,52%
 
 Other metrix handmade calculated
 False Positive = 30
@@ -140,14 +105,9 @@ Test set accuracy = 0.9357798165137615
 Confusion matrix =
 712.0  27.0
 29.0   104.0
-Accuracy with metrics = 0.9357798165137615
-Recall with metrics = 0.7819548872180451
-False Positive % with metrics = 0.036535859269282815
-root
- |-- id: integer (nullable = true)
- |-- label: integer (nullable = true)
- |-- features: vector (nullable = true)
- |-- prediction: double (nullable = true)
+Accuracy = 93,58%
+Recall = 78,20%
+False Positive = 3,65%
 
 Other metrix handmade calculated
 False Positive = 27

@@ -7,9 +7,9 @@ Success prediction rate: 0.991017221028419
 Confusion matrix =
 883.0  10.0
 32.0   153.0
-Accuracy with metrics = 0.961038961038961
-Recall with metrics = 0.9888017917133258
-False Positive % with metrics = 0.17297297297297298
+Accuracy = 96,10%
+Recall = 98,88%
+False Positive = 17,30%
 
 
 manutenzione
@@ -21,9 +21,9 @@ Success prediction rate: 0.9662252024538174
 Confusion matrix =
 350.0  44.0
 46.0   683.0
-Accuracy with metrics = 0.9198575244879786
-Recall with metrics = 0.8883248730964467
-False Positive % with metrics = 0.06310013717421124
+Accuracy = 91,99%
+Recall = 88,83%
+False Positive = 6,31%
 
 guasto
 False Positive = 30
@@ -34,9 +34,9 @@ Success prediction rate: 0.9694935270822743
 Confusion matrix =
 664.0  30.0
 47.0   402.0
-Accuracy with metrics = 0.9326334208223972
-Recall with metrics = 0.9567723342939481
-False Positive % with metrics = 0.10467706013363029
+Accuracy = 93,26%
+Recall = 95,68%
+False Positive = 10,47%
 
 idrico
 False Positive = 22
@@ -47,10 +47,9 @@ Success prediction rate: 0.9715971283239918
 Confusion matrix =
 479.0  22.0
 58.0   562.0
-Accuracy with metrics = 0.928635147190009
-Recall with metrics = 0.9560878243512974
-False Positive % with metrics = 0.0935483870967742
-
+Accuracy = 92,86%
+Recall = 95,61%
+False Positive = 9,35%
 stradale
 False Positive = 19
 False Negative = 67
@@ -60,9 +59,9 @@ Success prediction rate: 0.9389146090535015
 Confusion matrix =
 818.0  19.0
 67.0   221.0
-Accuracy with metrics = 0.9235555555555556
-Recall with metrics = 0.977299880525687
-False Positive % with metrics = 0.2326388888888889
+Accuracy = 92,36%
+Recall = 97,73%
+False Positive = 23,26%
 
 telecomunicazioni
 False Positive = 14
@@ -73,9 +72,9 @@ Success prediction rate: 0.9219339400226476
 Confusion matrix =
 950.0  14.0
 50.0   126.0
-Accuracy with metrics = 0.9438596491228071
-Recall with metrics = 0.9854771784232366
-False Positive % with metrics = 0.2840909090909091
+Accuracy = 94,39%
+Recall = 98,55%
+False Positive = 28,41%
 
 elettrico
 False Positive = 23
@@ -86,6 +85,6 @@ Success prediction rate: 0.971819406921186
 Confusion matrix =
 590.0  23.0
 75.0   431.0
-Accuracy with metrics = 0.9124218051831993
-Recall with metrics = 0.9624796084828712
-False Positive % with metrics = 0.1482213438735178
+Accuracy = 91,24%
+Recall = 96,25%
+False Negative = 14,82%
