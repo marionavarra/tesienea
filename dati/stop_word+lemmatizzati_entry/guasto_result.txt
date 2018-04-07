@@ -1,11 +1,11 @@
 guasto
-Test set accuracy = 0.9050343249427918
+Test set accuracy = 0.902745995423341
 Confusion matrix = 
-469.0  50.0   
-33.0   322.0  
-Accuracy with metrics = 0.9050343249427918
-Recall with metrics = 0.9036608863198459
-False Positive % with metrics = 0.09295774647887324
+470.0  49.0   
+36.0   319.0  
+Accuracy with metrics = 0.902745995423341
+Recall with metrics = 0.8985915492957747
+False Positive % with metrics = 0.09441233140655106
 root
  |-- id: integer (nullable = true)
  |-- label: integer (nullable = true)
@@ -13,7 +13,7 @@ root
  |-- prediction: double (nullable = true)
 
 Other metrix handmade calculated
-False Positive = 50
-False Negative = 33
-True Positive = 322
-True Negative = 469
+False Positive = 49
+False Negative = 36
+True Positive = 319
+True Negative = 470

@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Classifications</h1>
+<h1>Notizie classificate</h1>
 
 <table>
   <thead>
@@ -20,7 +20,7 @@
   <tbody>
     <% @classifications.each do |classification| %>
       <tr>
-        <td rowspan="2" style="width: 60%"><%= classification.notizia %></td>
+        <td rowspan="2" style="width: 60%"><%= classification.notizia.truncate(150) %></td>
 		
         <td style="width: 10%">
 		 <% if classification.maltempo %>
@@ -136,4 +136,4 @@
 
 <br>
 
-<%= link_to 'New Classification', new_classification_path %>
+<%= link_to 'Nuova Classificazione', new_classification_path %>

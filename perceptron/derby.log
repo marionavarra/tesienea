@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Wed Mar 21 13:17:32 CET 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0162-487e-2ff2-00001a237520 
+on database directory /home/dimartino/Documenti/mario/codice/tesienea/perceptron/metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@5dd12c19 
+Loaded from file:/home/dimartino/Documenti/mario/spark-2.2.1-bin-hadoop2.7/jars/derby-10.12.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_162-8u162-b12-1-b12
+user.dir=/home/dimartino/Documenti/mario/codice/tesienea/perceptron
+os.name=Linux
+os.arch=amd64
+os.version=4.14.0-3-amd64
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

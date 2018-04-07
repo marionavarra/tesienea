@@ -1,11 +1,11 @@
 telecomunicazioni
-Test set accuracy = 0.8524027459954233
+Test set accuracy = 0.9073226544622426
 Confusion matrix = 
-745.0  0.0  
-129.0  0.0  
-Accuracy with metrics = 0.8524027459954233
-Recall with metrics = 1.0
-False Positive % with metrics = 1.0
+710.0  35.0  
+46.0   83.0  
+Accuracy with metrics = 0.9073226544622426
+Recall with metrics = 0.6434108527131783
+False Positive % with metrics = 0.04697986577181208
 root
  |-- id: integer (nullable = true)
  |-- label: integer (nullable = true)
@@ -13,7 +13,7 @@ root
  |-- prediction: double (nullable = true)
 
 Other metrix handmade calculated
-False Positive = 0
-False Negative = 129
-True Positive = 0
-True Negative = 745
+False Positive = 35
+False Negative = 46
+True Positive = 83
+True Negative = 710

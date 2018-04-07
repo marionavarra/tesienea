@@ -1,11 +1,11 @@
 elettrico
-Test set accuracy = 0.9016018306636155
+Test set accuracy = 0.902745995423341
 Confusion matrix = 
-445.0  47.0   
-39.0   343.0  
-Accuracy with metrics = 0.9016018306636155
-Recall with metrics = 0.9044715447154471
-False Positive % with metrics = 0.10209424083769633
+455.0  37.0   
+48.0   334.0  
+Accuracy with metrics = 0.902745995423341
+Recall with metrics = 0.8743455497382199
+False Positive % with metrics = 0.07520325203252033
 root
  |-- id: integer (nullable = true)
  |-- label: integer (nullable = true)
@@ -13,7 +13,7 @@ root
  |-- prediction: double (nullable = true)
 
 Other metrix handmade calculated
-False Positive = 47
-False Negative = 39
-True Positive = 343
-True Negative = 445
+False Positive = 37
+False Negative = 48
+True Positive = 334
+True Negative = 455

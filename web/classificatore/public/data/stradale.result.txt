@@ -1,1 +1,1 @@
-stradale:1.0
+stradale:0.0

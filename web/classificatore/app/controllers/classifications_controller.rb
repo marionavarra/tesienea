@@ -5,7 +5,7 @@ class ClassificationsController < ApplicationController
   # GET /classifications
   # GET /classifications.json
   def index
-    @classifications = Classification.all
+    @classifications = Classification.all.order("id DESC")
   end
 
   # GET /classifications/1
@@ -48,19 +48,19 @@ class ClassificationsController < ApplicationController
 	  th[t]=Thread.new do
 	      Thread.current["mycount"] = t
 		  t*=1
-		  command = "spark-submit --class ClassifierLogReg #{path}public/scala/classifierlogreg_2.11-0.1.0-SNAPSHOT.jar #{f} 2>> #{path}public/data/error > #{path}public/data/#{f}.result.txt"
+		  command = "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre/ && spark-submit --class ClassifierLogReg #{path}public/scala/classifierlogreg_2.11-0.1.0-SNAPSHOT.jar #{f} 2>> #{path}public/data/error > #{path}public/data/#{f}.result.txt"
 		  logger.info  command
 		  system(command)
 	  end
 	  th[t]=Thread.new do
 	      Thread.current["mycount"] = t
 		  t*=1
-		  command2 = "spark-submit --class ClassifierPerceptron #{path}public/scala/classifierperceptron_2.11-0.1.0-SNAPSHOT.jar #{f} 2>> #{path}public/data/error2 > #{path}public/data/#{f}2.result.txt"
+		  command2 = "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre/ && spark-submit --class ClassifierPerceptron #{path}public/scala/classifierperceptron_2.11-0.1.0-SNAPSHOT.jar #{f} 2>> #{path}public/data/error2 > #{path}public/data/#{f}2.result.txt"
       	  logger.info  command2
 		  system(command2)
 	  end	  
 	end
-	th.each {|t| t.join; print t["mycount"], "/tFinito #{DateTime.now.strftime("%d/%m/%Y %H:%M:%S")}/ " }
+	th.each {|t| t.join; logger.info ", /tFinito #{DateTime.now.strftime("%d/%m/%Y %H:%M:%S")}/ " }
 	file.each do |f|
       positivo = false
 		ris_letto = `cat #{path}public/data/#{f}.result.txt`.split(":")[1].split(".")[0]
@@ -77,7 +77,7 @@ class ClassificationsController < ApplicationController
           when "guasto"
             @classification.guasto =  positivo
           when "telecomunicazioni"
-             @classification.telecomunicazioni2 =  positivo
+             @classification.telecomunicazioni =  positivo
           when "stradale"
             @classification.stradale =  positivo
           when "idrico"
