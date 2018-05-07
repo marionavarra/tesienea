@@ -1,2 +1,2 @@
 # tesienea
-Script, data and configuration for my wort in ENEA
+Script, data and configuration for my work in ENEA
